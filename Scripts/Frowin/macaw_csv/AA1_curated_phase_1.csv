@@ -1684,7 +1684,7 @@ NMNDA,h2o_c + nmn_c --> nh4_c + nicrnt_c,ok,ok,ok,ok,ok
 NMNPtpp,nmn_p --> nmn_c,ok,ok,ok,ok,ok
 NMNR,h2o_e + nmn_e --> pi_e + rnam_e,ok,ok,ok,ok,ok
 NMNtex,nmn_e <=> nmn_p,ok,ok,ok,ok,ok
-NMO,etha_c + fmnh2_c + o2_c --> acald_c + fmn_c + no2_c,ok,ok,ok,ok,ok
+NMO,etha_c + fmnh2_c + o2_c --> acald_c + fmn_c + 6.0 h_c + no2_c,ok,ok,ok,ok,ok
 NNAM,h2o_c + ncam_c --> nac_c + nh4_c,ok,ok,ok,ok,ok
 NNATr,atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c,ok,ok,ok,ok,should be irreversible
 NO2t3,h_e + no2_c --> h_c + no2_e,ok,ok,ok,ok,ok

@@ -380,7 +380,7 @@ EX_zn2_e,zn2_e <=> ,ok,ok,ok,ok,ok
 3OXOADPt_ex,3oxoadp_e <=> 3oxoadp_p,ok,ok,ok,ok,ok
 3OXOADPt_pp,3oxoadp_p + h_p --> 3oxoadp_c + h_c,ok,ok,ok,ok,ok
 3PEPTabcpp,LalaDgluMdap_p + atp_c + h2o_c --> LalaDgluMdap_c + adp_c + h_c + pi_c,ok,ok,ok,ok,ok
-3SALATAi,3sala_c + akg_c + h_c <=> 3snpyr_c + glu__L_c,ok,ok,ok,ok,ok
+3SALATAi,3sala_c + akg_c <=> 3snpyr_c + glu__L_c,ok,ok,ok,ok,ok
 4ABUTD,4abutn_c + h2o_c + nadp_c <=> 4abut_c + 2.0 h_c + nadph_c,ok,ok,ok,ABUTD,ok
 4ABUTabcpp,4abut_p + atp_c + h2o_c --> 4abut_c + adp_c + h_c + pi_c,ok,ok,ok,ok,ok
 4CMLCL_kt,4cml_c + h_c --> 5odhf2a_c + co2_c,ok,ok,ok,ok,ok
@@ -528,7 +528,7 @@ ACP1_FMN,fmn_c + h2o_c --> pi_c + ribflv_c,ok,ok,ok,ok,ok
 ACPPAT140,h_c + myrsACP_c + pi_c --> ACP_c + ttdcap_c,ok,ok,ok,ok,ok
 ACPPAT160,h_c + palmACP_c + pi_c --> ACP_c + hdcap_c,ok,ok,ok,ok,ok
 ACPPAT181,h_c + octeACP_c + pi_c --> ACP_c + ocdceap_c,ok,ok,ok,ok,ok
-ACPS1_1,apoACP_c + coa_c --> ACP_c + pap_c,ok,ok,ok,ok,ok
+ACPS1,apoACP_c + coa_c --> ACP_c + pap_c,ok,ok,ok,ok,ok
 ACPpds,ACP_c + h2o_c --> apoACP_c + 2.0 h_c + pan4p_c,ok,ok,ok,ok,ok
 ACS,ac_c + atp_c + coa_c --> accoa_c + amp_c + ppi_c,ok,ok,ok,ok,ok
 ACS2,atp_c + coa_c + ppa_c --> amp_c + ppcoa_c + ppi_c,ok,ok,ok,ok,ok
@@ -1302,7 +1302,7 @@ FE3abcpp,atp_c + fe3_p + h2o_c --> adp_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
 FE3t,fe3_e <=> fe3_c,ok,ok,ok,ok,ok
 FE3tex,fe3_e <=> fe3_p,ok,ok,ok,ok,ok
 FEDCabc,atp_c + 2.0 cit_e + fe3_e + h2o_c --> adp_c + 2.0 cit_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
-FEDHBZS3R2,2.0 fe3dhbzs3_c + fmnh2_c --> 2.0 23dhbzs3_c + 2.0 fe3_c + fmn_c + 2.0 h_c,ok,ok,ok,ok,ok
+FEDHBZS3R2,2.0 fe3dhbzs3_c + fmnh2_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + fmn_c + 4.0 h_c,ok,ok,ok,ok,ok
 FEENTERR2,2.0 feenter_c + fmnh2_c --> 2.0 enter_c + 2.0 fe2_c + fmn_c + 2.0 h_c,ok,ok,ok,ok,ok
 FEENTERabcpp,atp_c + feenter_p + h2o_c --> adp_c + feenter_c + h_c + pi_c,ok,ok,ok,ok,ok
 FEENTERtex,enter_p + h_p --> enter_e + h_c,ok,ok,ok,ok,ok
@@ -1664,7 +1664,6 @@ HIStex,his__L_e <=> his__L_p,ok,ok,ok,ok,ok
 HKtpp,atp_c + h2o_c + k_p --> adp_c + h_p + k_c + pi_c,ok,ok,ok,ok,ok
 HMBS,h2o_c + 4.0 ppbng_c --> hmbil_c + 4.0 nh4_c,ok,ok,ok,ok,ok
 HMEDR,2.0 h_c + hmbpp_c + nadh_c --> h2o_c + ipdp_c + nad_c,ok,ok,ok,ok,ok
-HMEDS,2mecdp_c + 2.0 fdxrd_c --> 2.0 fdxox_c + h2o_c + hmbpp_c,ok,ok,ok,ok,ok
 HMGL,hmgcoa_c --> acac_c + accoa_c,HMGL_2,ok,ok,ok,ok
 HMGL_2,hmgcoa_c --> acac_c + accoa_c,HMGL,ok,ok,ok,ok
 HMPK1,4ahmmp_c + atp_c --> 4ampm_c + adp_c + h_c,ok,ok,ok,ok,ok

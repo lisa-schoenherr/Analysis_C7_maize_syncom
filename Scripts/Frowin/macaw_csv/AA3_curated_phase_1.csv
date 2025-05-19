@@ -638,7 +638,7 @@ ASPtex,asp__L_e <=> asp__L_p,ok,ok,ok,ok,ok
 ATHRDHr,athr__L_c + nadp_c <=> 2aobut_c + h_c + nadph_c,ok,ok,ok,ok,ok
 ATPHs,atp_c + h2o_c + h_c --> itp_c + nh4_c,ok,ok,ok,ok,ok
 ATPPRT,atp_c + prpp_c --> ppi_c + prbatp_c,ok,ok,ok,ok,ok
-AT_MBD2,dhlam_c + ibcoa_c <=> 2mpdhl_c + coa_c,ok,ok,ok,ok,ok
+AT_MBD2,dhlam_c + ibcoa_c <=> 2mpdhl_c + coa_c + h_c,ok,ok,ok,ok,ok
 BDH,bhb_c + nad_c <=> acac_c + h_c + nadh_c,ok,ok,ok,ok,ok
 BGLA,cellb_c + h2o_c <=> 2.0 glc__D_c,ok,ok,ok,ok,ok
 BGLA1,6pgg_c + h2o_c --> g6p_c + glc__D_c,ok,ok,ok,ok,ok
@@ -820,7 +820,7 @@ DHBS,23dhb_c + atp_c + h_c --> 23dhba_c + ppi_c,ok,ok,ok,ok,ok
 DHBSH_1,23dhbzs_c + h2o_c --> 23dhb_c + ser__L_c,ok,ok,ok,ok,ok
 DHBSZ3FEabcpp,atp_c + fe3dhbzs3_p + h2o_c --> adp_c + fe3dhbzs3_c + h_c + pi_c,ok,ok,ok,ok,ok
 DHBSZ3FEtonex,fe3dhbzs3_e + h_p --> fe3dhbzs3_p + h_c,ok,ok,ok,ok,ok
-DHBZS2H,23dhbzs2_c + h2o_c --> 2.0 23dhbzs_c,ok,ok,ok,ok,ok
+DHBZS2H,23dhbzs2_c + h2o_c --> 2.0 23dhbzs_c + 2.0 h_c,ok,ok,ok,ok,ok
 DHBZS3H,23dhbzs3_c + h2o_c --> 23dhbzs2_c + 23dhbzs_c,ok,ok,ok,ok,ok
 DHDPRy,23dhdp_c + h_c + nadph_c --> nadp_c + thdp_c,ok,ok,ok,ok,ok
 DHDPS,aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c,ok,ok,ok,ok,ok
@@ -907,7 +907,7 @@ ENO,2pg_c <=> h2o_c + pep_c,ok,ok,ok,ok,ok
 ENTCS,3.0 23dhba_c + 3.0 seramp_c --> 6.0 amp_c + enter_c + 9.0 h_c,ok,ok,ok,ok,ok
 ENTERES,enter_c + 3.0 h2o_c --> 3.0 23dhbzs_c + 3.0 h_c,ok,ok,ok,ok,ok
 ENTERES2,feenter_c + 3.0 h2o_c --> 3.0 23dhbzs_c + fe3_c + 3.0 h_c,ok,ok,ok,ok,ok
-ENTERH,enter_c + h2o_c --> 23dhbzs3_c,ok,ok,ok,ok,ok
+ENTERH,enter_c + h2o_c --> 23dhbzs3_c + h_c,ok,ok,ok,ok,ok
 ETHAt,etha_e <=> etha_c,ok,ok,ok,ok,ok
 F1PP,f1p_c + h2o_c --> fru_c + pi_c,ok,ok,ok,ok,ok
 F6PP,f6p_c + h2o_c --> fru_c + pi_c,ok,ok,ok,ok,ok
@@ -976,7 +976,7 @@ FE2tex,fe2_e <=> fe2_p,ok,ok,ok,ok,ok
 FE3DCITCH,2.0 cit_c + fe3_c <=> fe3dcit_c,ok,ok,ok,ok,ok
 FE3DCITR5,2.0 fe3dcit_c + nadph_c --> 4.0 cit_c + 2.0 fe2_c + h_c + nadp_c,ok,ok,ok,ok,ok
 FE3DCITabc,atp_c + fe3dcit_e + h2o_c --> adp_c + 2.0 cit_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
-FE3DHBZS3R,2.0 fe3dhbzs3_c + nadph_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + h_c + nadp_c,ok,ok,ok,FEDHBZS3R1;FEDHBZS3R2;FEDHBZS3R3,ok
+FE3DHBZS3R,2.0 fe3dhbzs3_c + nadph_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + 3.0 h_c + nadp_c,ok,ok,ok,FEDHBZS3R1;FEDHBZS3R2;FEDHBZS3R3,ok
 FE3Gabcpp,fe3_p + gtp_c + h2o_c --> fe3_c + gdp_c + h_c + pi_c,ok,ok,ok,ok,ok
 FE3PYOVD2tonex,fe3pyovd_kt_e + h_p --> fe3pyovd_kt_p + h_c,ok,ok,ok,ok,ok
 FE3PYOVDDR2,2.0 fe3pyovd_kt_p + pqqh2_p <=> 2.0 fe2_p + 2.0 h_p + pqq_p + 2.0 pyovd_kt_p,ok,ok,ok,ok,ok
@@ -985,9 +985,9 @@ FE3abc,atp_c + fe3_e + h2o_c --> adp_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
 FE3abcpp,atp_c + fe3_p + h2o_c --> adp_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
 FE3t,fe3_e <=> fe3_c,ok,ok,ok,ok,ok
 FEDCabc,atp_c + 2.0 cit_e + fe3_e + h2o_c --> adp_c + 2.0 cit_c + fe3_c + h_c + pi_c,ok,ok,ok,ok,ok
-FEDHBZS3R1,fadh2_c + 2.0 fe3dhbzs3_c --> 2.0 23dhbzs3_c + fad_c + 2.0 fe2_c + 2.0 h_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R2;FEDHBZS3R3,ok
-FEDHBZS3R2,2.0 fe3dhbzs3_c + fmnh2_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + fmn_c + 2.0 h_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R1;FEDHBZS3R3,ok
-FEDHBZS3R3,2.0 fe3dhbzs3_c + rbflvrd_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + 2.0 h_c + ribflv_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R1;FEDHBZS3R2,ok
+FEDHBZS3R1,fadh2_c + 2.0 fe3dhbzs3_c --> 2.0 23dhbzs3_c + fad_c + 2.0 fe2_c + 4.0 h_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R2;FEDHBZS3R3,ok
+FEDHBZS3R2,2.0 fe3dhbzs3_c + fmnh2_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + fmn_c + 4.0 h_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R1;FEDHBZS3R3,ok
+FEDHBZS3R3,2.0 fe3dhbzs3_c + rbflvrd_c --> 2.0 23dhbzs3_c + 2.0 fe2_c + 4.0 h_c + ribflv_c,ok,ok,ok,FE3DHBZS3R;FEDHBZS3R1;FEDHBZS3R2,ok
 FEENTER2tpp,atp_c + enter_c + h2o_c --> adp_c + enter_p + h_c + pi_c,ok,ok,ok,ok,ok
 FEENTERES,feenter_c + h2o_c --> fe3dhbzs3_c,ok,ok,ok,ok,ok
 FEENTERR4,2.0 feenter_c + nadph_c --> 2.0 enter_c + 2.0 fe2_c + h_c + nadp_c,ok,ok,ok,ok,ok
@@ -1009,7 +1009,7 @@ FORAMD,frmd_c + h2o_c --> for_c + nh4_c,ok,ok,ok,ok,ok
 FORCT,forcoa_c + oxa_c <=> for_c + oxalcoa_c,ok,ok,ok,ok,ok
 FORGLUt,forglu_c <=> forglu_e,ok,ok,ok,ok,ok
 FORtex,for_e <=> for_p,ok,ok,ok,ok,ok
-FPRA,fdxrd_c + h_c + nadp_c --> fdxox_c + nadph_c,ok,ok,ok,ok,ok
+FPRA,2.0 fdxrd_c + h_c + nadp_c --> 2.0 fdxox_c + nadph_c,ok,ok,ok,ok,ok
 FRD,fadh2_c + fum_c --> fad_c + succ_c,ok,SUCD1,SUCD1,FRD2,ok
 FRD2,fum_c + mql8_c --> mqn8_c + succ_c,ok,ok,ok,FRD;SUCD1,ok
 FRD3,2dmmql8_c + fum_c --> 2dmmq8_c + succ_c,ok,ok,ok,ok,ok
@@ -1118,7 +1118,7 @@ GLCt2,glc__D_e + h_e --> glc__D_c + h_c,ok,ok,ok,ok,ok
 GLCt2pp,glc__D_p + h_p --> glc__D_c + h_c,ok,ok,ok,ok,ok
 GLDBRAN3,bglyg4n_c --> glyg4n_c,ok,GLBRAN3,GLBRAN3,ok,ok
 GLGC,atp_c + g1p_c + h_c --> adpglc_c + ppi_c,ok,ok,ok,ok,ok
-GLMS_syn,akg_c + 2.0 fdxrd_c + gln__L_c + 2.0 h_c --> 2.0 fdxo_2_2_c + 2.0 glu__L_c,ok,ok,ok,ok,ok
+GLMS_syn,akg_c + 2.0 fdxrd_c + gln__L_c + 2.0 h_c --> 2.0 fdxox_c + 2.0 glu__L_c,ok,ok,ok,ok,ok
 GLNS,atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c,ok,ok,ok,ok,ok
 GLNS_1,atp_c + glu__L_c + nh3_c --> adp_c + gln__L_c + pi_c,ok,ok,ok,ok,ok
 GLNabc,atp_c + gln__L_e + h2o_c --> adp_c + gln__L_c + h_c + pi_c,ok,ok,ok,ok,ok
@@ -1313,7 +1313,6 @@ HISabc,atp_c + h2o_c + his__L_e --> adp_c + h_c + his__L_c + pi_c,ok,ok,ok,ok,ok
 HKtpp,atp_c + h2o_c + k_p --> adp_c + h_p + k_c + pi_c,ok,ok,ok,ok,ok
 HMBS,h2o_c + 4.0 ppbng_c --> hmbil_c + 4.0 nh4_c,ok,ok,ok,ok,ok
 HMEDR,2.0 h_c + hmbpp_c + nadh_c --> h2o_c + ipdp_c + nad_c,ok,ok,ok,ok,ok
-HMEDS,2mecdp_c + 2.0 fdxrd_c --> 2.0 fdxox_c + h2o_c + hmbpp_c,ok,ok,ok,ok,ok
 HMGCOAR,coa_c + mev__R_c + 2.0 nadp_c <=> 2.0 h_c + hmgcoa_c + 2.0 nadph_c,ok,ok,ok,ok,ok
 HMGCOAS,coa_c + h_c + hmgcoa_c <-- aacoa_c + accoa_c + h2o_c,ok,ok,ok,ok,ok
 HMGL_2,hmgcoa_c --> acac_c + accoa_c,ok,ok,ok,ok,ok
@@ -1511,6 +1510,7 @@ MDH2,mal__L_c + q8_c --> oaa_c + q8h2_c,ok,ok,ok,DMALRED;MDH3,ok
 MDH3,mal__L_c + mqn8_c --> mql8_c + oaa_c,ok,ok,ok,DMALRED;MDH2,ok
 MDH3_1,mal__L_c + mqn7_c --> mql7_c + oaa_c,ok,ok,ok,ok,ok
 MDNTHAep,2m35mdntha_c + h_p --> 2m35mdntha_e + h_c,ok,ok,ok,ok,ok
+MECDPDH3_syn,2mecdp_c + 2.0 fdxrd_c + h_c <=> 2.0 fdxox_c + h2mb4p_c + h2o_c,ok,ok,ok,ok,ok
 MECDPS,2p4c2me_c --> 2mecdp_c + cmp_c,ok,ok,ok,ok,ok
 MELIB_Et,melib_e <=> melib_c,ok,ok,ok,ok,ok
 MELIBabc,atp_c + h2o_c + melib_e --> adp_c + h_c + melib_c + pi_c,ok,ok,ok,ok,ok
@@ -1637,7 +1637,7 @@ NMNAT,atp_c + h_c + nmn_c --> nad_c + ppi_c,ok,ok,ok,ok,ok
 NMNDA,h2o_c + nmn_c --> nh4_c + nicrnt_c,ok,ok,ok,ok,ok
 NMNHYD,h2o_c + nmn_c --> pi_c + rnam_c,ok,ok,ok,ok,ok
 NMNS,h_c + ncam_c + prpp_c --> nmn_c + ppi_c,ok,ok,ok,ok,ok
-NMO,etha_c + fmnh2_c + o2_c --> acald_c + fmn_c + no2_c,ok,ok,ok,ok,ok
+NMO,etha_c + fmnh2_c + o2_c --> acald_c + fmn_c + 6.0 h_c + no2_c,ok,ok,ok,ok,ok
 NNAM,h2o_c + ncam_c --> nac_c + nh4_c,ok,ok,ok,ok,ok
 NNATr,atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c,ok,ok,ok,ok,should be irreversible
 NNDPR,2.0 h_c + prpp_c + quln_c --> co2_c + nicrnt_c + ppi_c,ok,ok,ok,ok,ok
@@ -1844,8 +1844,7 @@ PRAMPC,h2o_c + prbamp_c --> prfp_c,PRAMPC_1,ok,ok,ok,ok
 PRAMPC_1,h2o_c + prbamp_c --> prfp_c,PRAMPC,ok,ok,ok,ok
 PRASCSi,5aizc_c + asp__L_c + atp_c --> 25aics_c + adp_c + h_c + pi_c,ok,ok,ok,ok,ok
 PRATPP,h2o_c + prbatp_c --> h_c + ppi_c + prbamp_c,ok,ok,ok,ok,ok
-PRFGS,atp_c + fgam_c + gln__L_c + h2o_c --> adp_c + fpram_c + glu__L_c + h_c + pi_c,ok,ok,PRFGS_1,ok,ok
-PRFGS_1,atp_c + fgam_c + gln__L_c + h2o_c --> adp_c + fpram_c + glu__L_c + 2.0 h_c + pi_c,ok,ok,PRFGS,ok,ok
+PRFGS,atp_c + fgam_c + gln__L_c + h2o_c --> adp_c + fpram_c + glu__L_c + h_c + pi_c,ok,ok,ok,ok,ok
 PRMICI,prfp_c <=> prlp_c,ok,ok,ok,ok,ok
 PROD2,fad_c + pro__L_c --> 1pyr5c_c + fadh2_c + h_c,ok,ok,ok,P5CR;P5CRx,ok
 PROGLYabcpp,atp_c + h2o_c + progly_p --> adp_c + h_c + pi_c + progly_c,ok,ok,ok,ok,ok
@@ -2033,13 +2032,13 @@ RPI,r5p_c <=> ru5p__D_c,ok,ok,ok,ok,ok
 RU5PP,h2o_c + ru5p__D_c --> pi_c + rbl__D_c,ok,ok,ok,ok,ok
 RU5PS,fald_c + ru5p__D_c <-- ah6p__D_c,ok,ok,ok,ok,ok
 S6PG,h2o_c + salcn6p_c --> 2hxmp_c + g6p_c,ok,ok,ok,ok,ok
-SALCHS1H,h2o_c + salchs1_c --> 23dhbzs_c + salchsx_c,ok,ok,ok,ok,ok
+SALCHS1H,h2o_c + salchs1_c --> 23dhbzs_c + 2.0 h_c + salchsx_c,ok,ok,ok,ok,ok
 SALCHS2FER1,fadh2_c + 2.0 salchs2fe_c --> fad_c + 2.0 fe2_c + 2.0 h_c + 2.0 salchs2_c,ok,ok,ok,SALCHS2FER2;SALCHS2FER3,ok
 SALCHS2FER2,fmnh2_c + 2.0 salchs2fe_c --> 2.0 fe2_c + fmn_c + 2.0 h_c + 2.0 salchs2_c,ok,ok,ok,SALCHS2FER1;SALCHS2FER3,ok
 SALCHS2FER3,rbflvrd_c + 2.0 salchs2fe_c --> 2.0 fe2_c + 2.0 h_c + ribflv_c + 2.0 salchs2_c,ok,ok,ok,SALCHS2FER1;SALCHS2FER2,ok
 SALCHS2FEabcpp,atp_c + h2o_c + salchs2fe_p --> adp_c + h_c + pi_c + salchs2fe_c,ok,ok,ok,ok,ok
 SALCHS2FEtonex,h_p + salchs2fe_e --> h_c + salchs2fe_p,ok,ok,ok,ok,ok
-SALCHS2H,h2o_c + salchs2_c --> salchs1_c + salchsx_c,ok,ok,ok,ok,ok
+SALCHS2H,h2o_c + salchs2_c --> h_c + salchs1_c + salchsx_c,ok,ok,ok,ok,ok
 SALCHS4FER1,fadh2_c + 2.0 salchs4fe_c --> fad_c + 2.0 fe2_c + 2.0 h_c + 2.0 salchs4_c,ok,ok,ok,SALCHS4FER2;SALCHS4FER3,ok
 SALCHS4FER2,fmnh2_c + 2.0 salchs4fe_c --> 2.0 fe2_c + fmn_c + 2.0 h_c + 2.0 salchs4_c,ok,ok,ok,SALCHS4FER1;SALCHS4FER3,ok
 SALCHS4FER3,rbflvrd_c + 2.0 salchs4fe_c --> 2.0 fe2_c + 2.0 h_c + ribflv_c + 2.0 salchs4_c,ok,ok,ok,SALCHS4FER1;SALCHS4FER2,ok
@@ -2107,7 +2106,7 @@ SULR,5.0 h_c + 3.0 nadph_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nadp_c,ok,SULR_1,
 SULR_1,3.0 h2o_c + h2s_c + 3.0 nadp_c <=> 5.0 h_c + 3.0 nadph_c + so3_c,ok,SULR,SULR,ok,ok
 SULabc,atp_c + h2o_c + so4_e --> adp_c + h_c + pi_c + so4_c,ok,ok,ok,ok,ok
 T2ECR,b2coa_c + h_c + nadph_c --> btcoa_c + nadp_c,ok,ok,ok,ACOAD1;ACOAD1f,ok
-T6PK,atp_c + tag6p__D_c --> adp_c + tagdp__D_c,ok,ok,ok,ok,ok
+T6PK,atp_c + tag6p__D_c --> adp_c + h_c + tagdp__D_c,ok,ok,ok,ok,ok
 TALA,g3p_c + s7p_c <=> e4p_c + f6p_c,ok,ok,ok,ok,ok
 TCYNTtex,tcynt_e <=> tcynt_p,ok,ok,ok,ok,ok
 TCYNTtpp,tcynt_p <=> tcynt_c,ok,ok,ok,ok,ok
