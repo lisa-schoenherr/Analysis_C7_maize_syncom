@@ -1,21 +1,24 @@
 Reaction_ID,AA1,AA2,AA3,AA4,AA5,AA6,AA7
-12PPDRte,-,only when going backwards,-,-,-,-,-
+12PPDRte,-,only when going backwards,only when going backwards,only when going backwards,-,ok,-
+12PPDRtex,-,-,-,12ppd__R_p,-,-,-
 12PPDStex,-,-,-,12ppd__S_e;12ppd__S_p,-,-,-
 13PPDH,-,3hppnl_c;13ppd_c,-,-,-,3hppnl_c;13ppd_c,3hppnl_c;13ppd_c
 13PPDH2,-,-,-,3hppnl_c;13ppd_c,3hppnl_c;13ppd_c,-,-
-13PPDH2_1,ok,-,-,-,13ppd_c,-,-
+13PPDH2_1,-,-,-,-,13ppd_c,-,-
 1P2CBXLCYCL,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 23CAMPtex,-,-,-,only when going backwards,-,-,-
 23CCMPtex,-,-,-,only when going backwards,-,-,-
 23CGMPtex,-,-,-,only when going backwards,-,-,-
 23CUMPtex,-,-,-,only when going backwards,-,-,-
+23DK5MPPISO,only when going forwards,-,-,-,-,only when going backwards,-
 25DKGLCNtex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 26DAHtex,-,-,-,only when going backwards,-,-,-
-2DDARAA,-,ok,-,2ddara_c,-,2ddara_c,-
-2DHGLCNtex,only when going forwards,ok,-,only when going backwards,-,-,-
-2DHPFALDL,ok,ok,only when going forwards,-,ok,-,ok
+2DDARAA,-,2ddara_c,-,2ddara_c,-,-,-
+2DHGLCNtex,only when going forwards,-,-,only when going backwards,-,-,-
+2DHPFALDL,-,ok,only when going forwards,-,ok,-,ok
 2HXMPt6,-,-,only when going forwards,only when going forwards,-,-,-
-2PGLYCt6,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-
+2OH3K5MPPISO,only when going forwards,-,-,-,-,only when going backwards,-
+2PGLYCt6,-,only when going backwards,-,only when going backwards,only when going backwards,-,-
 2PGtex,-,-,-,only when going backwards,-,-,-
 34dhpactex,-,-,-,only when going forwards,-,-,-
 3AIBT2,-,only when going forwards,-,-,-,only when going forwards,only when going forwards
@@ -29,19 +32,21 @@ Reaction_ID,AA1,AA2,AA3,AA4,AA5,AA6,AA7
 3NUCLE4,-,-,-,-,3gmp_c,-,-
 3OAR40,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 3OXOADPt_ex,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards
-3SALATAi,-,3sala_c;3snpyr_c,-,-,3sala_c;3snpyr_c,3sala_c;3snpyr_c,-
+3PEPTtex,-,ok,-,ok,only when going forwards,-,-
+3SALATAi,-,only when going forwards,-,-,only when going forwards,only when going forwards,-
 3UMPtex,-,-,only when going backwards,ok,-,-,-
 3_4DHBZt2,-,-,-,-,only when going backwards,only when going backwards,only when going backwards
 3hoxpactex,-,-,-,only when going backwards,-,only when going backwards,-
-4ABUTD,only when going forwards,ok,ok,ok,only when going forwards,only when going forwards,ok
+4ABUTD,only when going forwards,ok,ok,ok,ok,only when going forwards,ok
 4ABZGLUH,-,-,-,only when going backwards,-,-,-
 4ABZGLUtex,-,-,-,only when going backwards,-,-,-
-4HALDD,-,only when going backwards,-,-,4hoxpacd_c;4hphac_c,4hoxpacd_c,only when going backwards
-4HBADH,only when going backwards,only when going backwards,only when going forwards,-,only when going backwards,-,-
-4HBALDtex,only when going backwards,4hbald_e;4hbald_p,-,4hbald_e;4hbald_p,4hbald_e;4hbald_p,4hbald_e;4hbald_p,only when going forwards
-4HBAt,-,ok,only when going forwards,-,-,only when going forwards,only when going forwards
+4HALDD,-,only when going backwards,-,-,4hoxpacd_c;4hphac_c,ok,only when going backwards
+4HBADH,only when going backwards,only when going backwards,-,-,only when going backwards,-,-
+4HBALDtex,-,4hbald_e;4hbald_p,-,4hbald_e;4hbald_p,4hbald_e;4hbald_p,-,only when going forwards
+4HBAt,-,-,only when going forwards,only when going forwards,-,only when going forwards,only when going forwards
 4HBAtex,-,-,-,-,-,-,only when going backwards
-4HBZtex,only when going forwards,only when going forwards,only when going backwards,ok,only when going forwards,ok,ok
+4HBZtex,only when going forwards,only when going forwards,-,ok,only when going forwards,ok,ok
+4HGLSD,only when going forwards,ok,ok,-,-,only when going backwards,-
 4HOXPACDtex,-,-,-,only when going forwards,-,-,-
 4HPRODCtex,-,-,only when going backwards,-,-,-,only when going backwards
 4HPROE,-,only when going backwards,only when going forwards,-,-,-,only when going backwards
@@ -49,33 +54,33 @@ Reaction_ID,AA1,AA2,AA3,AA4,AA5,AA6,AA7
 4HPRO_LT_Et,-,ok,ok,-,only when going backwards,only when going backwards,-
 4HTHRA,-,ok,-,ok,ok,-,only when going backwards
 4HTHRtex,-,-,-,only when going backwards,-,-,-
-4OXPTNtex,-,only when going backwards,-,-,-,only when going backwards,-
-4PEPTtex,-,ok,only when going backwards,ok,-,-,-
-4POPCOAM2,-,only when going backwards,-,-,-,only when going backwards,-
-4hoxpactex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
+4OXPTNtex,-,only when going backwards,-,-,-,-,-
+4PEPTtex,ok,ok,only when going backwards,ok,ok,-,-
+4POPCOAM2,-,only when going backwards,-,-,-,-,-
+4hoxpactex,-,only when going backwards,-,only when going backwards,-,-,-
 5APTNtex,-,-,-,-,-,only when going backwards,-
 5DGLCNtex,-,-,-,only when going backwards,-,-,-
 5DKGR,only when going backwards,ok,ok,ok,only when going backwards,ok,ok
-6APAt1,-,-,-,6apa_e;6apa_p,-,-,-
-6HNACtex,-,-,-,-,-,only when going backwards,-
+6APAt1,only when going backwards,-,-,6apa_e;6apa_p,-,-,-
 6PGALSZ_1,-,-,-,lac6p_c;dgal6p_c;glc_D_B_c,-,-,-
 A5PISO,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-AAAN,only when going forwards,only when going forwards,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards
+AAAN,only when going forwards,only when going forwards,-,only when going forwards,only when going forwards,-,-
 AACLAM,-,-,-,-,-,only when going backwards,-
 AADSACYCL,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
-AALDH,only when going backwards,ok,only when going backwards,-,pea_c,pacald_c;pea_c,-
+AADa,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,-
+AALDH,pea_c,pea_c,only when going backwards,-,pea_c,only when going backwards,-
 AATA,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards,only when going forwards
 ABTDG,-,-,only when going backwards,-,-,only when going backwards,-
 ABTt,-,only when going forwards,only when going forwards,-,only when going forwards,-,-
-ABUTtex,only when going backwards,-,only when going backwards,ok,-,ok,-
-ACACT6r_1,ok,-,ok,-,ddcoa_c,ok,-
-ACACT8r,ok,ok,ok,ok,only when going backwards,only when going backwards,ok
-ACACtex,only when going backwards,-,-,-,-,-,only when going backwards
-ACALDtpp,-,-,-,ok,only when going backwards,only when going backwards,-
+ABUTtex,only when going backwards,only when going backwards,-,ok,-,-,only when going backwards
+ACACT8r,ok,ok,ok,ok,only when going backwards,-,ok
+ACACtex,only when going backwards,-,-,only when going backwards,-,-,only when going backwards
+ACALDtpp,-,only when going backwards,-,ok,only when going backwards,-,-
 ACGAL1Ptex,-,-,-,only when going forwards,-,-,-
+ACGAM1P_Et,-,-,-,-,only when going backwards,-,-
 ACGAM1Ptex,-,-,-,only when going forwards,-,-,-
 ACGAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
-ACGLUtd,-,ok,ok,-,only when going forwards,ok,-
+ACGLUtd,-,-,ok,ok,only when going forwards,ok,-
 ACLS_b,-,only when going backwards,-,only when going backwards,-,-,-
 ACLS_d,ok,adhlam_c,-,-,only when going backwards,only when going forwards,hethmpp_c
 ACMANAtex,-,-,-,only when going backwards,-,-,-
@@ -92,10 +97,10 @@ ACOAD17f,only when going backwards,only when going backwards,-,-,-,only when goi
 ACOAD18f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD19f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD20f,only when going backwards,-,-,-,-,only when going backwards,only when going backwards
-ACOAD21f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
+ACOAD21f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD22f,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards
 ACOAD23f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-ACOAD25f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
+ACOAD25f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD26f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ACOAD27f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ACOAD28f,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
@@ -104,49 +109,46 @@ ACOAD30f,only when going backwards,only when going backwards,-,-,-,only when goi
 ACOAD31f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD32f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ACOAD33f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
-ACOAD34f,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
-ACOAD4_1,ok,dccoa_c,-,-,ok,ok,-
-ACOAD5_1,ok,ddcoa_c;trans_dd2coa_c,ok,-,ddcoa_c;trans_dd2coa_c,ok,-
+ACOAD34f,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 ACOAD8f,ok,ok,ok,ok,stcoa_c,ok,ok
 ACONCtex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-ACOTA,only when going forwards,ok,only when going forwards,only when going forwards,only when going forwards,ok,only when going forwards
+ACOTA,only when going forwards,ok,only when going forwards,ok,only when going forwards,ok,only when going forwards
 ACOXT,-,oxalcoa_c,-,-,-,oxalcoa_c,oxalcoa_c
 ACSERtex,-,-,only when going forwards,only when going forwards,-,-,-
 ACYSBMNt,-,-,only when going backwards,-,-,-,-
 ACtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-ADAPAT,-,nal2a6o_c;n6all26d_c,-,-,nal2a6o_c;n6all26d_c,nal2a6o_c;n6all26d_c,-
+ADAPAT,-,nal2a6o_c;n6all26d_c,ok,-,nal2a6o_c;n6all26d_c,-,-
 ADEtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 ADK4,ok,idp_c,-,only when going forwards,ok,only when going forwards,only when going forwards
 ADNtex,only when going backwards,-,ok,ok,only when going backwards,adn_e;adn_p,adn_p
 ADOCBIAH,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 ADSL1r,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 ADSL2r,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-AEPTA,-,-,-,only when going backwards,-,only when going backwards,only when going backwards
+AEPTA,-,-,-,-,-,only when going backwards,only when going backwards
 AEPtex,-,-,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
-AGMPTRCtpp,-,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards,only when going backwards
-AGMtex,only when going forwards,ok,only when going backwards,ok,only when going backwards,only when going backwards,-
+AGMPTRCtpp,-,only when going backwards,only when going backwards,ok,only when going backwards,-,only when going backwards
+AGMtex,only when going forwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards,-
 AGPATr_BS,-,-,only when going backwards,-,-,-,-
 AGPR,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-AHGDx,S2hglut_c,only when going forwards,-,S2hglut_c,only when going forwards,only when going backwards,-
+AHGDx,S2hglut_c,only when going forwards,-,S2hglut_c,only when going forwards,-,-
 AI2tex,-,-,-,ok,only when going forwards,-,only when going forwards
 AICART,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 AIRC3,only when going forwards,-,-,only when going forwards,-,only when going forwards,only when going forwards
 AKGDa,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards
 AKGtex,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 ALAALAr,only when going backwards,ok,ok,ok,only when going backwards,ok,ok
-ALAALAtex,-,ok,-,ok,only when going forwards,-,ok
+ALAALAtex,-,-,-,ok,only when going forwards,-,ok
 ALAGLUE,-,only when going backwards,-,only when going backwards,only when going backwards,-,-
 ALAHIStex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ALALEUtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ALATHRtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ALATRPtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ALAtex,only when going backwards,-,only when going backwards,ok,-,only when going backwards,only when going backwards
-ALCD22_L,ok,ok,ok,only when going backwards,-,-,-
-ALCD3ir,-,only when going forwards,-,-,-,only when going forwards,only when going forwards
+ALCD22_L,ok,ok,-,only when going backwards,-,ok,-
+ALCD3ir,-,only when going forwards,-,-,-,-,-
 ALCD4,-,btoh_c,-,-,-,btoh_c,btoh_c
-ALDD19xr,pac_c,ok,-,only when going backwards,ok,pacald_c,ok
-ALDD31,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-ALDH_1,only when going forwards,only when going forwards,-,-,-,only when going forwards,-
+ALDD19xr,only when going backwards,only when going forwards,-,only when going backwards,ok,only when going forwards,only when going backwards
+ALDD31,only when going backwards,only when going backwards,only when going backwards,only when going backwards,aacald_c,only when going backwards,only when going backwards
 ALGE1,-,-,-,-,-,-,only when going backwards
 ALGE2,-,-,-,-,-,-,only when going backwards
 ALGE3,-,-,-,-,-,-,only when going backwards
@@ -177,36 +179,36 @@ AMPEP7,only when going backwards,-,only when going backwards,only when going bac
 AMPEP8,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 AMPEP9,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
 AMPtex,-,-,only when going backwards,only when going backwards,-,-,-
-ANHGMtex,-,-,only when going forwards,ok,ok,ok,-
+ANHGMtex,-,-,only when going forwards,ok,ok,-,-
 AOXSr,-,only when going backwards,-,only when going backwards,-,-,-
-APATr,ok,only when going forwards,-,-,-,only when going backwards,ok
+APATr,only when going backwards,only when going forwards,-,-,-,ok,ok
 APCtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 APPLDHr,-,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards,ok
 APTNAT,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 ARABDI,only when going forwards,-,only when going forwards,only when going forwards,-,only when going forwards,-
-ARABRr,-,abt__L_c,ok,abt__L_c,abt__L_c,-,-
-ARAI,-,-,only when going backwards,only when going backwards,-,-,only when going backwards
+ARAI,-,-,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 ARAT,-,-,-,only when going backwards,-,only when going backwards,-
 ARBT6Pt,only when going forwards,only when going forwards,-,ok,-,only when going forwards,only when going forwards
-ARGORNt3,only when going backwards,-,only when going forwards,-,-,only when going forwards,-
-ARGORNt7pp,only when going forwards,-,only when going forwards,ok,-,-,only when going backwards
+ARGAGMt7pp,-,-,-,-,-,only when going forwards,-
+ARGORNt3,-,-,-,ok,-,only when going forwards,-
+ARGORNt7pp,only when going backwards,-,only when going forwards,ok,-,-,only when going backwards
 ARGR,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 ARGSL,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-ARGtex,-,ok,-,ok,-,only when going backwards,ok
+ARGtex,only when going backwards,only when going backwards,-,ok,-,-,ok
 AROAT,only when going backwards,-,-,-,-,only when going backwards,only when going backwards
-ARSR,-,-,only when going forwards,-,-,-,-
+ARSR,-,-,only when going forwards,-,-,only when going forwards,only when going forwards
 ARUH,-,-,5g2oxpt_c,-,-,ok,ok
-ASAD,only when going forwards,ok,only when going forwards,ok,only when going forwards,only when going forwards,only when going forwards
+ASAD,only when going forwards,ok,only when going forwards,ok,ok,only when going forwards,only when going forwards
 ASCBtex,-,-,-,only when going backwards,-,-,-
 ASNtex,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 ASO3tex,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-ASO3tex_1,only when going backwards,ok,only when going forwards,-,ok,-,-
+ASO3tex_1,only when going backwards,ok,only when going forwards,-,ok,ok,-
 ASO4tex,ok,ok,-,only when going backwards,ok,only when going backwards,only when going backwards
-ASPK,only when going backwards,ok,only when going backwards,ok,only when going backwards,only when going backwards,only when going backwards
-ASPR,ok,asp__D_c,-,asp__D_c,asp__D_c,asp__D_c,-
-ASPtex,-,-,only when going backwards,ok,ok,ok,-
-ASPtpp,only when going forwards,only when going forwards,-,ok,-,-,-
-ATAH_1,only when going backwards,ok,-,-,only when going backwards,ok,ok
+ASPK,only when going backwards,ok,only when going backwards,ok,ok,only when going backwards,only when going backwards
+ASPR,ok,asp__D_c,-,asp__D_c,asp__D_c,-,-
+ASPtex,only when going backwards,-,only when going backwards,ok,-,-,-
+ASPtpp,-,only when going forwards,-,ok,ok,ok,-
+ATAH_1,-,ok,-,-,only when going backwards,ok,ok
 ATHRDHr,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 AT_MBD2,-,-,only when going forwards,-,-,-,-
 BALAALAtex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
@@ -214,83 +216,84 @@ BALABALAtex,-,only when going backwards,-,-,-,only when going backwards,only whe
 BALAGLYtex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
 BALALEUtex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
 BALAtex,only when going backwards,only when going backwards,-,only when going backwards,-,-,only when going backwards
-BDH,ok,ok,ok,ok,only when going forwards,only when going forwards,ok
+BDH,ok,ok,only when going backwards,ok,only when going forwards,only when going forwards,ok
 BGLA,cellb_c,-,only when going backwards,ok,cellb_c,-,-
 BKDC1,-,-,only when going backwards,-,-,-,-
 BLAMDtex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
 BMNt,-,-,only when going forwards,-,-,-,-
-BSCT,ok,only when going forwards,ok,-,only when going forwards,ok,only when going forwards
-BTDD_RR,-,btd_RR_c,btd_RR_c,btd_RR_c,btd_RR_c,btd_RR_c,btd_RR_c
+BSCT,ok,only when going forwards,-,-,only when going forwards,only when going forwards,only when going forwards
+BTDD_RR,ok,btd_RR_c,btd_RR_c,ok,btd_RR_c,btd_RR_c,btd_RR_c
 BTNTe,-,ok,only when going backwards,only when going backwards,-,-,-
 BTOHtex,-,-,-,-,only when going backwards,-,-
-BTS,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards,-
-BTS3r,-,ok,-,-,only when going forwards,only when going forwards,-
-BUTKr,-,only when going backwards,-,-,-,-,-
+BTS,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards,only when going forwards
+BTS3r,only when going forwards,ok,-,-,only when going forwards,only when going forwards,-
+BUTKr,-,-,only when going backwards,-,-,-,-
 BUTSO3tex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 BUTtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 BZALCtex,-,only when going forwards,-,-,-,-,only when going forwards
 BZALDH,-,only when going backwards,-,-,-,-,only when going backwards
 BZALt,-,-,-,-,-,-,only when going backwards
 BZDH,bzal_c,only when going backwards,-,-,-,-,-
-BZSCD,ok,-,only when going forwards,-,-,ok,-
-BZSCT,ok,bzsucc_c;bzsuccoa_c,only when going forwards,-,-,ok,-
-BZSS,ok,-,only when going forwards,-,-,ok,-
-BZt,ok,-,ok,only when going forwards,-,ok,ok
+BZSCD,ok,-,only when going forwards,ok,-,-,-
+BZSCT,ok,bzsucc_c;bzsuccoa_c,only when going forwards,ok,-,-,-
+BZSS,ok,-,only when going forwards,ok,-,-,-
+BZt,ok,ok,bz_e;bz_c,only when going forwards,-,ok,ok
 BZtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-C4HP,-,only when going backwards,-,4hoxpacd_c,-,-,only when going backwards
-CA2tex,ok,only when going backwards,-,ok,ca2_p,ca2_p,only when going backwards
+C4HP,-,only when going backwards,-,4hoxpacd_c,-,ok,only when going backwards
+CA2tex,ok,ok,-,ok,ok,only when going backwards,only when going backwards
 CARNtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-CATECHOLtex,-,only when going backwards,-,-,only when going forwards,ok,-
-CATECHOLtpp,-,only when going backwards,-,-,only when going forwards,ok,-
-CAt6pp,ok,-,-,ok,-,-,only when going forwards
+CATECHOLtex,-,-,-,-,only when going forwards,ok,-
+CATECHOLtpp,-,-,-,-,only when going forwards,ok,-
+CAt6,ok,-,only when going forwards,-,-,-,-
+CAt6pp,ok,ok,-,ok,ok,only when going forwards,only when going forwards
 CEPA,-,only when going backwards,-,ok,-,cellb_c,cellb_c
-CGLYtex,only when going forwards,-,-,ok,only when going forwards,-,ok
-CH4St,-,only when going forwards,-,-,only when going forwards,-,-
-CHLtex,-,ok,only when going backwards,ok,ok,-,-
-CHOLS_ex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
-CHTBStex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
+CGLYtex,only when going forwards,-,only when going backwards,ok,only when going forwards,-,ok
+CH4St,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards,-,-
+CHOLS_ex,-,only when going backwards,-,-,-,-,only when going backwards
+CHTBStex,-,only when going backwards,-,only when going backwards,-,-,-
 CINNMtex,only when going forwards,only when going forwards,-,-,-,only when going forwards,only when going forwards
 CINNMtpp,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
-CITtex,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-CLBtex,only when going backwards,only when going backwards,-,only when going forwards,only when going backwards,-,-
+CITtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+CLBtex,only when going backwards,only when going backwards,only when going backwards,only when going forwards,only when going backwards,-,-
 CLPNS120pp,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 CLPNS140pp,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 CLPNS141pp,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 CLPNS160pp,-,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards
 CLPNS161pp,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-CLPNS180pp,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-CLPNS181pp,-,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards
-CLtex,only when going forwards,only when going forwards,ok,ok,only when going forwards,only when going forwards,cl_p
+CLPNS180pp,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+CLPNS181pp,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
+CLtex,only when going forwards,only when going forwards,-,ok,only when going forwards,only when going forwards,cl_p
 CMPtex,-,-,only when going backwards,only when going backwards,-,-,-
 CMtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+COBALT2tex,ok,ok,-,ok,only when going forwards,ok,ok
 COCO2,only when going backwards,ok,ok,-,only when going backwards,ok,-
 CONFRLtex,only when going backwards,-,-,-,-,-,only when going backwards
 CONFRLtpp,only when going backwards,-,-,-,-,-,only when going backwards
-COt_1,only when going backwards,ok,ok,-,only when going backwards,ok,-
+COt_1,only when going backwards,ok,ok,-,only when going backwards,-,-
 CREATtex,-,-,only when going backwards,-,-,only when going backwards,only when going backwards
 CRNtex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-CRO4tex,only when going backwards,-,-,-,-,ok,only when going backwards
+CRO4tex,only when going backwards,-,-,-,-,-,only when going backwards
 CRTNtex,-,only when going backwards,-,-,-,-,-
-CSNtex,-,-,-,only when going backwards,-,-,only when going backwards
+CSNtex,-,-,-,-,-,-,only when going backwards
 CTBTt2rpp,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 CTECOAI8,ok,ok,ok,ok,only when going backwards,ok,ok
 CTI1,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 CU2tex,ok,ok,-,ok,ok,only when going forwards,ok
 CUtex,-,only when going backwards,-,only when going backwards,-,-,only when going backwards
-CYANtex,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-CYNTtex,-,only when going backwards,-,-,-,only when going backwards,-
-CYSDtex,-,-,-,only when going backwards,-,-,-
-CYTDtex,only when going backwards,-,-,ok,only when going backwards,-,-
-CYTOM,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,ok
+CYANtex,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards
+CYNTtex,-,only when going backwards,-,-,-,-,-
+CYTDtex,only when going backwards,-,ok,ok,only when going backwards,-,-
+CYTOM,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,ok
 Clt,only when going backwards,only when going backwards,ok,-,only when going backwards,only when going backwards,only when going backwards
-Cotpp,only when going backwards,ok,ok,-,only when going backwards,ok,-
+Cotpp,only when going backwards,ok,ok,-,only when going backwards,-,-
 DABAAT2,-,only when going backwards,24dab_c,only when going forwards,-,24dab_c,only when going forwards
-DACL,-,-,-,-,-,only when going backwards,-
+DACL,-,-,-,-,only when going backwards,-,-
 DADNtex,only when going backwards,-,-,ok,only when going backwards,-,-
+DALAtex,-,-,only when going forwards,ok,only when going forwards,-,-
 DAMPtex,-,-,-,only when going backwards,-,-,-
-DAPDA,-,-,-,-,n6all26d_c,-,-
+DAPDA,-,-,ok,-,n6all26d_c,-,-
 DAPE,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-DAPtex,only when going backwards,-,-,15dap_e;15dap_p,-,only when going forwards,-
+DAPtex,-,-,-,15dap_e;15dap_p,-,only when going forwards,-
 DARBtex,only when going forwards,-,only when going forwards,ok,-,only when going forwards,-
 DCAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 DCMPtex,-,-,-,only when going backwards,-,-,-
@@ -303,19 +306,18 @@ DGSNtex,only when going backwards,-,-,ok,only when going backwards,-,-
 DHACOAH,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 DHAt,-,-,-,-,only when going forwards,-,-
 DHAtex,-,-,-,dha_e;dha_p,-,ok,-
-DHBD,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-
+DHBD,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,-,-
 DHFR,only when going backwards,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards
 DHNPA2r,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-
 DHORTS,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 DIMPtex,-,-,-,only when going backwards,-,-,-
 DINStex,only when going backwards,-,-,ok,only when going backwards,-,-
-DLCYSR,-,-,-,-,only when going backwards,only when going backwards,only when going backwards
+DLCYSR,-,-,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 DLEUtex,only when going backwards,only when going backwards,-,-,-,only when going backwards,-
-DLMETR,-,-,only when going forwards,-,-,-,-
 DLYStex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 DMGDH2,-,only when going backwards,-,only when going backwards,only when going backwards,-,only when going backwards
 DMGLYtex,-,only when going backwards,-,-,-,-,only when going backwards
-DMSO2tex,-,only when going backwards,-,-,-,-,only when going backwards
+DMSO2tex,-,only when going backwards,only when going backwards,-,-,-,only when going backwards
 DMSOtex,-,-,-,only when going backwards,-,-,-
 DMStex,-,-,-,only when going forwards,-,-,-
 DOPAtex,-,-,-,only when going backwards,-,-,-
@@ -328,14 +330,13 @@ DTMPK,ok,only when going backwards,only when going backwards,ok,ok,ok,only when 
 DTMPtex,-,-,-,only when going backwards,-,-,-
 DTYRtex,only when going backwards,only when going backwards,-,-,-,only when going backwards,-
 DUMPtex,-,-,-,only when going backwards,-,-,-
-DURAD,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards,only when going forwards
+DURAD,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,ok,only when going forwards
 DURAD2,-,only when going forwards,-,-,-,only when going forwards,only when going forwards
-DURADx,-,-,-,-,only when going forwards,-,-
-DURIPP,-,-,-,ok,ok,only when going backwards,-
+DURIPP_1,only when going forwards,-,-,-,-,only when going backwards,-
 DURItex,only when going backwards,-,-,ok,only when going backwards,-,-
 DVALtex,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
-DXYLONtex,-,ok,-,dxylnt_e;dxylnt_p,-,-,-
-DXYLTD,-,ok,-,dxylnt_c;2ddara_c,-,-,-
+DXYLONtex,-,-,-,dxylnt_e;dxylnt_p,-,-,-
+DXYLTD,-,-,-,dxylnt_c;2ddara_c,-,-,-
 DXYLUDtex,-,only when going backwards,-,only when going backwards,-,-,-
 D_LACtex,only when going backwards,-,-,only when going backwards,-,only when going backwards,only when going backwards
 E4PD,ok,4per_c,-,ok,4per_c,only when going backwards,only when going backwards
@@ -352,8 +353,8 @@ ECOAH19,-,only when going backwards,only when going backwards,-,-,only when goin
 ECOAH20,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ECOAH21,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 ECOAH22,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-ECOAH23,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-ECOAH24,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
+ECOAH23,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
+ECOAH24,-,only when going backwards,only when going backwards,-,-,-,only when going backwards
 ECOAH25,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards,only when going forwards
 ECOAH26,only when going forwards,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
 ECOAH27,only when going forwards,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
@@ -366,98 +367,87 @@ ECOAH33,only when going forwards,only when going forwards,-,-,-,only when going 
 ECOAH34,only when going forwards,only when going forwards,-,-,-,only when going forwards,only when going forwards
 ECOAH35,only when going forwards,only when going forwards,-,-,-,only when going forwards,only when going forwards
 ECOAH36,-,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
-ECOAH37,-,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
+ECOAH37,only when going forwards,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
 ECOAH38,-,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
-ECOAH5_1,ok,trans_dd2coa_c,ok,-,-,ok,-
-ECOAH8,ok,ok,ok,ok,only when going forwards,only when going forwards,ok
-ECTOtex,-,only when going backwards,-,-,-,-,-
-ETHAt,-,only when going forwards,ok,-,ok,-,ok
+ECOAH8,ok,ok,ok,ok,only when going forwards,ok,ok
+ECTOtex,-,only when going backwards,-,-,only when going backwards,-,-
+ETHAt,-,only when going forwards,ok,only when going forwards,ok,-,ok
 ETHAtex,-,-,-,only when going forwards,-,-,only when going backwards
 ETHSO3tex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-EX_12ppd__S_e,-,-,-,12ppd__S_e,-,-,-
-EX_15dap_e,ok,-,-,15dap_e,-,ok,-
-EX_4hbald_e,ok,4hbald_e,-,4hbald_e,4hbald_e,4hbald_e,ok
-EX_6apa_e,-,-,-,6apa_e,-,-,-
+EX_12ppd__S_e,-,-,-,12ppd__S_e,-,ok,-
+EX_15dap_e,-,-,-,15dap_e,-,ok,-
+EX_4hbald_e,-,4hbald_e,-,4hbald_e,4hbald_e,-,ok
+EX_6apa_e,ok,-,-,6apa_e,-,-,-
 EX_adn_e,ok,-,ok,ok,ok,adn_e,ok
+EX_bz_e,ok,ok,bz_e,ok,ok,ok,ok
 EX_dha_e,-,-,-,dha_e,ok,ok,-
-EX_dxylnt_e,-,ok,-,dxylnt_e,-,-,-
+EX_dxylnt_e,-,-,-,dxylnt_e,-,-,-
 EX_for_e,for_e,ok,ok,ok,for_e,ok,ok
-EX_frmd_e,-,ok,ok,frmd_e,-,-,-
-EX_h2_e,h2_e,ok,-,ok,ok,ok,h2_e
+EX_h2_e,h2_e,h2_e,-,ok,ok,ok,h2_e
 EX_hxan_e,ok,ok,ok,ok,hxan_e,ok,ok
 EX_meoh_e,ok,ok,ok,ok,meoh_e,ok,ok
 EX_oxa_e,oxa_e,ok,ok,oxa_e,oxa_e,ok,ok
 EX_pac_e,-,-,-,pac_e,-,-,pac_e
-EX_peng_e,-,-,-,peng_e,-,-,-
-EX_ppal_e,-,-,-,ppal_e,-,-,-
+EX_peng_e,ok,-,-,peng_e,-,-,-
 EX_tartr__L_e,-,ok,-,tartr__L_e,-,ok,ok
-EX_uri_e,ok,-,ok,ok,ok,uri_e,uri_e
+EX_uri_e,ok,-,-,ok,ok,uri_e,uri_e
 F6Ptex,-,-,-,only when going backwards,-,-,-
-FACOAL140_ISO,-,-,only when going backwards,-,-,-,-
-FACOAL150_ISO,-,-,only when going backwards,-,-,-,-
-FACOAL150_anteiso,-,-,only when going backwards,-,-,-,-
-FACOAL160_ISO,-,-,only when going backwards,-,-,-,-
-FACOAL170_ISO,-,-,only when going backwards,-,-,-,-
-FACOAL170_anteiso,-,-,only when going backwards,-,-,-,-
-FACOAL180_2,-,-,only when going backwards,-,-,-,-
-FACOALPHDCA,-,-,-,-,only when going backwards,-,-
 FADtex,-,-,-,only when going backwards,-,-,-
 FALDH2,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 FALDtpp,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards,only when going backwards
 FALGTHLs,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 FBA,ok,only when going forwards,ok,ok,ok,only when going forwards,ok
 FBA3,only when going backwards,s17bp_c,-,only when going backwards,only when going backwards,s17bp_c,-
-FCI,-,only when going backwards,-,only when going backwards,-,-,-
+FCI,-,-,-,only when going backwards,-,-,-
 FCLPA,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-FE3DCITCH,ok,ok,only when going backwards,ok,-,only when going backwards,ok
+FE3DCITCH,ok,ok,only when going backwards,only when going backwards,-,only when going backwards,ok
 FE3PYOVDDR2,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 FERtex,only when going forwards,-,-,-,-,-,only when going forwards
 FERtpp,only when going forwards,-,-,-,-,-,only when going forwards
 FETRANS,-,-,only when going forwards,-,-,-,-
 FMNtex,-,-,-,only when going backwards,-,-,-
-FOAMtex,-,only when going backwards,only when going backwards,frmd_e;frmd_p,-,-,-
-FOAMtrpp,-,only when going forwards,only when going forwards,-,-,-,-
+FOAMtex,-,-,only when going backwards,ok,-,only when going backwards,-
+FOAMtrpp,-,-,only when going forwards,ok,-,only when going forwards,-
 FORCT,-,forcoa_c;oxalcoa_c,forcoa_c;oxalcoa_c,-,-,forcoa_c;oxalcoa_c,-
-FORGLUt,-,-,only when going backwards,-,-,-,-
+FORGLUt,-,-,only when going backwards,-,ok,-,-
 FORtex,for_e;for_p,ok,only when going backwards,ok,for_e;for_p,only when going backwards,only when going backwards
 FRULYSDG,-,only when going backwards,-,-,-,-,-
 FRULYSE,-,only when going backwards,-,-,-,-,-
-FRUtex,only when going backwards,only when going backwards,only when going backwards,ok,-,only when going backwards,only when going backwards
-FUC_L_Et,-,only when going backwards,-,-,-,-,-
+FRUtex,only when going backwards,only when going backwards,only when going backwards,ok,-,-,only when going backwards
 FUCtex,-,-,-,only when going backwards,-,-,-
-FUM,ok,ok,only when going backwards,ok,ok,ok,ok
-FUMt1pp,only when going forwards,-,-,ok,only when going forwards,only when going forwards,only when going forwards
+FUMt1pp,-,-,-,ok,-,only when going forwards,only when going forwards
+FUMtex,-,only when going backwards,-,ok,only when going backwards,-,-
 FUSAtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-
 G1Ptex,only when going backwards,-,only when going backwards,ok,-,-,-
-G1SAT,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+G1SAT,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards,only when going backwards
 G3PCtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
 G3PEtex,-,ok,-,ok,-,-,only when going forwards
-G3PGtex,-,ok,-,ok,-,-,only when going forwards
+G3PGtex,-,-,-,ok,-,-,only when going forwards
 G3PItex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
 G3PStex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
 G6PDH2r,ok,ok,ok,only when going backwards,only when going backwards,ok,ok
-G6PI,ok,ok,-,-,only when going forwards,ok,only when going backwards
+G6PI,ok,ok,-,-,-,ok,only when going backwards
 G6PI3,ok,ok,only when going forwards,-,-,ok,-
+G6P_Bt,-,-,-,-,only when going forwards,-,-
 G6Ptex,-,-,-,only when going backwards,-,-,-
-GAD2ktpp,only when going backwards,only when going backwards,2dhglcn_p,-,only when going backwards,only when going backwards,only when going backwards
-GAL6PI,-,-,-,-,-,only when going forwards,-
+GAD2ktpp,only when going backwards,only when going backwards,2dhglcn_p,-,only when going backwards,2dhglcn_p,only when going backwards
 GALAMtex,-,-,-,only when going backwards,-,-,-
-GALBDtex,-,-,-,only when going backwards,-,-,-
-GALCTNLtex,-,-,-,only when going backwards,-,only when going backwards,-
+GALBDtex,-,-,-,only when going backwards,-,only when going backwards,-
+GALCTNLtex,-,-,-,only when going backwards,-,-,-
 GALCTNtex,-,-,-,only when going backwards,-,-,-
-GALCT_D_Et,-,-,ok,-,only when going backwards,-,-
+GALCT_D_Et,only when going forwards,-,ok,-,only when going backwards,-,-
 GALCTtex,-,-,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
-GALKr,-,-,only when going backwards,only when going backwards,only when going backwards,-,-
+GALKr,-,-,only when going backwards,only when going backwards,only when going backwards,ok,ok
 GALM1,glc__bD_c,only when going backwards,ok,-,only when going forwards,glc__bD_c,-
-GALT,-,-,only when going backwards,-,ok,-,-
+GALT,-,-,only when going backwards,-,ok,-,ok
 GALTtex,-,-,-,only when going backwards,-,-,-
-GALURDH,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
+GALURDH,only when going backwards,only when going backwards,only when going backwards,-,-,ok,only when going backwards
 GALURtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 GALpts,only when going forwards,only when going forwards,-,dgal6p_c,-,only when going forwards,only when going forwards
-GALtex,only when going forwards,ok,-,ok,only when going forwards,-,only when going backwards
+GALtex,only when going forwards,-,-,ok,only when going forwards,-,-
 GAMAN6Ptex,-,-,-,only when going backwards,-,-,-
 GAMtex,-,-,-,only when going backwards,-,-,-
-GARFT,ok,ok,only when going backwards,ok,ok,ok,ok
+GARFT,ok,only when going backwards,only when going backwards,ok,ok,ok,ok
 GAt1,-,-,only when going backwards,-,-,only when going backwards,-
 GCCc_1,-,-,-,-,only when going backwards,-,-
 GCDH,-,ok,-,only when going backwards,-,only when going backwards,-
@@ -468,20 +458,19 @@ GGDAPDxr,only when going backwards,only when going backwards,-,-,-,-,only when g
 GLCOASYNT,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards
 GLCRtex,-,-,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 GLCUR1Ptex,-,-,-,only when going forwards,-,-,-
-GLCURDH,only when going backwards,ok,only when going forwards,-,-,ok,only when going backwards
+GLCURDH,-,ok,only when going forwards,-,-,only when going backwards,only when going backwards
 GLCURS1,-,-,only when going backwards,only when going backwards,only when going backwards,-,-
-GLCURtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+GLCURtex,glcur_e;glcur_p,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 GLNtex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-GLTPD,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
-GLUABUTt7pp,-,only when going backwards,-,ok,only when going backwards,ok,only when going backwards
-GLUR,-,ok,only when going forwards,ok,ok,ok,ok
+GLTPD,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-,-
+GLUABUTt7pp,-,-,only when going backwards,ok,only when going backwards,only when going backwards,-
+GLUR,ok,ok,only when going forwards,ok,ok,ok,ok
 GLUTARtex,-,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards
+GLUtex,-,-,only when going backwards,ok,-,-,ok
 GLYAT,ok,only when going backwards,ok,ok,ok,-,-
 GLYBACT1r,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 GLYC2Ptex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
-GLYC3Ptex,-,-,-,ok,-,only when going backwards,-
 GLYCAtex,-,-,-,only when going backwards,-,only when going backwards,only when going backwards
-GLYCLTt,-,-,-,-,only when going forwards,-,-
 GLYCLTtex,only when going backwards,-,-,only when going backwards,-,only when going backwards,only when going backwards
 GLYCYSAP,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
 GLYCtpp,ok,ok,only when going forwards,ok,ok,ok,ok
@@ -490,40 +479,38 @@ GLYGLUtex,-,only when going backwards,only when going backwards,-,-,only when go
 GLYGLYtex,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 GLYLEUAP,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
 GLYMETtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-GLYOX_1,-,ok,only when going backwards,-,-,-,-
+GLYOX_1,-,ok,only when going backwards,-,-,ok,-
 GLYPHEAP,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
 GLYPHEtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 GLYSERtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 GLYTYRAP,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
-GLYtex,-,-,only when going backwards,ok,-,only when going backwards,only when going backwards
-GLYtpp,only when going backwards,only when going backwards,-,ok,-,-,-
+GLYtex,-,-,-,ok,-,-,only when going backwards
+GLYtpp,only when going backwards,only when going backwards,only when going backwards,ok,-,only when going backwards,-
 GMPtex,-,-,only when going backwards,only when going backwards,-,-,-
 GNKr,-,-,-,-,-,only when going backwards,-
 GSNtex,-,only when going forwards,ok,ok,only when going backwards,only when going forwards,only when going forwards
-GTHOr,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
-GTHRDtex,-,ok,-,ok,-,only when going backwards,-
+GTHOr,only when going backwards,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards
 GTPtex,-,-,-,only when going backwards,-,-,-
-GUAtex,only when going backwards,ok,-,ok,gua_p,only when going backwards,only when going backwards
-GUAtpp,-,ok,only when going forwards,ok,-,-,-
+GUAtex,only when going backwards,only when going backwards,-,ok,gua_p,only when going backwards,only when going backwards
+GUAtpp,-,-,only when going forwards,ok,-,-,-
 GUI1,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-
-GUI2,-,only when going backwards,tagur_c,only when going backwards,only when going backwards,-,-
+GUI2,-,only when going backwards,tagur_c,only when going backwards,only when going backwards,only when going backwards,-
 GalMr,glc__aD_c;glc__bD_c,only when going backwards,ok,-,glc__aD_c,glc__aD_c;glc__bD_c,-
-H2ASE_syn,-,-,only when going forwards,-,-,-,-
 H2O2tex,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,-,only when going backwards
 H2Stex,-,-,-,only when going forwards,-,-,-
-H2tex,h2_e;h2_p,ok,-,ok,ok,only when going backwards,h2_e;h2_p
-H2tpp,-,ok,only when going backwards,ok,ok,only when going backwards,-
+H2tex,h2_e;h2_p,h2_e;h2_p,-,ok,ok,only when going backwards,h2_e;h2_p
+H2tpp,-,-,only when going backwards,ok,ok,only when going backwards,-
 HACD1,ok,ok,ok,only when going forwards,ok,ok,ok
-HACD1_1,ok,ok,ok,-,3hbycoa_c,ok,-
-HACD8,ok,ok,ok,ok,only when going forwards,-,ok
+HACD6,ok,ok,ok,ok,ok,only when going backwards,ok
+HACD8,ok,ok,ok,ok,only when going forwards,only when going backwards,ok
 HACD9,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards
 HADPCOADH3,-,only when going backwards,only when going backwards,ok,ok,only when going backwards,only when going backwards
-HAT40tex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-HAT40tpp,-,only when going forwards,only when going forwards,-,-,only when going forwards,only when going forwards
+HAT40tex,-,only when going backwards,only when going backwards,-,-,-,only when going backwards
+HAT40tpp,-,only when going forwards,only when going forwards,-,-,-,only when going forwards
 HBCHLR,ok,ok,ok,3hbcoa__R_c,3hbcoa__R_c,only when going backwards,ok
 HCINNMtex,-,-,-,only when going backwards,-,-,-
-HCO3tex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-
-HDECH,-,-,ok,ok,only when going forwards,-,-
+HCO3tex,-,only when going backwards,-,only when going backwards,only when going backwards,-,-
+HDECH,-,-,only when going forwards,-,only when going forwards,-,-
 HHDDI,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 HIAt,-,only when going forwards,-,-,only when going forwards,-,-
 HISGLYtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
@@ -531,33 +518,32 @@ HISHIStex,-,only when going backwards,only when going backwards,-,-,only when go
 HISTDa,-,-,-,-,-,-,only when going backwards
 HIStex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 HIUH_c,only when going backwards,-,-,-,-,only when going backwards,only when going backwards
-HMEDR,-,hmbpp_c,hmbpp_c,-,-,-,hmbpp_c
+HMEDR,-,hmbpp_c,ok,-,-,-,hmbpp_c
 HMGCOAR,-,-,only when going forwards,-,only when going forwards,-,-
-HMPSCD,ok,hmpscoa_c,only when going forwards,hmpscoa_c,hmpscoa_c,ok,-
+HMPSCD,ok,hmpscoa_c,only when going forwards,ok,hmpscoa_c,-,-
 HOMtex,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-HOXPRx,-,only when going forwards,-,-,-,only when going forwards,-
 HPAtex,-,-,-,only when going backwards,-,only when going backwards,-
 HPPPNtex,-,-,-,only when going backwards,-,-,-
-HPROx,-,-,ok,-,only when going backwards,only when going backwards,-
-HPYRI,2h3oppan_c,ok,ok,ok,only when going forwards,ok,ok
+HPROx,-,ok,ok,-,only when going backwards,only when going backwards,-
+HPYRI,2h3oppan_c,ok,only when going forwards,ok,only when going forwards,ok,ok
 HQNt6,-,-,only when going forwards,only when going forwards,-,-,-
 HSDy,only when going forwards,ok,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-HVCD,ok,ok,ok,-,only when going forwards,only when going forwards,ok
 HXAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-HYXNtex,only when going backwards,only when going backwards,only when going backwards,ok,hxan_e;hxan_p,only when going backwards,only when going backwards
+HYXNtex,only when going backwards,only when going backwards,-,ok,hxan_e;hxan_p,only when going backwards,only when going backwards
+HYXNtpp,-,-,only when going forwards,ok,-,-,-
 IBTtex,only when going backwards,-,-,-,only when going backwards,only when going backwards,-
-ICHORS,only when going backwards,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,-
+ICHORS,only when going backwards,only when going backwards,only when going backwards,ok,ok,-,-
 ICITtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-ID3ACALDt,only when going forwards,ok,ok,-,only when going forwards,-,-
+ID3ACALDt,ok,only when going forwards,-,-,-,-,-
 IDOND,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-
 IDONtex,-,-,-,only when going backwards,-,-,-
-ILETA,ok,ok,ok,only when going forwards,ok,ok,ok
+ILETA,only when going forwards,ok,ok,only when going forwards,ok,ok,ok
 ILEtex,ile__L_e;ile__L_p,only when going backwards,only when going backwards,ok,ile__L_p,only when going backwards,only when going backwards
 IMPC,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 IMPtex,-,-,-,only when going backwards,-,-,-
 IND3ACtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 INDOLEtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-INDPYRD,-,ok,ok,only when going backwards,-,-,-
+INDPYRD,ok,-,-,only when going backwards,only when going backwards,-,-
 INSTtex,-,-,-,only when going forwards,-,-,-
 INStex,-,only when going forwards,-,ok,only when going backwards,only when going forwards,only when going forwards
 IPPMIa,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
@@ -572,10 +558,10 @@ LALALGLUtex,only when going backwards,only when going backwards,only when going 
 LALDO,ok,only when going backwards,only when going backwards,-,-,ok,-
 LASP2OA,-,Largn_c,-,-,-,-,-
 LAT,only when going backwards,-,-,-,only when going backwards,-,-
-LCARR,only when going forwards,-,-,only when going backwards,-,only when going forwards,only when going forwards
-LCARS,ok,12ppd__S_c,only when going forwards,12ppd__S_c,only when going forwards,only when going forwards,only when going forwards
-LCYSTtex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
-LDH_D,ok,ok,-,ok,only when going backwards,ok,ok
+LCARR,only when going forwards,-,-,only when going backwards,-,ok,only when going forwards
+LCARS,only when going forwards,12ppd__S_c,only when going forwards,12ppd__S_c,only when going forwards,ok,only when going forwards
+LCTStex,-,-,-,ok,-,only when going forwards,-
+LCYSTtex,-,only when going backwards,-,only when going backwards,-,-,-
 LEULEULAPc,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 LEULEUtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
 LEUtex,only when going forwards,ok,only when going backwards,ok,leu__L_p,ok,ok
@@ -585,31 +571,32 @@ LYSRC,-,-,-,only when going forwards,-,-,-
 LYStex,ok,ok,only when going backwards,ok,only when going forwards,ok,ok
 LYXtex,-,-,-,only when going backwards,-,-,-
 L_LACtex,only when going backwards,-,-,only when going backwards,-,only when going backwards,only when going backwards
-M1PD,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
+LacR,-,-,only when going forwards,-,only when going forwards,-,-
+M1PD,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
 MAK,-,-,only when going backwards,only when going backwards,-,-,only when going backwards
 MAL6PG,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-
 MALDtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-MALEI,-,only when going backwards,-,-,-,only when going backwards,-
+MALEI,-,only when going backwards,-,-,-,-,-
 MAL_D_Et,only when going forwards,-,-,only when going forwards,-,-,-
-MALtex,only when going backwards,-,-,ok,only when going backwards,-,only when going backwards
+MALtex,-,only when going backwards,-,ok,only when going backwards,-,only when going backwards
 MAN6Ptex,-,-,-,only when going backwards,-,-,-
 MANAO,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-,-
-MANE,only when going backwards,-,ok,only when going backwards,-,only when going backwards,only when going backwards
+MANE,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards
 MANGLYCtex,-,-,-,only when going backwards,-,-,-
-MANtex,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
+MANtex,-,only when going backwards,-,only when going backwards,-,-,-
 MBCOAi,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 MCA,-,-,only when going forwards,only when going forwards,-,-,-
 MCITL2,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards
-MCSNtex,-,-,-,-,-,-,only when going backwards
-MECDPDH3_syn,ok,ok,only when going backwards,-,-,ok,ok
-MELIBtex,only when going backwards,only when going forwards,only when going forwards,ok,-,-,-
+MCSNtex,-,-,-,-,only when going backwards,-,only when going backwards
+MELIB_Et,-,ok,ok,-,ok,only when going backwards,-
+MELIBtex,only when going backwards,only when going forwards,only when going forwards,ok,-,only when going forwards,-
 MEOHtex,ok,ok,ok,only when going forwards,meoh_e;meoh_p,ok,only when going forwards
 MEOHtrpp,ok,ok,ok,only when going forwards,-,ok,only when going forwards
 METB2,-,-,-,-,-,only when going backwards,-
 METDtex,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards,-
 METGLCURtex,-,-,-,only when going backwards,-,-,-
-METRR,ok,ok,-,ok,only when going forwards,ok,-
-METSOX1tex,-,-,-,only when going backwards,-,-,-
+METRR,-,ok,only when going forwards,ok,only when going forwards,ok,-
+METSOX2tex,-,-,-,only when going backwards,-,-,-
 METtex,-,-,only when going backwards,ok,only when going backwards,-,-
 MG2tex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 MGCH,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
@@ -621,15 +608,15 @@ MLTP3,-,only when going backwards,only when going backwards,ok,-,only when going
 MME,-,only when going backwards,-,-,only when going backwards,-,-
 MMETtex,-,-,-,only when going backwards,-,-,-
 MNLDHr,-,only when going forwards,-,-,-,-,-
-MNLtex,-,-,only when going backwards,only when going backwards,-,-,-
+MNLtex,-,-,-,only when going backwards,-,-,-
 MNtex,only when going forwards,ok,-,ok,mn2_p,ok,ok
 MOBDtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-MSO3tex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-MSULR,-,-,-,-,-,-,only when going backwards
-MS_1,mhpglu_c;hpglu_c,mhpglu_c;hpglu_c,-,-,only when going forwards,mhpglu_c;hpglu_c,-
-MTAM_1,-,ok,only when going forwards,-,-,-,-
-MTHFC,ok,ok,only when going backwards,ok,ok,ok,ok
-MTI,only when going backwards,-,ok,ok,-,-,only when going backwards
+MSO3tex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
+MSULR,only when going forwards,-,only when going forwards,-,-,-,only when going backwards
+MS_1,mhpglu_c;hpglu_c,mhpglu_c;hpglu_c,-,-,ok,mhpglu_c;hpglu_c,-
+MTAM_1,-,-,only when going forwards,-,-,-,-
+MTHFC,ok,only when going backwards,only when going backwards,ok,ok,ok,ok
+MTI,-,-,ok,ok,-,ok,only when going backwards
 MTRI,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 MUCCYCI,-,-,-,-,-,-,only when going backwards
 MUCLI,-,-,-,-,-,-,only when going backwards
@@ -640,10 +627,8 @@ N2Otpp,-,-,only when going forwards,only when going forwards,-,-,-
 NACtex,-,-,-,only when going backwards,-,only when going backwards,-
 NADHXE,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 NADPHXE,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-NAPRT,only when going backwards,ok,only when going backwards,-,ok,ok,-
-NARK,-,ok,only when going backwards,ok,ok,ok,ok
-NCAMUP,-,-,-,-,-,only when going forwards,-
-NCBMPTStex,-,-,-,-,-,only when going backwards,-
+NARK,ok,ok,only when going backwards,ok,ok,ok,ok
+NDPK2,ok,only when going backwards,ok,ok,ok,ok,ok
 NDPK4,ok,only when going backwards,only when going backwards,ok,ok,ok,only when going backwards
 NDPK6,ok,ok,ok,ok,only when going backwards,ok,ok
 NDPK7,ok,only when going backwards,ok,ok,ok,ok,only when going backwards
@@ -651,105 +636,109 @@ NDPK8,ok,ok,ok,ok,ok,ok,only when going backwards
 NDPK9,ok,-,only when going backwards,-,ok,-,-
 NH3c,ok,ok,ok,only when going backwards,ok,ok,only when going backwards
 NH4OHDs,-,-,-,-,-,only when going backwards,-
-NMNtex,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards,-
-NNATr,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
+NMNtex,-,-,-,only when going backwards,only when going backwards,-,-
 NO2tex,only when going forwards,only when going forwards,-,ok,ok,only when going backwards,only when going backwards
 NO3tex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 NOVBCNtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-NOt,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-NOtex,-,-,-,only when going backwards,-,-,-
-NOtpp,-,only when going forwards,-,only when going backwards,-,-,-
+NOt,-,-,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
+NOtex,-,only when going backwards,-,no_p,-,-,-
 NP1_1,-,only when going backwards,only when going backwards,-,only when going backwards,-,-
 O2Stex,-,-,-,only when going backwards,-,-,-
 OAAtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-OCBT_1,-,ok,-,-,only when going backwards,-,-
-OCOAT2r,3mb_c,only when going backwards,-,-,only when going forwards,only when going backwards,ok
-OCTAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
+OCBT,ok,only when going backwards,ok,ok,only when going backwards,ok,ok
+OCBT_1,-,only when going forwards,-,-,-,-,-
+OCOAT1,ok,-,only when going backwards,ok,ok,ok,ok
+OCOAT2r,3mb_c,-,-,-,only when going forwards,-,ok
+OCTAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 OHPBAT,ok,-,-,ok,-,only when going backwards,only when going backwards
 OIVD1r,ok,ok,only when going backwards,-,ok,-,ok
 OMAIS,-,-,only when going backwards,-,-,only when going backwards,-
 ORNTA,ok,ok,ok,-,only when going backwards,ok,ok
 ORNTAC,-,ok,only when going backwards,-,-,ok,-
-ORNtex,only when going backwards,-,only when going backwards,ok,-,only when going backwards,-
+ORNtex,-,only when going backwards,ok,ok,-,only when going backwards,-
 OROTtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-ORPT,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 OXFOt4pp,-,ok,only when going forwards,oxa_p;oxa_c,-,only when going forwards,only when going forwards
 OXFOtex,oxa_e;oxa_p,ok,only when going forwards,oxa_e;oxa_p,oxa_e;oxa_p,only when going forwards,only when going forwards
 OXPTNDH,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-P3PCL,-,-,-,-,only when going backwards,only when going backwards,-
+P3PCL,-,-,-,only when going forwards,only when going backwards,only when going backwards,-
+PACALDt,-,only when going backwards,-,-,ok,-,-
 PACALDtex,only when going backwards,only when going backwards,-,ok,-,-,-
+PACPT_1,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards,-
 PACt1,-,-,-,pac_e;pac_p,-,-,pac_e;pac_p
-PALDO2,-,-,-,only when going backwards,-,-,-
-PAPSSH,-,-,only when going backwards,-,-,ok,-
-PBUTT,-,only when going forwards,-,-,-,-,-
+PAPSSH,only when going backwards,-,only when going backwards,ok,-,-,-
+PBUTT,-,-,only when going forwards,-,-,-,-
 PCNO,ok,-,ok,prpncoa_c,-,-,-
 PDC,-,only when going forwards,-,only when going forwards,-,only when going forwards,only when going forwards
 PDHbr,ok,-,only when going backwards,-,only when going backwards,-,only when going backwards
-PDYXPT_c,-,ok,only when going forwards,-,only when going forwards,only when going forwards,only when going forwards
+PDYXPT_c,-,-,only when going forwards,-,only when going forwards,-,only when going forwards
 PEAMNtex,-,only when going backwards,-,only when going backwards,-,-,only when going backwards
-PENGt1,-,-,-,peng_e;peng_p,-,-,-
-PENTSOtex,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-PEPtex,-,-,-,only when going backwards,-,-,-
+PEAt,-,-,-,-,-,only when going backwards,-
+PENGt1,only when going forwards,-,-,peng_e;peng_p,-,-,-
+PENTSOtex,-,-,-,-,-,only when going backwards,only when going backwards
 PERD,ok,-,-,ok,4per_c;ohpb_c,only when going backwards,only when going backwards
 PGAMT,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards,only when going forwards
-PGCM,-,-,only when going forwards,only when going forwards,-,-,-
-PGI1c,g6p_A_c,-,-,-,-,g6p_A_c,-
+PGCM,-,-,only when going forwards,-,-,-,-
+PGI1c,g6p_A_c,-,-,only when going backwards,-,g6p_A_c,-
 PGLCNDH,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
+PHCHGS,only when going forwards,ok,ok,-,-,only when going backwards,-
 PHDCATA,-,-,-,-,only when going backwards,-,-
 PHDCAt,-,-,-,-,only when going backwards,-,-
 PHER,only when going backwards,only when going backwards,-,-,-,only when going backwards,only when going backwards
 PHETA1,ok,ok,ok,ok,ok,ok,only when going forwards
 PHEtex,-,-,-,ok,only when going backwards,-,-
 PHHL,-,-,-,-,only when going backwards,-,-
-PICH,ok,-,only when going forwards,-,-,ok,-
-PMANM,only when going forwards,ok,ok,ok,ok,only when going forwards,only when going forwards
+PICH,ok,-,only when going forwards,ok,-,-,-
+PMANM,ok,ok,ok,ok,ok,only when going forwards,only when going forwards
 PNCDC_1,-,only when going forwards,only when going forwards,-,-,-,-
-PNP,-,only when going backwards,only when going backwards,-,only when going backwards,-,-
+PNP,-,-,-,-,only when going backwards,-,-
+PNP_1,-,only when going backwards,only when going backwards,-,-,-,-
 PNTOtex,-,-,-,only when going backwards,-,-,only when going backwards
-PPAKr,ok,only when going backwards,ok,ok,-,only when going backwards,only when going backwards
-PPALtex,-,-,-,ppal_e;ppal_p,-,-,-
+PPAKr,only when going backwards,only when going backwards,ok,ok,-,only when going backwards,-
+PPALtex,-,-,only when going backwards,only when going backwards,-,only when going backwards,-
+PPALtpp,-,-,only when going forwards,only when going forwards,-,only when going forwards,-
+PPAP_Et,-,-,ok,ok,-,-,only when going forwards
 PPAtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 PPItex_1,-,-,-,-,-,-,only when going backwards
 PPK50r,only when going backwards,-,-,-,-,only when going backwards,only when going backwards
-PPM,ok,ok,ok,ok,-,only when going backwards,-
-PPM2,-,ok,ok,ok,-,only when going forwards,-
+PPM,r1p_c,only when going backwards,ok,ok,-,ok,-
+PPM2,-,only when going backwards,ok,ok,-,only when going forwards,-
 PPNDH2,ok,-,ok,-,prpncoa_c,prpncoa_c,-
-PPOHtex,-,only when going backwards,-,-,-,only when going backwards,only when going backwards
-PPPM,-,-,-,-,only when going backwards,only when going backwards,-
+PPOHtex,-,only when going backwards,-,-,-,-,-
+PPPM,-,-,-,only when going forwards,only when going backwards,only when going backwards,-
 PPPNtex,-,-,-,only when going backwards,-,-,-
 PPRGL,only when going backwards,-,-,-,-,only when going backwards,only when going backwards
 PPTtex,-,-,only when going backwards,only when going backwards,-,-,-
-PQQH2tpp,only when going backwards,only when going backwards,only when going backwards,-,-,-,-
-PQQtpp,only when going forwards,only when going forwards,only when going forwards,-,-,-,-
+PQQH2tpp,only when going backwards,-,only when going backwards,only when going backwards,-,only when going backwards,-
+PQQtpp,only when going forwards,-,only when going forwards,only when going forwards,-,only when going forwards,-
 PRAGSr,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-
 PRMICI,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 PROGLYtex,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 PROR,only when going backwards,only when going backwards,-,-,pro__D_c,only when going backwards,only when going backwards
 PROtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-PRPPS,only when going backwards,ok,only when going backwards,only when going backwards,ok,ok,only when going backwards
+PRPPS,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 PSCLYStex,-,only when going backwards,-,-,-,-,-
 PSCVT,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 PSERtex,-,-,only when going backwards,only when going backwards,-,-,-
 PTAr,actp_c,actp_c,ok,ok,-,ok,actp_c
 PTAtex,only when going backwards,-,-,-,only when going backwards,only when going backwards,only when going backwards
 PTHRP,only when going backwards,only when going forwards,-,-,only when going backwards,-,-
-PTRCORNt7pp,only when going forwards,only when going backwards,-,ok,-,-,-
+PTRCtex,only when going backwards,-,-,ok,-,only when going backwards,ok
 PUNP1,-,-,ok,ok,ok,-,r1p_c
-PUNP2,-,-,only when going backwards,ok,ok,ok,-
+PUNP2,-,-,only when going backwards,ok,ok,-,-
 PUNP3,-,-,ok,ok,only when going backwards,-,-
-PUNP4,-,-,-,only when going backwards,ok,-,only when going forwards
+PUNP4,-,-,-,only when going backwards,ok,ok,-
+PUNP4_1,-,-,only when going backwards,-,-,-,only when going forwards
 PUNP5,-,-,ok,ok,only when going backwards,-,-
 PUNP6,-,-,only when going backwards,only when going backwards,only when going backwards,-,-
 PUNP6_1,only when going backwards,only when going backwards,-,-,-,ok,only when going backwards
-PUNP7,ok,-,ok,only when going backwards,only when going backwards,-,-
+PUNP7,-,-,ok,only when going backwards,only when going backwards,-,-
 PUNP7_1,-,-,-,-,-,only when going backwards,-
-PYDAMtex,only when going backwards,-,-,only when going backwards,-,-,-
-PYDXNtr,-,-,-,-,only when going backwards,only when going backwards,ok
-PYNP1,-,-,ok,-,only when going forwards,-,-
-PYNP1_1,-,-,-,-,-,only when going backwards,-
+PYDAMtex,-,-,-,only when going backwards,-,-,-
+PYDXNtr,-,-,only when going backwards,-,only when going backwards,-,ok
+PYNP1,-,-,-,-,only when going forwards,only when going forwards,-
 PYRtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 P_Xylt1,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-QSDH,ok,only when going backwards,-,only when going forwards,-,-,ok
+QSDH,ok,-,-,ok,-,only when going backwards,ok
 QUIDH,ok,-,only when going backwards,only when going backwards,-,-,ok
 QUIN2tex,quin_e;quin_p,-,only when going backwards,only when going backwards,-,-,only when going backwards
 QUIN2tpp,-,-,only when going backwards,-,-,only when going forwards,-
@@ -757,149 +746,146 @@ R5Ptex,-,-,only when going backwards,only when going backwards,-,-,-
 RAFFtex,-,-,-,only when going backwards,-,-,-
 RBP4E,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 RECOAH10,ok,only when going backwards,only when going backwards,-,R_3hnonacoa_c;nona2coa_c,ok,ok
-RECOAH11,only when going forwards,ok,only when going backwards,-,R_3hpdecacoa_c;pdca2coa_c,R_3hpdecacoa_c,ok
-RECOAH12,only when going forwards,ok,only when going backwards,-,R_3hpnonacoa_c;pnona2coa_c,R_3hpnonacoa_c,ok
-RECOAH13,only when going forwards,only when going forwards,only when going backwards,-,R_3hpoctacoa_c;pocta2coa_c,R_3hpoctacoa_c,ok
-RECOAH14,only when going forwards,only when going forwards,only when going backwards,-,R_3hphpcoa_c;php2coa_c,R_3hphpcoa_c,ok
-RECOAH15,only when going forwards,ok,only when going backwards,-,R_3hphxacoa_c;phxa2coa_c,R_3hphxacoa_c,ok
-RECOAH16,only when going forwards,ok,only when going backwards,-,R_3hpptcoa_c;ppt2coa_c,R_3hpptcoa_c,ok
+RECOAH11,only when going forwards,ok,only when going backwards,-,R_3hpdecacoa_c;pdca2coa_c,ok,ok
+RECOAH12,only when going forwards,ok,only when going backwards,-,R_3hpnonacoa_c;pnona2coa_c,ok,ok
+RECOAH13,only when going forwards,ok,only when going backwards,-,R_3hpoctacoa_c;pocta2coa_c,R_3hpoctacoa_c,ok
+RECOAH14,only when going forwards,ok,only when going backwards,-,R_3hphpcoa_c;php2coa_c,R_3hphpcoa_c,ok
+RECOAH15,only when going forwards,ok,only when going backwards,-,R_3hphxacoa_c;phxa2coa_c,only when going forwards,ok
+RECOAH16,only when going forwards,ok,only when going backwards,-,R_3hpptcoa_c;ppt2coa_c,only when going forwards,ok
 RECOAH17,only when going forwards,ok,only when going backwards,-,R_3hpbcoa_c;pb2coa_c,R_3hpbcoa_c,ok
-RECOAH19,only when going forwards,only when going backwards,only when going backwards,-,R_3h6athcoa_c;6ath2coa_c,R_3h6athcoa_c,ok
-RECOAH2,ok,only when going forwards,only when going forwards,-,ok,ok,ok
-RECOAH20,only when going forwards,ok,ok,-,R_3h4atbcoa_c;4atb2coa_c,R_3h4atbcoa_c,ok
+RECOAH19,ok,only when going backwards,only when going backwards,-,R_3h6athcoa_c;6ath2coa_c,R_3h6athcoa_c,ok
+RECOAH2,ok,ok,only when going forwards,-,ok,only when going backwards,ok
+RECOAH20,only when going forwards,ok,only when going backwards,-,R_3h4atbcoa_c;4atb2coa_c,only when going forwards,ok
 RECOAH21,ok,ok,ok,-,R_3hcmrs7ecoa_c;tde2coa_c,only when going backwards,ok
-RECOAH22,ok,only when going forwards,only when going forwards,-,R_3hcddec5ecoa_c;dde2coa_c,ok,ok
-RECOAH23,ok,only when going forwards,only when going forwards,-,R_3htd5coa_c;tded5_2_coa_c,ok,ok
+RECOAH22,ok,ok,only when going backwards,-,R_3hcddec5ecoa_c;dde2coa_c,ok,ok
+RECOAH23,ok,ok,only when going forwards,-,R_3htd5coa_c;tded5_2_coa_c,ok,ok
 RECOAH24,only when going forwards,ok,only when going backwards,-,R_3htd58coa_c;td58_2_coa_c,ok,ok
-RECOAH25,only when going forwards,only when going forwards,ok,-,R_3hdd6coa_c;dd6_2_coa_c,ok,ok
-RECOAH26,ok,ok,only when going backwards,only when going backwards,R3hdec4coa_c;dec4_2_coa_c,ok,ok
-RECOAH3,ok,ok,only when going forwards,-,R_3hocoa_c,ok,ok
-RECOAH4,ok,only when going forwards,ok,-,R_3hdcoa_c,ok,ok
-RECOAH5,ok,only when going forwards,only when going forwards,-,R_3hddcoa_c,only when going backwards,ok
-RECOAH6,ok,only when going forwards,ok,-,only when going forwards,ok,ok
-RECOAH7,ok,only when going forwards,only when going forwards,-,R_3hhdcoa_c,only when going backwards,ok
-RECOAH8,ok,ok,only when going forwards,-,R_3hptcoa_c,only when going backwards,ok
+RECOAH25,ok,ok,ok,-,R_3hdd6coa_c;dd6_2_coa_c,only when going backwards,ok
+RECOAH26,ok,ok,ok,-,R3hdec4coa_c;dec4_2_coa_c,ok,ok
+RECOAH3,ok,ok,only when going forwards,-,ok,only when going backwards,ok
+RECOAH4,ok,ok,ok,-,R_3hdcoa_c,only when going backwards,ok
+RECOAH5,ok,ok,only when going forwards,-,R_3hddcoa_c,only when going backwards,ok
+RECOAH6,ok,ok,only when going forwards,-,only when going forwards,ok,ok
+RECOAH7,ok,ok,only when going forwards,-,R_3hhdcoa_c,only when going backwards,ok
+RECOAH8,ok,ok,only when going forwards,-,only when going forwards,ok,ok
 RECOAH9,ok,ok,only when going backwards,-,R_3hhpcoa_c;hp2coa_c,ok,ok
 REPHACCOAI,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-RHA100tex,-,only when going backwards,only when going backwards,-,-,-,-
-RHA100tpp,-,only when going forwards,only when going forwards,-,-,-,-
-RHA101tex,-,only when going backwards,ok,only when going forwards,-,-,-
-RHA101tpp,-,only when going forwards,ok,only when going backwards,-,-,-
-RHA120tex,ok,only when going backwards,only when going backwards,-,-,only when going forwards,-
-RHA120tpp,ok,only when going forwards,only when going forwards,-,-,only when going backwards,-
-RHA121d6tex,-,only when going backwards,only when going backwards,-,-,ok,-
-RHA121d6tpp,-,only when going forwards,only when going forwards,-,-,ok,-
-RHA121tex,-,only when going backwards,only when going backwards,-,-,only when going forwards,-
-RHA121tpp,-,only when going forwards,only when going forwards,-,-,only when going backwards,-
-RHA140tex,-,only when going backwards,only when going backwards,only when going forwards,-,only when going forwards,-
-RHA140tpp,-,only when going forwards,only when going forwards,only when going backwards,-,only when going backwards,-
-RHA141d5tex,-,only when going backwards,only when going backwards,-,-,ok,-
-RHA141d5tpp,-,only when going forwards,only when going forwards,-,-,ok,-
-RHA141tex,-,only when going backwards,only when going backwards,-,-,only when going forwards,-
-RHA141tpp,-,only when going forwards,only when going forwards,-,-,only when going backwards,-
-RHA142tex,-,only when going backwards,ok,-,-,only when going forwards,-
-RHA142tpp,-,only when going forwards,ok,-,-,only when going backwards,-
-RHA160tex,-,only when going backwards,only when going backwards,-,-,only when going forwards,-
-RHA160tpp,-,only when going forwards,only when going forwards,-,-,only when going backwards,-
+RHA100tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA100tpp,-,-,only when going forwards,-,-,only when going backwards,-
+RHA101tex,-,only when going backwards,-,-,-,-,-
+RHA101tpp,-,only when going forwards,-,-,-,-,-
+RHA120tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA120tpp,-,-,only when going forwards,-,-,only when going backwards,-
+RHA121d6tex,-,-,-,only when going forwards,-,only when going forwards,-
+RHA121d6tpp,-,-,-,only when going backwards,-,only when going backwards,-
+RHA140tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA140tpp,-,-,only when going forwards,-,-,only when going backwards,-
+RHA141d5tex,-,-,only when going backwards,-,-,ok,-
+RHA141d5tpp,-,-,only when going forwards,-,-,ok,-
+RHA141tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA141tpp,-,-,only when going forwards,-,-,only when going backwards,-
+RHA160tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA160tpp,-,-,only when going forwards,-,-,only when going backwards,-
 RHA40tex,-,-,-,-,-,-,only when going forwards
 RHA40tpp,-,-,-,only when going forwards,-,-,-
-RHA50tex,-,-,only when going backwards,-,-,only when going forwards,-
-RHA50tpp,-,-,only when going forwards,-,-,only when going backwards,-
-RHA60tex,-,only when going backwards,only when going backwards,-,-,-,-
-RHA60tpp,-,only when going forwards,only when going forwards,-,-,-,-
-RHA80tex,-,only when going backwards,only when going backwards,-,-,-,-
-RHA80tpp,-,only when going forwards,only when going forwards,-,-,-,-
-RHA90tex,-,ok,-,-,-,only when going forwards,-
-RHA90tpp,-,ok,-,-,-,only when going backwards,-
+RHA50tex,-,-,only when going backwards,-,only when going backwards,ok,-
+RHA50tpp,-,-,only when going forwards,-,only when going forwards,ok,-
+RHA60tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA60tpp,-,-,only when going forwards,-,-,only when going backwards,-
+RHA70tex,ok,-,ok,-,-,only when going forwards,-
+RHA70tpp,ok,-,ok,-,-,only when going backwards,-
+RHA80tex,-,-,only when going backwards,-,-,only when going forwards,-
+RHA80tpp,-,-,only when going forwards,-,-,only when going backwards,-
 RHACOAR101,-,only when going backwards,only when going backwards,-,-,only when going backwards,only when going backwards
-RHACOAR121d6,only when going forwards,-,only when going backwards,-,-,-,ok
+RHACOAR121d5,-,-,-,-,-,only when going backwards,ok
+RHACOAR121d6,-,-,-,only when going forwards,-,-,ok
+RHACOAR140,-,-,-,only when going backwards,-,-,ok
 RHACOAR141d5,-,-,-,-,-,only when going backwards,ok
-RHACOAR70,-,-,only when going backwards,-,-,-,ok
-RHACOAR90,ok,-,only when going backwards,-,-,ok,ok
-RHACOARP100,-,ok,only when going backwards,-,-,-,ok
-RHACOARP40,-,only when going backwards,-,-,-,-,ok
+RHACOAR141d7,-,-,only when going backwards,-,-,-,ok
+RHACOAR142,only when going forwards,-,-,-,-,only when going backwards,ok
+RHACOAR90,-,-,only when going backwards,-,-,only when going backwards,ok
+RHACOARP100,-,-,only when going backwards,-,-,only when going backwards,ok
 RHACOARP50,only when going forwards,-,only when going backwards,-,-,-,ok
 RHACOARP60,only when going forwards,-,only when going backwards,-,-,-,ok
 RHACOARP70,-,-,only when going backwards,-,-,-,ok
 RHACOARP80,-,-,only when going backwards,-,-,-,ok
-RHACOARP90,-,ok,only when going backwards,-,-,-,ok
-RHAP100tex,ok,only when going backwards,-,-,-,-,-
-RHAP100tpp,ok,only when going forwards,-,-,-,-,-
-RHAP40tex,ok,only when going backwards,ok,-,-,-,-
-RHAP40tpp,ok,only when going forwards,ok,-,-,-,-
-RHAP70tex,ok,only when going backwards,-,-,-,-,-
-RHAP70tpp,ok,only when going forwards,-,-,-,-,-
-RHAP80tex,ok,only when going backwards,-,-,-,-,-
-RHAP80tpp,ok,only when going forwards,-,-,-,-,-
-RHAP90tex,ok,only when going backwards,-,-,-,-,-
-RHAP90tpp,ok,only when going forwards,-,-,-,-,-
+RHACOARP90,-,-,only when going backwards,-,-,only when going backwards,ok
+RHACOART60,-,-,only when going backwards,-,-,-,ok
+RHAP100tex,ok,-,-,-,-,only when going backwards,-
+RHAP100tpp,ok,-,-,-,-,only when going forwards,-
+RHAP50tex,-,-,-,-,-,only when going backwards,ok
+RHAP50tpp,-,-,-,-,-,only when going forwards,ok
+RHAP60tex,-,-,-,-,-,only when going backwards,-
+RHAP60tpp,-,-,-,-,-,only when going forwards,-
+RHAP90tex,ok,-,-,-,-,only when going backwards,-
+RHAP90tpp,ok,-,-,-,-,only when going forwards,-
+RHAT40tex,ok,-,ok,-,-,only when going backwards,-
+RHAT40tpp,ok,-,ok,-,-,only when going forwards,-
 RIBtex,only when going backwards,only when going backwards,-,ok,only when going backwards,only when going backwards,only when going backwards
-RMI,-,-,only when going backwards,only when going backwards,-,only when going backwards,-
-RMN_Et,-,only when going forwards,ok,ok,-,-,-
+RMI,-,only when going backwards,only when going backwards,only when going backwards,-,-,-
+RMN_Et,-,-,ok,ok,-,only when going forwards,-
 RMNtex,-,-,-,only when going backwards,-,-,-
-RMPA,-,-,only when going backwards,only when going backwards,-,only when going backwards,-
-SALCHSXtex,-,only when going forwards,only when going forwards,-,-,only when going forwards,-
-SALCHSXtpp,-,only when going forwards,only when going forwards,-,-,only when going forwards,-
-SALCt,-,only when going backwards,only when going backwards,-,only when going backwards,-,-
+RMPA,-,only when going backwards,only when going backwards,only when going backwards,-,-,-
+SALCHSXtex,-,only when going forwards,only when going forwards,-,-,-,-
+SALCHSXtpp,-,only when going forwards,only when going forwards,-,-,-,-
+SALCt,-,only when going backwards,-,-,only when going backwards,-,-
 SBTPD,-,only when going backwards,-,only when going backwards,-,only when going backwards,-
 SBTtex,-,-,-,only when going backwards,-,-,-
 SDPTA,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
 SEAHCYSHYD_1,only when going forwards,-,-,-,only when going forwards,-,-
 SELTt,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-SELt,-,-,only when going backwards,-,only when going backwards,ok,-
-SELtex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-SERASr,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-,-
+SELt,-,-,-,-,only when going backwards,-,-
+SELtex,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
 SERAT,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards
-SERtex,-,only when going backwards,ok,ok,-,-,-
+SERtex,-,only when going backwards,ok,ok,only when going forwards,-,-
 SHK3Dr,ok,ok,only when going backwards,ok,only when going backwards,only when going backwards,ok
 SHSL2,-,-,-,-,ok,-,only when going forwards
-SHSL2r,only when going forwards,only when going forwards,only when going forwards,-,ok,suchms_c,-
+SHSL2r,only when going forwards,only when going forwards,ok,-,ok,suchms_c,-
 SKMtex,-,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 SLNTtex,-,only when going backwards,-,only when going backwards,-,-,-
-SO3tex,only when going backwards,only when going backwards,only when going backwards,only when going forwards,only when going forwards,only when going backwards,ok
+SO3tex,only when going backwards,only when going backwards,only when going backwards,ok,only when going forwards,only when going backwards,ok
 SO4tex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 SORD_D,only when going forwards,-,-,-,-,only when going forwards,-
-SPMDtex,-,only when going backwards,-,ok,-,only when going backwards,-
+SPMDtex,-,only when going backwards,ok,ok,-,only when going backwards,-
 SRB_Lt,only when going backwards,-,-,-,-,only when going backwards,-
-SUCBZT1,ok,only when going backwards,ok,-,only when going backwards,ok,only when going backwards
+SUCBZT1,ok,only when going backwards,-,-,only when going backwards,only when going backwards,only when going backwards
 SUCBZT2,-,-,-,-,only when going forwards,-,-
-SUCCt1pp,-,only when going forwards,-,ok,-,only when going forwards,-
-SUCCtex,-,-,only when going forwards,ok,-,-,-
-SUCFUMtpp,-,only when going forwards,-,ok,-,-,-
-SUCMALtpp,only when going backwards,only when going forwards,-,ok,-,only when going forwards,-
-SUCRtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,-
-SUCTARTtpp,-,-,-,ok,only when going backwards,-,-
+SUCCt1pp,-,-,-,ok,-,-,only when going forwards
+SUCCtex,-,-,-,ok,-,only when going backwards,-
+SUCMALtpp,only when going forwards,-,-,ok,-,only when going forwards,-
+SUCRtex,-,only when going backwards,-,only when going backwards,-,-,-
+SUCTARTtpp,-,only when going backwards,-,ok,only when going backwards,-,-
 SULFACtex,-,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
 SULR_1,ok,-,only when going forwards,-,ok,-,-
 TAGURr,-,only when going forwards,-,only when going forwards,only when going forwards,only when going forwards,-
 TAGtex,-,-,-,only when going backwards,-,-,-
-TARTRDtex,-,-,-,ok,only when going backwards,-,-
-TARTR_D_Et,only when going backwards,only when going backwards,-,-,-,-,-
-TARTRt7,-,only when going backwards,-,-,-,only when going backwards,ok
-TARTRt7pp,-,-,-,tartr__L_p;tartr__L_c,-,-,only when going backwards
-TARTRtex,-,-,-,tartr__L_e;tartr__L_p,-,-,only when going backwards
+TARTRDtex,-,only when going backwards,-,ok,only when going backwards,-,-
+TARTR_L_Et,-,only when going backwards,-,-,-,-,-
+TARTRt7,-,-,-,-,-,only when going backwards,only when going backwards
+TARTRt7pp,-,-,-,tartr__L_p;tartr__L_c,-,-,-
+TARTRtex,-,-,-,tartr__L_e;tartr__L_p,-,-,-
 TAURtex,only when going backwards,only when going backwards,-,only when going backwards,-,only when going backwards,only when going backwards
-TCYNTtex,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
-TCYNTtpp,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards
+TCYNTtex,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards
+TCYNTtpp,-,only when going forwards,only when going forwards,only when going forwards,only when going forwards,-,only when going forwards
 TETtex,-,-,-,only when going backwards,-,-,-
 TGBPA,only when going backwards,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-
 THMDtex,only when going backwards,-,-,ok,only when going backwards,-,-
 THMtex,-,only when going backwards,-,only when going backwards,-,-,-
 THMtrbc,-,-,-,-,only when going backwards,-,ok
 THRPtex,-,-,only when going backwards,only when going backwards,-,-,-
-THRtex,only when going forwards,-,only when going forwards,ok,only when going forwards,-,-
-THYMt,ok,ok,-,ok,only when going forwards,ok,ok
+THRtex,only when going forwards,-,ok,ok,only when going forwards,-,-
+THYMt,only when going forwards,-,-,ok,only when going forwards,ok,ok
 THYMtex,-,-,-,thym_p,-,-,only when going backwards
 TMAOtex,-,-,-,only when going backwards,-,-,-
 TMAtex,-,-,-,only when going forwards,-,-,-
-TMDPP,only when going forwards,only when going backwards,only when going forwards,ok,-,-,-
+TMDPP,-,-,only when going forwards,ok,-,only when going backwards,-
 TOLtex,ok,ok,only when going forwards,ok,ok,ok,ok
-TRE6P_Et,ok,ok,-,-,only when going backwards,ok,-
-TREtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,-
+TRE6P_Et,-,-,ok,-,only when going backwards,-,-
+TREtex,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,-,-
 TRPS2_1,-,-,-,-,only when going backwards,-,-
-TRPTA,indpyr_c,ok,ok,only when going backwards,indpyr_c,indpyr_c,-
+TRPTA,ok,ok,ok,only when going backwards,only when going backwards,indpyr_c,-
 TRPtex,-,-,-,ok,only when going backwards,-,-
-TRSARr,-,only when going forwards,ok,ok,only when going forwards,ok,ok
+TRSARr,-,only when going forwards,-,ok,only when going forwards,ok,ok
 TSULtex,only when going backwards,only when going backwards,only when going backwards,ok,only when going backwards,only when going backwards,only when going backwards
 TYMtex,-,-,-,only when going backwards,-,-,-
 TYRPtex,-,-,-,only when going backwards,-,-,-
@@ -907,41 +893,38 @@ TYRTA,ok,ok,ok,only when going forwards,ok,ok,ok
 TYRtex,-,-,-,ok,only when going backwards,-,ok
 UACGAMtex,-,-,-,only when going backwards,-,-,-
 UAG2E,-,-,only when going backwards,-,-,-,-
-UAG2EMA,only when going backwards,-,only when going forwards,only when going forwards,only when going forwards,only when going backwards,acmana_c
-UAG4Ei,-,ok,-,-,only when going backwards,udpacgal_c,-
+UAG2EMA,only when going backwards,-,only when going forwards,only when going forwards,-,only when going backwards,acmana_c
+UAG4Ei,-,only when going forwards,-,-,udpacgal_c,only when going forwards,-
 UAGAAT,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards,only when going backwards,only when going backwards
 UAGPT2_1,-,-,only when going forwards,-,-,-,-
 UDPACGALtex,-,-,-,only when going backwards,-,-,-
-UDPACGLP,-,ok,-,-,only when going forwards,-,-
-UDPG4E,udpgal_c,udpgal_c,only when going forwards,only when going forwards,ok,udpgal_c,udpgal_c
+UDPG4E,udpgal_c,udpgal_c,only when going forwards,only when going forwards,ok,ok,ok
 UDPGALtex,-,-,-,only when going backwards,-,-,-
 UDPGLCURtex,-,-,-,only when going backwards,-,-,-
 UDPGtex,-,-,-,only when going backwards,-,-,-
-UGLT,-,-,-,only when going backwards,ok,-,-
+UGLT,-,-,-,only when going backwards,ok,ok,-
 UMPtex,-,-,only when going backwards,ok,-,-,-
 URATEtex,-,-,-,-,-,only when going backwards,-
-URAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
+URAtex,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-,only when going backwards
 UREASE,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,only when going backwards
-UREAtex,-,-,only when going backwards,ok,-,-,-
-UREAtpp,-,only when going forwards,-,ok,-,only when going forwards,only when going forwards
-URItex,only when going backwards,-,only when going forwards,ok,only when going backwards,uri_e;uri_p,uri_e;uri_p
-VACOAI,-,only when going backwards,-,-,only when going backwards,only when going backwards,-
-VACOAI_2,-,only when going forwards,-,-,only when going forwards,only when going forwards,-
+UREAtpp,-,only when going forwards,only when going forwards,ok,-,only when going forwards,only when going forwards
+URItex,only when going backwards,-,-,ok,only when going backwards,uri_e;uri_p,uri_e;uri_p
+VACOAI,-,only when going backwards,-,-,only when going backwards,-,-
+VACOAI_2,-,only when going forwards,-,-,only when going forwards,-,-
 VALtex,ok,ok,only when going backwards,ok,val__L_p,ok,only when going backwards
 VANLTtex,only when going backwards,-,-,only when going backwards,-,only when going backwards,only when going backwards
-VCACT,ok,ok,ok,-,only when going forwards,only when going forwards,ok
 VCOAD,ok,ok,ok,-,only when going backwards,only when going backwards,ok
-VECOAH,ok,ok,ok,3hptcoa_c;pt2coa_c,only when going forwards,only when going forwards,ok
-VNDH_2,only when going backwards,only when going backwards,only when going forwards,-,only when going backwards,-,-
-XANtex,-,only when going backwards,-,only when going backwards,-,-,-
-XANtpp,only when going forwards,-,-,-,-,only when going forwards,only when going forwards
+VECOAH,ok,ok,ok,3hptcoa_c;pt2coa_c,ok,ok,ok
+VNDH_2,only when going backwards,only when going backwards,-,-,only when going backwards,-,-
+XANtex,-,-,-,only when going backwards,-,-,-
+XANtpp,only when going forwards,only when going forwards,-,-,-,only when going forwards,only when going forwards
 XMPtex,-,-,-,only when going backwards,-,-,-
 XTSNtex,only when going backwards,-,-,ok,only when going backwards,-,-
-XYLI1,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,-,xyl__D_c;xylu__D_c
+XYLI1,only when going backwards,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,xyl__D_c;xylu__D_c
 XYLOS1,-,-,only when going backwards,only when going backwards,only when going backwards,-,-
 XYLOS2,only when going backwards,-,only when going backwards,-,only when going backwards,-,-
 XYLOS3,only when going backwards,-,only when going backwards,-,only when going backwards,-,-
 XYLUtex,-,only when going backwards,-,-,-,-,-
-XYLt,-,-,-,ok,only when going forwards,only when going forwards,-
-XYLtex,-,only when going backwards,only when going backwards,only when going backwards,-,only when going backwards,-
+XYLt,-,-,-,ok,only when going forwards,-,-
+XYLtex,-,only when going backwards,only when going backwards,only when going backwards,-,-,-
 YUMPS,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards,only when going forwards

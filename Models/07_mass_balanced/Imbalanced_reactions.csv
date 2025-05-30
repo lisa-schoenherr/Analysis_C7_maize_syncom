@@ -1,0 +1,5 @@
+	Reaction	Occurences	Model IDs
+0	CMCBTFL	7	['AA5.xml', 'AA4.xml', 'AA6.xml', 'AA1.xml', 'AA3.xml', 'AA7.xml', 'AA2.xml']
+1	SALCHS4FEabcpp	7	['AA5.xml', 'AA4.xml', 'AA6.xml', 'AA1.xml', 'AA3.xml', 'AA7.xml', 'AA2.xml']
+2	CMCBTFabcpp	2	['AA4.xml', 'AA2.xml']
+3	DHBSZ3FEabcpp	3	['AA4.xml', 'AA3.xml', 'AA2.xml']
