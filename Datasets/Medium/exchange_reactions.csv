@@ -1,0 +1,554 @@
+reaction_id,metabolite_name,model_id
+EX_12dgr160_e,"1,2-Diacyl-sn-glycerol (dihexadecanoyl, n-C16:0)",['AA7']
+EX_12dgr180_e,"1,2-Diacyl-sn-glycerol (dioctadecanoyl, n-C18:0)",['AA7']
+EX_12ppd__R_e,"(R)-Propane-1,2-diol","['AA2', 'AA3', 'AA4', 'AA6']"
+EX_12ppd__S_e,"(S)-Propane-1,2-diol","['AA4', 'AA6']"
+EX_14glucan_e,"1,4-alpha-D-glucan","['AA1', 'AA4', 'AA5']"
+EX_15dap_e,"1,5-Diaminopentane","['AA4', 'AA6']"
+EX_1ag160_e,1 Acyl sn glycerol  hexadecanoate,['AA7']
+EX_1ag180_e,1 Acyl sn glycerol  octadecanoate,['AA7']
+EX_1ag181d9_e,1 Acyl sn glycerol  nC181d9,['AA7']
+EX_1ag182d9d12_e,1 Acyl sn glycerol  nC182d9d12,['AA7']
+EX_23camp_e,"2',3'-Cyclic AMP",['AA4']
+EX_23ccmp_e,"2',3'-Cyclic CMP",['AA4']
+EX_23cgmp_e,"2',3'-Cyclic GMP",['AA4']
+EX_23cump_e,"2',3'-Cyclic UMP",['AA4']
+EX_25dkglcn_e,"2,5-diketo-D-gluconate","['AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_26dap__M_e,"Meso-2,6-Diaminoheptanedioate",['AA4']
+EX_2ameph_e,2-Aminoethylphosphonate,"['AA3', 'AA4', 'AA6', 'AA7']"
+EX_2ddglcn_e,2-Dehydro-3-deoxy-D-gluconate,"['AA1', 'AA4', 'AA7']"
+EX_2dhglcn_e,2-Dehydro-D-gluconate,"['AA1', 'AA4']"
+EX_2hxmp_e,2  Hydroxymethyl phenol C7H8O2,"['AA3', 'AA4']"
+EX_2m35mdntha_e,N  2 methyl 3 5 dinitrophenyl  4 methyl 3 5 dinitroaniline,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_2pg_e,D-Glycerate 2-phosphate,['AA4']
+EX_2pglyc_e,2-Phosphoglycolate,"['AA2', 'AA4', 'AA5']"
+EX_34dhbz_e,"3,4-Dihydroxybenzoate","['AA5', 'AA6', 'AA7']"
+EX_34dhpac_e,"3,4-Dihydroxyphenylacetaldehyde",['AA4']
+EX_35dnta_e,N N bis 3 5 dinitrotolyl  amine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_3amp_e,3  AMP C10H12N5O7P,"['AA3', 'AA4']"
+EX_3cmp_e,3  CMP C9H12N3O8P,"['AA3', 'AA4']"
+EX_3gmp_e,Guanosine 3  phosphate C10H12N5O8P,"['AA3', 'AA4']"
+EX_3h4atb_e,3 Hydroxy 4 acetylthiobutanoic acid,"['AA2', 'AA3', 'AA7']"
+EX_3hcinnm_e,3-hydroxycinnamic acid,['AA4']
+EX_3hoxpac_e,3 Hydroxyphenylacetic acid C8H8O3,"['AA4', 'AA6']"
+EX_3hpppn_e,3-(3-hydroxy-phenyl)propionate,['AA4']
+EX_3mb_e,3-Methylbutanoic acid,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_3oxoadp_e,3-Oxoadipate,"['AA1', 'AA2', 'AA5', 'AA6', 'AA7']"
+EX_3ump_e,3  UMP C9H11N2O9P,"['AA3', 'AA4']"
+EX_4abut_e,4-Aminobutanoate,"['AA1', 'AA2', 'AA4', 'AA7']"
+EX_4abutn_e,4-Aminobutanal,"['AA1', 'AA3', 'AA5']"
+EX_4abz_e,4-Aminobenzoate,"['AA3', 'AA5', 'AA7']"
+EX_4abzglu_e,4-aminobenzoyl-glutamate,['AA4']
+EX_4ahmmp_e,4-Amino-5-hydroxymethyl-2-methylpyrimidine,"['AA2', 'AA3']"
+EX_4hba_e,4-Hydroxy-benzyl alcohol,"['AA3', 'AA4', 'AA6', 'AA7']"
+EX_4hbald_e,4-Hydroxybenzaldehyde,"['AA2', 'AA4', 'AA5', 'AA7']"
+EX_4hbz_e,4-Hydroxybenzoate,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_4hoxpac_e,4 Hydroxyphenylacetic acid C8H8O3,"['AA2', 'AA4']"
+EX_4hoxpacd_e,4-Hydroxyphenylacetaldehyde,['AA4']
+EX_4hphac_e,4-Hydroxyphenylacetate,"['AA4', 'AA6']"
+EX_4hpro_DC_e,Cis 4 Hydroxy D proline,"['AA3', 'AA7']"
+EX_4hpro_LT_e,Trans 4 Hydroxy L proline C5H9NO3,"['AA2', 'AA3', 'AA5', 'AA6', 'AA7']"
+EX_4hthr_e,4-Hydroxy-L-threonine,['AA4']
+EX_4oxptn_e,4 Oxopentanoate,['AA2']
+EX_5aptn_e,5-Aminopentanoate,['AA6']
+EX_5dglcn_e,5-Dehydro-D-gluconate,"['AA4', 'AA5']"
+EX_5drib_e,5'-deoxyribose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_5mcsn_e,5-Methylcytosine,"['AA5', 'AA7']"
+EX_5mdru1p_e,5-Methylthio-5-deoxy-D-ribulose 1-phosphate,"['AA2', 'AA5', 'AA7']"
+EX_6apa_e,6 Aminopenicillanic acid C8H12N2O3S,"['AA1', 'AA4']"
+EX_6atha_e,6 acetylthiohexanoic acid,"['AA1', 'AA6', 'AA7']"
+EX_6pgc_e,6-Phospho-D-gluconate,['AA3']
+EX_abg4_e,4-aminobenzoate-glutamate,['AA5']
+EX_abt__D_e,D-Arabitol,"['AA3', 'AA6']"
+EX_abt_e,L Arabinitol C5H12O5,"['AA2', 'AA3', 'AA5']"
+EX_ac_e,Acetate,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_acac_e,Acetoacetate,"['AA1', 'AA4', 'AA6', 'AA7']"
+EX_acald_e,Acetaldehyde,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_acgal1p_e,N-Acetyl-D-galactosamine 1-phosphate,['AA4']
+EX_acgam_e,N-Acetyl-D-glucosamine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_acgam1p_e,N-Acetyl-D-glucosamine 1-phosphate,"['AA4', 'AA5']"
+EX_acglu_e,N-Acetyl-L-glutamate,"['AA3', 'AA4', 'AA5', 'AA6']"
+EX_acmana_e,N-Acetyl-D-mannosamine,"['AA1', 'AA2', 'AA4', 'AA6']"
+EX_acmum_e,N-Acetylmuramate,"['AA3', 'AA4']"
+EX_acnam_e,N-Acetylneuraminate,"['AA2', 'AA3', 'AA4']"
+EX_acon_C_e,Cis-Aconitate,"['AA2', 'AA4', 'AA6', 'AA7']"
+EX_acser_e,O-Acetyl-L-serine,"['AA3', 'AA4']"
+EX_actn__R_e, R  Acetoin C4H8O2,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_acysbmn_e,Acetyl-cystine-bimane,['AA3']
+EX_ad_e,Acetamide,"['AA2', 'AA4', 'AA5']"
+EX_ade_e,Adenine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_adn_e,Adenosine,"['AA1', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_agm_e,Agmatine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_akg_e,2-Oxoglutarate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ala__D_e,D-Alanine,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_ala__L_e,L-Alanine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ala_B_e,Beta-Alanine,"['AA1', 'AA2', 'AA4', 'AA7']"
+EX_ala_gln_e,Ala-Gln,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_ala_his_e,Ala-His,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_ala_L_asp__L_e,Ala L asp L C7H11N2O5,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ala_L_glu__L_e,Ala L glu L C8H13N2O5,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ala_L_thr__L_e,Ala-L-Thr-L,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_ala_leu_e,Ala-Leu,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_alaala_e,D-Alanyl-D-alanine,"['AA4', 'AA5', 'AA7']"
+EX_alagly_e,L-alanylglycine,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_alahis_e,L alaninylhistidine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_alaleu_e,L alaninylleucine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_alathr_e,L alaninylthreonine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_alatrp_e,L alaninyltryptophan,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_algac__M_e,Alginate  5 units of  D mannuronate completelly acetylated,['AA7']
+EX_algac_MG_14_e,Alginate  1 units of acetylated D mannuronate and 4 units ofL guluronate,['AA7']
+EX_algac_MG_23_e,Alginate  2 units of acetylated D mannuronate and 3 units ofL guluronate,['AA7']
+EX_algac_MG_32_e,Alginate  3 units of acetylated D mannuronate and 2 units ofL guluronate,['AA7']
+EX_algac_MG_41_e,Alginate  4 units of acetylated D mannuronate and one unit ofL guluronate,['AA7']
+EX_all__D_e,D-Allose,['AA4']
+EX_alltn_e,Allantoin,"['AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_amp_e,AMP C10H12N5O7P,"['AA3', 'AA4']"
+EX_anhgm_e,N-Acetyl-D-glucosamine(anhydrous)N-Acetylmuramic acid,"['AA3', 'AA4', 'AA5']"
+EX_apc_e,Ampicillin,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_arab__D_e,D Arabinose C5H10O5,"['AA1', 'AA3', 'AA4', 'AA6']"
+EX_arab__L_e,L-Arabinose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_arbt_e,Arbutin C12H16O7,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_arbt6p_e,Arbutin 6-phosphate,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_arg__L_e,L-Arginine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ascb__L_e,L-Ascorbate,"['AA2', 'AA4', 'AA5']"
+EX_asn__L_e,L-Asparagine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_aso3_e,Arsenite,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_aso4_e,Arsenate,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_asp__D_e,D-Aspartate,['AA1']
+EX_asp__L_e,L-Aspartate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_balaala_e,Beta alanylL alanine,"['AA2', 'AA6', 'AA7']"
+EX_balabala_e,Beta alanyl beta alanine,"['AA2', 'AA6', 'AA7']"
+EX_balagly_e,Beta alanylL glycine,"['AA2', 'AA6', 'AA7']"
+EX_balaleu_e,Beta alanylL leucine,"['AA2', 'AA6', 'AA7']"
+EX_balamd_e,Beta Alaninamide,"['AA2', 'AA6', 'AA7']"
+EX_bhb_e,(R)-3-Hydroxybutanoate,['AA7']
+EX_bmn_e,Bimane,['AA3']
+EX_btd_RR_e, R R  2 3 Butanediol C4H10O2,"['AA1', 'AA4']"
+EX_btn_e,Biotin,"['AA2', 'AA3', 'AA4']"
+EX_btoh_e,Butanol,['AA5']
+EX_but_e,Butyrate (n-C4:0),"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_butso3_e,Butanesulfonate,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_bz_e,Benzoate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_bzal_e,Benzaldehyde,['AA7']
+EX_bzalc_e,Benzyl alcohol,"['AA2', 'AA7']"
+EX_ca2_e,Calcium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_carn_e,L-Carnosine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_catechol_e,Catechol,"['AA5', 'AA6']"
+EX_cd2_e,Cadmium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cellb_e,Cellobiose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5']"
+EX_cgly_e,Cys Gly C5H10N2O3S,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ch4s_e,Methanethiol CH4S,"['AA1', 'AA2', 'AA3', 'AA5']"
+EX_chol_e,Choline C5H14NO,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_chols_e,Choline sulfate,"['AA1', 'AA2', 'AA4', 'AA5', 'AA7']"
+EX_chor_e,Chorismate,['AA7']
+EX_chsterol_e,Chsterol c,"['AA2', 'AA5']"
+EX_chtbs_e,"N,N'-diacetylchitobiose","['AA2', 'AA4']"
+EX_cinnm_e,Trans-Cinnamate,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_cit_e,Citrate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cl_e,Chloride,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cm_e,Chloramphenicol,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cmcbtt_e,"Carboxymycobactin T (R=8 carbon, final carbon is carboxyl group)","['AA2', 'AA4', 'AA5']"
+EX_cmp_e,CMP C9H12N3O8P,"['AA3', 'AA4']"
+EX_co_e,Carbon monoxide,"['AA1', 'AA2', 'AA3', 'AA5', 'AA6']"
+EX_co2_e,CO2 CO2,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cobalt2_e,Co2+,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_confrl_e,Coniferol,"['AA1', 'AA7']"
+EX_creat_e,Creatine cytosol,"['AA3', 'AA6', 'AA7']"
+EX_crn_e,L-Carnitine,"['AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cro4_e,Chromate,"['AA1', 'AA7']"
+EX_crtn_e,Creatinine,['AA2']
+EX_csn_e,Cytosine,"['AA1', 'AA3', 'AA7']"
+EX_cu_e,Cu+,"['AA2', 'AA4', 'AA7']"
+EX_cu2_e,Copper,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cyan_e,Hydrogen cyanide,"['AA2', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_cynt_e,Cyanate,['AA2']
+EX_cys__L_e,L-Cysteine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_cytd_e,Cytidine,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_d23hb_e,"2,3-dihydroxybenzoate",['AA2']
+EX_dad_2_e,Deoxyadenosine,"['AA1', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_dag181d9_e,1 2 Diacyl sn glycerol  nC181d9,['AA7']
+EX_dag182d9d12_e,1 2 Diacyl sn glycerol  nC182d9d12,['AA7']
+EX_damp_e,DAMP C10H12N5O6P,['AA4']
+EX_dca_e,Decanoate (n-C10:0),"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_dcmp_e,DCMP C9H12N3O7P,['AA4']
+EX_dcyt_e,Deoxycytidine,"['AA1', 'AA4', 'AA5']"
+EX_ddca_e,Dodecanoate (n-C12:0),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_dgmp_e,DGMP C10H12N5O7P,['AA4']
+EX_dgsn_e,Deoxyguanosine,"['AA1', 'AA4', 'AA5']"
+EX_dha_e,Dihydroxyacetone,"['AA4', 'AA5', 'AA6']"
+EX_dhptd_e,"4,5-dihydroxy-2,3-pentanedione",['AA3']
+EX_dimp_e,DIMP C10H12N4O7P,['AA4']
+EX_din_e,Deoxyinosine,"['AA1', 'AA4', 'AA5']"
+EX_dmanur_e,Dimmer of D mannuronate,['AA7']
+EX_dmgly_e,"N,N-Dimethylglycine","['AA2', 'AA7']"
+EX_dms_e,Dimethyl sulfide,['AA4']
+EX_dmso_e,Dimethyl sulfoxide,['AA4']
+EX_dmso2_e,Dimethyl sulfone,"['AA2', 'AA3', 'AA7']"
+EX_dopa_e,Dopamine,['AA4']
+EX_doxrbcn_e,Doxorubicin,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6']"
+EX_drib_e,Deoxyribose C5H10O4,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_dtmp_e,DTMP C10H13N2O8P,['AA4']
+EX_dump_e,DUMP C9H11N2O8P,['AA4']
+EX_duri_e,Deoxyuridine,"['AA1', 'AA4', 'AA5']"
+EX_dxyl_e,1-deoxy-D-xylulose,"['AA2', 'AA4']"
+EX_dxylnt_e,D-Xylonate,['AA4']
+EX_ecto__L_e,L Ectoine,"['AA2', 'AA5']"
+EX_enter_e,Enterochelin,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_etha_e,Ethanolamine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_ethso3_e,Ethanesulfonate,"['AA2', 'AA4', 'AA6', 'AA7']"
+EX_etoh_e,Ethanol,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_f6p_e,D-Fructose 6-phosphate,['AA4']
+EX_fad_e,Flavin adenine dinucleotide oxidized,['AA4']
+EX_fald_e,Formaldehyde,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_fcmcbtt_e,"Iron(III) chelated carboxymycobactin T (R=8 carbon, final carbon is carboxyl group)","['AA2', 'AA4']"
+EX_fe2_e,Fe2+ mitochondria,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_fe3_e,Iron (Fe3+),"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_fe3dcit_e,Fe(III)dicitrate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_fe3dhbzs_e,"Ferric 2,3-dihydroxybenzoylserine","['AA2', 'AA4']"
+EX_fe3dhbzs3_e,2-3-dihydroxybenzoylserine trimer-Fe-III,"['AA2', 'AA3', 'AA4']"
+EX_fe3hox_e,Fe(III)hydroxamate,"['AA2', 'AA6']"
+EX_fe3hox_un_e,"Fe(III)hydoxamate, unloaded","['AA2', 'AA6']"
+EX_fe3mcbtt_e,Iron III  chelated mycobactin T,['AA5']
+EX_fe3pyovd_kt_e,Ferrypyoverdine  P putida KT2440 specific,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_feenter_e,Fe-enterobactin,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_feoxam_e,Generic ferrioxamine-Fe-III,"['AA2', 'AA4']"
+EX_feoxam_un_e,Ferroxamine minus Fe(3),"['AA2', 'AA4']"
+EX_fer_e,Ferulate,"['AA1', 'AA7']"
+EX_fmn_e,FMN C17H19N4O9P,['AA4']
+EX_fol_e,Folate,"['AA2', 'AA3', 'AA5', 'AA6']"
+EX_for_e,Formate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_forglu_e,N-Formimidoyl-L-glutamate,"['AA3', 'AA5']"
+EX_frmd_e,Formamide,"['AA3', 'AA4', 'AA6']"
+EX_fru_e,D-Fructose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_fuc__L_e,L-Fucose,['AA4']
+EX_fuc_e,L-fuculose,"['AA2', 'AA6', 'AA7']"
+EX_fum_e,Fumarate,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_fusa_e,Fusidic acid,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6']"
+EX_g1p_e,D-Glucose 1-phosphate,"['AA1', 'AA3', 'AA4']"
+EX_g3pc_e,Sn-Glycero-3-phosphocholine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_g3pe_e,Sn-Glycero-3-phosphoethanolamine,"['AA2', 'AA4', 'AA7']"
+EX_g3pg_e,Glycerophosphoglycerol,"['AA2', 'AA4', 'AA5', 'AA7']"
+EX_g3pi_e,Sn-Glycero-3-phospho-1-inositol,"['AA2', 'AA4', 'AA6']"
+EX_g3ps_e,Glycerophosphoserine,"['AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_g6p_B_e,Beta D glucose 6 phosphate C6H11O9P,['AA5']
+EX_g6p_e,D-Glucose 6-phosphate,['AA4']
+EX_ga_e,Gallic acid,"['AA3', 'AA6']"
+EX_gal_bD_e,Beta D-Galactose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_gal_e,D-Galactose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gal1p_e,Alpha-D-Galactose 1-phosphate,"['AA1', 'AA4']"
+EX_galam_e,D Galactosamine C6H13NO5,['AA4']
+EX_galct__D_e,D-Galactarate,"['AA1', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_galctn__D_e,D-Galactonate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6']"
+EX_galctn__L_e,L-Galactonate,['AA4']
+EX_galman4_e,"Galactomannan(n=4 repeat units mannose, alpha-1,4 man)",['AA3']
+EX_galman6_e,"Galactomannan(n=6 repeat units mannose, alpha-1,4 man)",['AA3']
+EX_galt_e,Galactitol,"['AA1', 'AA2', 'AA3', 'AA4']"
+EX_galur_e,D-Galacturonate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gam_e,D-Glucosamine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_gam6p_e,D-Glucosamine 6-phosphate,"['AA3', 'AA4']"
+EX_gcald_e,Glycolaldehyde,['AA5']
+EX_gdp_e,GDP C10H12N5O11P2,['AA4']
+EX_glc__aD_e,Alpha D-glucose,"['AA2', 'AA3', 'AA4']"
+EX_glc__D_e,D-Glucose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glcman4_e,"Glucomannan (n=4 repeat units, glc beta-1,4 man)",['AA3']
+EX_glcman6_e,"Glucomannan (n=6 repeat units, glc beta-1,4 man)",['AA3']
+EX_glcn__D_e,D Gluconate C6H11O7,['AA6']
+EX_glcn_e,D-Gluconate,"['AA2', 'AA4', 'AA7']"
+EX_glcr_e,D-Glucarate,"['AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_glcur_e,D-Glucuronate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glcur1p_e,D-Glucuronate 1-phosphate,['AA4']
+EX_gln__L_e,L-Glutamine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glu__L_e,L-Glutamate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glucan4_e,"Beta-1,3/1,4-glucan (Barley, n=4, Glc beta1->3,4 Glc)","['AA1', 'AA3', 'AA5']"
+EX_glucan6_e,"Beta-1,3/1,4-glucan (Barley, n=6, Glc beta1->3,4 Glc)","['AA1', 'AA3', 'AA5']"
+EX_glutar_e,Glutarate,"['AA2', 'AA3', 'AA5', 'AA7']"
+EX_gly_asn__L_e,Gly asn L C6H11N3O4,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gly_asp__L_e,Gly asp L C6H9N2O5,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gly_cys_e,Gly-Cys,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_gly_e,Glycine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gly_gln_e,Gly-Gln,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_gly_glu__L_e,Gly glu L C7H11N2O5,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gly_leu_e,Gly-Leu,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_gly_met_e,Gly-Met,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_gly_phe_e,Gly-Phe,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_gly_pro__L_e,Gly pro L C7H12N2O3,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gly_tyr_e,Gly-Tyr,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_glyald_e,D-Glyceraldehyde,['AA4']
+EX_glyb_e,Glycine betaine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glyc__R_e,(R)-Glycerate,"['AA4', 'AA6', 'AA7']"
+EX_glyc_e,Glycerol,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glyc2p_e,Glycerol 2-phosphate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6']"
+EX_glyc3p_e,Glycerol 3-phosphate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_glyclt_e,Glycolate C2H3O3,"['AA1', 'AA4', 'AA6', 'AA7']"
+EX_glygln_e,L glycinylglutamine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_glyglu_e,L glycinylglutamate,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_glygly_e,Glycylglycine C4H8N2O3,"['AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_glyglygln_e,Glycine-glycine-glutamine tripeptide,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_glymet_e,L Glycinylmethionine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_glyphe_e,Glycylphenylalanine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_glyser_e,L glycinylserine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_gmp_e,GMP C10H12N5O8P,"['AA3', 'AA4']"
+EX_gsn_e,Guanosine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gthox_e,Oxidized glutathione,['AA6']
+EX_gthrd_e,Reduced glutathione,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_gtp_e,GTP C10H12N5O14P3,['AA4']
+EX_gua_e,Guanine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_h_e,H+,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_h2_e,Hydrogen,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_h2o_e,H2O H2O,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_h2o2_e,Hydrogen peroxide,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_h2s_e,Hydrogen sulfide,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_hco3_e,Bicarbonate,"['AA2', 'AA4', 'AA5']"
+EX_hdca_e,Hexadecanoate (n-C16:0),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_hdcea_e,Hexadecenoate (n-C16:1),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_hg2_e,Mercury  charged 2  Hg,['AA4']
+EX_hia_e,"3-[(3aS,4S,5R,7aS)-5-hydroxy-7a-methyl-1-oxo-octahydro-1H-indene-4-carboxylate","['AA2', 'AA5']"
+EX_his__L_e,L-Histidine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_hisgly_e,L histidinylglycine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_hishis_e,L histidinylhistidine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_hom__L_e,L-Homoserine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_hpta_e,Heptanoate,"['AA1', 'AA6', 'AA7']"
+EX_hqn_e,Hydroquinone,"['AA3', 'AA4']"
+EX_hxa_e,Hexanoate (n-C6:0),"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_hxan_e,Hypoxanthine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ibt_e,Isobutyrate,"['AA1', 'AA5', 'AA6']"
+EX_icit_e,Isocitrate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_id3acald_e,Indole 3 acetaldehyde C10H9NO,"['AA1', 'AA2']"
+EX_idon__L_e,L-Idonate,['AA4']
+EX_ile__L_e,L-Isoleucine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_imp_e,IMP C10H11N4O8P,['AA4']
+EX_ind3ac_e,Indole 3 acetate C10H8NO2,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_indole_e,Indole,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_inost_e,Myo-Inositol,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ins_e,Inosine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_isetac_e,Isethionic acid,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_istfrnA_e,Iron bound extracellular staphyloferrin A,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_istfrnB_e,Iron bound extracellular staphyloferrin B,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_k_e,Potassium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_lac__D_e,D-Lactate,"['AA1', 'AA4', 'AA6', 'AA7']"
+EX_lac__L_e,L-Lactate,"['AA1', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_LalaDglu_e,L-alanine-D-glutamate,"['AA4', 'AA5']"
+EX_LalaDgluMdap_e,"L-alanine-D-glutamate-meso-2,6-diaminoheptanedioate","['AA2', 'AA4', 'AA5']"
+EX_LalaDgluMdapDala_e,"L-alanine-D-glutamate-meso-2,6-diaminoheptanedioate-D-alanine","['AA1', 'AA2', 'AA3', 'AA4', 'AA5']"
+EX_LalaLglu_e,L-alanine-L-glutamate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_lcts_e,Lactose C12H22O11,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_Lcyst_e,L-Cysteate,"['AA2', 'AA4']"
+EX_leu__D_e,D Leucine,"['AA1', 'AA2', 'AA6']"
+EX_leu__L_e,L-Leucine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_leuleu_e,Leucylleucine,"['AA2', 'AA3', 'AA6', 'AA7']"
+EX_lipoate_e,Lipoate,"['AA2', 'AA3', 'AA4']"
+EX_lmn2_e,Laminaribiose,"['AA1', 'AA3', 'AA5']"
+EX_lnlc_e,Linoleic acid (all cis C18:2) n-6,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_lys__D_e,D-Lysine,"['AA2', 'AA4', 'AA6', 'AA7']"
+EX_lys__L_e,L-Lysine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_lysglugly_e,Lysine-glutamine-glycine tripeptide,"['AA1', 'AA3', 'AA4', 'AA5']"
+EX_lyx__L_e,L-Lyxose,['AA4']
+EX_m_xyl_e,M-Xylene,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_mal__D_e,D-Malate,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_mal__L_e,L-Malate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_malt_e,Maltose C12H22O11,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6']"
+EX_malthp_e,Maltoheptaose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_malthx_e,Maltohexaose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6']"
+EX_maltpt_e,Maltopentaose,['AA4']
+EX_malttr_e,Maltotriose C18H32O16,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_maltttr_e,Maltotetraose,"['AA2', 'AA3', 'AA4']"
+EX_man_e,D-Mannose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_man6p_e,D-Mannose 6-phosphate,['AA4']
+EX_manb_e,"Mannobiose (beta-1,4)",['AA3']
+EX_manglyc_e,2(alpha-D-Mannosyl)-D-glycerate,['AA4']
+EX_mantr_e,"Mannotriose (beta-1,4)",['AA3']
+EX_manttr_e,Mannotetraose,"['AA1', 'AA3', 'AA5']"
+EX_manur_e,D Mannuronate,['AA7']
+EX_mcbtt_e,Mycobactin T,['AA5']
+EX_melib_e,Melibiose C12H22O11,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_meoh_e,Methanol,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_met__D_e,D-Methionine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_met__L_e,L-Methionine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_met_L_ala__L_e,Met L ala L C8H16N2O3S,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_metglcur_e,1-O-methyl-Beta-D-glucuronate,['AA4']
+EX_metsox_R__L_e,L-methionine-R-sulfoxide,['AA4']
+EX_metsox_S__L_e,L-Methionine Sulfoxide,['AA4']
+EX_mg2_e,Magnesium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_mmet_e,S-Methyl-L-methionine,['AA4']
+EX_mn2_e,Manganese,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_mnl_e,D-Mannitol,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6']"
+EX_mobd_e,Molybdate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_mso3_e,Methanesulfonate,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_mththf_e,"(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran","['AA4', 'AA5', 'AA7']"
+EX_n2o_e,Nitrous oxide,"['AA2', 'AA3', 'AA4']"
+EX_na1_e,Sodium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_nac_e,Nicotinate,"['AA4', 'AA6']"
+EX_nh4_e,Ammonium,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ni2_e,Nickel,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_nmn_e,NMN C11H14N2O8P,"['AA1', 'AA2', 'AA4', 'AA5']"
+EX_no_e,Nitric oxide,"['AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_no2_e,Nitrite,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_no3_e,Nitrate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_nona_e,Nonanoate C9H17O2,"['AA1', 'AA6', 'AA7']"
+EX_novbcn_e,Novobiocin,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_o2_e,O2 O2,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_o2s_e,Superoxide anion,['AA4']
+EX_oaa_e,Oxaloacetate,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_ocdca_e,Octadecanoate (n-C18:0),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_ocdcea_e,Octadecenoate (n-C18:1),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_octa_e,Octanoate (n-C8:0),"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_orn__D_e,D-Ornithine,"['AA1', 'AA7']"
+EX_orn_e,Ornithine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_orot_e,Orotate C5H3N2O4,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_oxa_e,Oxalate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_p_xyl_e,P-methyltoluene,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_pac_e,Phenylacetic acid,"['AA4', 'AA7']"
+EX_pacald_e,Phenylacetaldehyde,"['AA1', 'AA2', 'AA4', 'AA5']"
+EX_pea_e,Phenylethyl alcohol,"['AA3', 'AA6']"
+EX_peamn_e,Phenethylamine,"['AA2', 'AA4', 'AA7']"
+EX_peng_e,Penicillin G C16H18N2O4S,"['AA1', 'AA4']"
+EX_pentso3_e,Pentanesulfonate,"['AA6', 'AA7']"
+EX_phdca_e,Phenol palmitic acid,['AA5']
+EX_phe__L_e,L-Phenylalanine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_phedca_e,10 Phenyldecanoic acid,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_phehpa_e,7 Phenylheptanoic acid,"['AA1', 'AA6', 'AA7']"
+EX_phehxa_e,6 Phenylhexanoic acid,"['AA1', 'AA6', 'AA7']"
+EX_pheme_e,Protoheme C34H30FeN4O4,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_phenona_e,9 Phenylnonanoic acid,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_pheocta_e,8 Phenyloctanoic acid,"['AA1', 'AA6', 'AA7']"
+EX_phept_e,5 phenylvaleric acid,"['AA1', 'AA6', 'AA7']"
+EX_pi_e,Phosphate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_pime_e,Pimelate,"['AA2', 'AA4']"
+EX_pnto__R_e,(R)-Pantothenate,"['AA4', 'AA7']"
+EX_ppa_e,Propionate (n-C3:0),"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ppal_e,Propanal,"['AA3', 'AA4', 'AA6']"
+EX_ppap_e,Propanoyl phosphate,"['AA3', 'AA4', 'AA7']"
+EX_ppdima_e,Phenol phthiocerol dimycocerosate (Mtb),['AA5']
+EX_ppi_e,Diphosphate,['AA7']
+EX_ppoh_e,1-Propanol,['AA2']
+EX_pppn_e,Phenylpropanoate,['AA4']
+EX_ppt_e,Phosphonate,"['AA3', 'AA4']"
+EX_prealg_MG_14_e,Beta 1 4 glycosidic  1  beta D mannuronic  4L guluronic acid,['AA7']
+EX_prealg_MG_23_e,Beta 1 4 glycosidic  2  beta D mannuronic  3L guluronic acid,['AA7']
+EX_prealg_MG_32_e,Beta 1 4 glycosidic  3  beta D mannuronic  2L guluronic acid,['AA7']
+EX_prealg_MG_41_e,Beta 1 4 glycosidic  4  beta D mannuronic  1L guluronic acid,['AA7']
+EX_prealginate_G_e,Prealginate KT2440   beta 1 4  linked copolymers of  bL guluronic acid 5 units,['AA7']
+EX_pro__L_e,L-Proline,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_progly_e,L-Prolinylglycine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_prohisglu_e,Proline-histidine-glutamine tripeptide,"['AA2', 'AA3', 'AA6']"
+EX_psclys_e,Psicoselysine,['AA2']
+EX_pser__L_e,O-Phospho-L-serine,"['AA3', 'AA4']"
+EX_pta_e,Pentanoate,"['AA1', 'AA5', 'AA6', 'AA7']"
+EX_ptrc_e,Putrescine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ptsla_e,Petroselaidic acid,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_pydam_e,Pyridoxamine,['AA4']
+EX_pydxn_e,Pyridoxine,"['AA3', 'AA5', 'AA7']"
+EX_pyovd_kt_e,Pyoverdine  P putida specific,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_pyr_e,Pyruvate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_quin_e,Quinate,"['AA1', 'AA3', 'AA4', 'AA7']"
+EX_R_3h4atba_e, 3 Hydroxy 4 acetylthiobutanoic acid,"['AA1', 'AA3', 'AA6']"
+EX_R_3h6atha_e, 3 Hydroxy 6acetylthiohexanoic acid,['AA2']
+EX_R_3hcmrs7e_e, 3 hydroxy cis myristol 7 en,"['AA3', 'AA6']"
+EX_R_3hdcaa_e, 3 hydroxydecanoic acid,"['AA3', 'AA6']"
+EX_R_3hdd5ea_e, 3 Hydroxydodecanoic 5 en acid,"['AA3', 'AA6']"
+EX_R_3hdd6e_e, 3 Hydroxydodecanoic 6 en acid,"['AA4', 'AA6']"
+EX_R_3hdda_e, 3 Hydroxydodecanoic acid,"['AA3', 'AA6']"
+EX_R_3hhdca_e, 3 Hydroxyhexadecanoic acid,"['AA3', 'AA6']"
+EX_R_3hhpa_e, 3 hydroxyheptanoic acid,"['AA1', 'AA3', 'AA6']"
+EX_R_3hhxa_e, 3 hydroxyhexanoic acid,"['AA3', 'AA6']"
+EX_R_3hnonaa_e, 3 hydroxynonanoic acid,"['AA2', 'AA6']"
+EX_R_3hocta_e, 3 hydroxyoctanoic acid,"['AA3', 'AA6']"
+EX_R_3hpba_e, 3 Hydroxyphenylbutanoic acid,"['AA1', 'AA3']"
+EX_R_3hpdeca_e, 3 Hydroxy 10 phenyldecanoic acid,"['AA1', 'AA6']"
+EX_R_3hphpa_e, 3 Hydroxy 7 phenylheptanoic acid,['AA1']
+EX_R_3hphxa_e, 3 Hydroxy 6 phenylhexanoic acid,['AA6']
+EX_R_3hpnona_e, 3 Hydroxy 9 phenylnonanoic acid,"['AA1', 'AA6']"
+EX_R_3hpocta_e, 3 Hydroxy 8 phenyloctanoic acid,['AA1']
+EX_R_3hppta_e, 3 Hydroxy 5 phenylpentanoic acic,"['AA6', 'AA7']"
+EX_R_3hpt_e, 3 Hydroxypentanoic acid,"['AA3', 'AA5', 'AA6']"
+EX_R_3htd58e_e, 3 hydroxy  5Z 8Z  tetradecedienic acid,"['AA3', 'AA6']"
+EX_R_3htd5e_e, 3 hydroxy  5Z  tetradecenic acid,"['AA3', 'AA6']"
+EX_R_3httdca_e, 3 Hydroxytetradecanoic acid,"['AA3', 'AA6']"
+EX_R3hdec4e_e, 3 Hydroxy 4Z decenic acid,['AA2']
+EX_r5p_e,Alpha-D-Ribose 5-phosphate,"['AA3', 'AA4']"
+EX_raffin_e,Raffinose C18H32O16,"['AA2', 'AA3', 'AA4']"
+EX_rib__D_e,D-Ribose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ribflv_e,Riboflavin C17H20N4O6,['AA2']
+EX_rmn_e,L-Rhamnose,"['AA2', 'AA3', 'AA4', 'AA6']"
+EX_rnam_e,N Ribosylnicotinamide C11H15N2O5,"['AA1', 'AA2', 'AA4']"
+EX_s_e,Sulfur,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6']"
+EX_salc_e,Salicylate,"['AA2', 'AA5']"
+EX_salchs2_e,Salmochelin-S2,"['AA1', 'AA2', 'AA4', 'AA6', 'AA7']"
+EX_salchs2fe_e,Salmochelin-S2-Fe-III,"['AA3', 'AA4']"
+EX_salchs4_e,Salmochelin-S4,"['AA3', 'AA4', 'AA5']"
+EX_salchs4fe_e,Salmochelin-S4-Fe-III,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_salchsx_e,Salmochelin-SX,"['AA2', 'AA3']"
+EX_salcn_e,Salicin C13H18O7,"['AA3', 'AA4']"
+EX_sbt__D_e,D-Sorbitol,"['AA2', 'AA3', 'AA4', 'AA6']"
+EX_sel_e,Selenate,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ser__D_e,D-Serine,"['AA1', 'AA2', 'AA4', 'AA7']"
+EX_ser__L_e,L-Serine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_serglugly_e,Serine-glutamine-glycine tripeptide,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_sheme_e,Siroheme C42H36FeN4O16,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_skm_e,Shikimate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_slnt_e,Selenite,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_so3_e,Sulfite,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_so4_e,Sulfate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_spmd_e,Spermidine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_srb__L_e,L Sorbose C6H12O6,"['AA1', 'AA6']"
+EX_stfrnA_e,Staphyloferrin A,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_stfrnB_e,Staphyloferrin B,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_succ_e,Succinate,"['AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_sucr_e,Sucrose C12H22O11,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_sulfac_e,Sulfoacetate,"['AA2', 'AA4', 'AA6', 'AA7']"
+EX_tag__D_e,D-Tagatose,['AA4']
+EX_tag160_e,Triacylglycerol  hexadecanoate,['AA7']
+EX_tag180_e,Triacylglycerol  octadecanoate,['AA7']
+EX_tag181d9_e,Triacylglycerol  nC181d9,['AA7']
+EX_tag182d9d12_e,Triacylglycerol  nC182d9d12,['AA7']
+EX_tartr__D_e,D-tartrate,"['AA1', 'AA2', 'AA4', 'AA5']"
+EX_tartr__L_e,L-tartrate,"['AA2', 'AA4', 'AA6', 'AA7']"
+EX_taur_e,Taurine C2H7NO3S,"['AA1', 'AA2', 'AA3', 'AA4', 'AA6', 'AA7']"
+EX_tcb_e,Tricarballylate,['AA6']
+EX_tcynt_e,Thiocyanate,"['AA2', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_tet_e,Tetrathionate,['AA4']
+EX_tgt_e,Tagatose,['AA5']
+EX_thm_e,Thiamin,"['AA2', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_thr__L_e,L-Threonine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_thrp_e,L-Threonine O-3-phosphate,"['AA3', 'AA4']"
+EX_thym_e,Thymine C5H6N2O2,"['AA1', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_thymd_e,Thymidine C10H14N2O5,"['AA1', 'AA4', 'AA5']"
+EX_tma_e,Trimethylamine,['AA4']
+EX_tmanur_e,Trimmer of D mannuronate,['AA7']
+EX_tmao_e,Trimethylamine N-oxide,['AA4']
+EX_tnt_e,2 4 6 Trinitrotoluene,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_tol_e,Toluene,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_tre_e,Trehalose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_tre6p_e,"Alpha,alpha'-Trehalose 6-phosphate","['AA3', 'AA5']"
+EX_trp__L_e,L-Tryptophan,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_tsul_e,Thiosulfate,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_ttdca_e,Tetradecanoate (n-C14:0),"['AA1', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_ttdcea_e,Tetradecenoate (n-C14:1),"['AA1', 'AA4', 'AA5', 'AA7']"
+EX_ttrcyc_e,Tetracycline,"['AA1', 'AA2', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_tym_e,Tyramine,['AA4']
+EX_tyr__D_e,D Tyrosine,"['AA1', 'AA2', 'AA6']"
+EX_tyr__L_e,L-Tyrosine,"['AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_tyrp_e,Phosphotyrosine,['AA4']
+EX_uacgam_e,UDP-N-acetyl-D-glucosamine,['AA4']
+EX_udpacgal_e,UDP-N-acetyl-D-galactosamine,['AA4']
+EX_udpg_e,UDPglucose,['AA4']
+EX_udpgal_e,UDPgalactose,['AA4']
+EX_udpglcur_e,UDP-D-glucuronate,['AA4']
+EX_ump_e,UMP C9H11N2O9P,"['AA3', 'AA4']"
+EX_ura_e,Uracil,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_urate_e,Urate C5H4N4O3,['AA6']
+EX_urea_e,Urea CH4N2O,"['AA1', 'AA4', 'AA5']"
+EX_uri_e,Uridine,"['AA1', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_vacc_e,Vaccenic acid,"['AA5', 'AA7']"
+EX_val__D_e,D Valine,"['AA1', 'AA2', 'AA6', 'AA7']"
+EX_val__L_e,L-Valine,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"
+EX_vanlt_e,Vanillate,"['AA1', 'AA4', 'AA6', 'AA7']"
+EX_xan_e,Xanthine,"['AA3', 'AA4', 'AA6']"
+EX_xmp_e,Xanthosine 5'-phosphate,['AA4']
+EX_xtsn_e,Xanthosine,"['AA1', 'AA3', 'AA4', 'AA5', 'AA7']"
+EX_xyl__D_e,D-Xylose,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6']"
+EX_xyl3_e,Xylotriose,"['AA1', 'AA3', 'AA5']"
+EX_xylan4_e,"Xylan (4 backbone units, 1 glcur side chain)","['AA3', 'AA4', 'AA5']"
+EX_xylb_e,Xylobiose,"['AA1', 'AA3', 'AA5']"
+EX_xylu__L_e,L-Xylulose,['AA2']
+EX_zn2_e,Zinc,"['AA1', 'AA2', 'AA3', 'AA4', 'AA5', 'AA6', 'AA7']"

@@ -13,6 +13,9 @@ More explaination about my scripts: \
 (01) create_metabolic_models.ipynb \
 (02) balance_metabolic_models.ipynb (mass and charge balancing) \
 (03) check_duplicates.ipynb (more in-depth analysis about models and their structure with the goal to clean up topology) \
+(04) simulations.ipynb \
+(05) community.ipynb 
+
 
 I used Scripts from Frowin (that can also be found in his Github repo) to mass balance my models and later on for fixes based on macaw testing. I fully integrated parts that I took from his scripts and integrated them into mine for an easier workflow on my end and credited the parts accordingly.
  

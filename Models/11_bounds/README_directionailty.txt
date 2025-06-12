@@ -1,0 +1,1 @@
+These models are currently not used and are not a progress from the 10_ models. For these models the bounds of reactions were changed according to reference models to deal with unbounded flux reactions (maybe also blocked reactions). But the results were very mixed, so it is not an official step of the pipeline.
