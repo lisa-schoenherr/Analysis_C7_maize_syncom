@@ -1,0 +1,8 @@
+id;genus;species;reactions;metabolites;file;sample_id;abundance
+AA1;Stenotrophomonas;Stenotrophomonas maltophilia;2261;1513;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA1_deleted_duplicates.xml;Sample_1;16
+AA2;Brucella;Brucella pituitosa;2669;1789;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA2_deleted_duplicates.xml;Sample_1;5
+AA3;Curtobacterium;Curtobacterium pusillum;2223;1501;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA3_deleted_duplicates.xml;Sample_1;8
+AA4;Enterobacter;Enterobacter ludwigii;2795;1758;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA4_deleted_duplicates.xml;Sample_1;65
+AA5;Chryseobacterium;Chryseobacterium indologenes;2107;1446;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA5_deleted_duplicates.xml;Sample_1;1
+AA6;Herbaspirillum;Herbaspirillum robiniae;2578;1685;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA6_deleted_duplicates.xml;Sample_1;2
+AA7;Pseudomonas;Pseudomonas putida;2522;1655;/home/lisa/Dokumente/Programmierung/Models/10_duplicate_removal/AA7_deleted_duplicates.xml;Sample_1;3
