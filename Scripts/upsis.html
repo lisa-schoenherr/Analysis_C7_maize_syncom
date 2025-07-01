@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 700px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "red", "id": "EX_acald_e__AA1", "label": "EX_acald_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "acald_m", "label": "acald_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ala__L_e__AA1", "label": "EX_ala__L_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "ala__L_m", "label": "ala__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fe2_e__AA1", "label": "EX_fe2_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "fe2_m", "label": "fe2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fru_e__AA1", "label": "EX_fru_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "fru_m", "label": "fru_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fum_e__AA1", "label": "EX_fum_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "fum_m", "label": "fum_m", "shape": "ellipse"}, {"color": "red", "id": "EX_galur_e__AA1", "label": "EX_galur_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "galur_m", "label": "galur_m", "shape": "ellipse"}, {"color": "red", "id": "EX_mal__L_e__AA1", "label": "EX_mal__L_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "mal__L_m", "label": "mal__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_nh4_e__AA1", "label": "EX_nh4_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "nh4_m", "label": "nh4_m", "shape": "ellipse"}, {"color": "red", "id": "EX_o2_e__AA1", "label": "EX_o2_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "o2_m", "label": "o2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_s_e__AA1", "label": "EX_s_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "s_m", "label": "s_m", "shape": "ellipse"}, {"color": "red", "id": "EX_srb__L_e__AA1", "label": "EX_srb__L_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "srb__L_m", "label": "srb__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_tol_e__AA1", "label": "EX_tol_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "tol_m", "label": "tol_m", "shape": "ellipse"}, {"color": "red", "id": "EX_val__L_e__AA1", "label": "EX_val__L_e__AA1", "shape": "box"}, {"color": "lightblue", "id": "val__L_m", "label": "val__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_LalaDgluMdapDala_e__AA2", "label": "EX_LalaDgluMdapDala_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "LalaDgluMdapDala_m", "label": "LalaDgluMdapDala_m", "shape": "ellipse"}, {"color": "red", "id": "EX_acald_e__AA2", "label": "EX_acald_e__AA2", "shape": "box"}, {"color": "red", "id": "EX_arg__L_e__AA2", "label": "EX_arg__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "arg__L_m", "label": "arg__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_bz_e__AA2", "label": "EX_bz_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "bz_m", "label": "bz_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ca2_e__AA2", "label": "EX_ca2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "ca2_m", "label": "ca2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_cl_e__AA2", "label": "EX_cl_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "cl_m", "label": "cl_m", "shape": "ellipse"}, {"color": "red", "id": "EX_cobalt2_e__AA2", "label": "EX_cobalt2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "cobalt2_m", "label": "cobalt2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_cu2_e__AA2", "label": "EX_cu2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "cu2_m", "label": "cu2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_cys__L_e__AA2", "label": "EX_cys__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "cys__L_m", "label": "cys__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fe2_e__AA2", "label": "EX_fe2_e__AA2", "shape": "box"}, {"color": "red", "id": "EX_fe3_e__AA2", "label": "EX_fe3_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "fe3_m", "label": "fe3_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fru_e__AA2", "label": "EX_fru_e__AA2", "shape": "box"}, {"color": "red", "id": "EX_gthrd_e__AA2", "label": "EX_gthrd_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "gthrd_m", "label": "gthrd_m", "shape": "ellipse"}, {"color": "red", "id": "EX_gua_e__AA2", "label": "EX_gua_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "gua_m", "label": "gua_m", "shape": "ellipse"}, {"color": "red", "id": "EX_h_e__AA2", "label": "EX_h_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "h_m", "label": "h_m", "shape": "ellipse"}, {"color": "red", "id": "EX_hxan_e__AA2", "label": "EX_hxan_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "hxan_m", "label": "hxan_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ile__L_e__AA2", "label": "EX_ile__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "ile__L_m", "label": "ile__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_indole_e__AA2", "label": "EX_indole_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "indole_m", "label": "indole_m", "shape": "ellipse"}, {"color": "red", "id": "EX_k_e__AA2", "label": "EX_k_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "k_m", "label": "k_m", "shape": "ellipse"}, {"color": "red", "id": "EX_leu__L_e__AA2", "label": "EX_leu__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "leu__L_m", "label": "leu__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_lys__L_e__AA2", "label": "EX_lys__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "lys__L_m", "label": "lys__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_malt_e__AA2", "label": "EX_malt_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "malt_m", "label": "malt_m", "shape": "ellipse"}, {"color": "red", "id": "EX_met__L_e__AA2", "label": "EX_met__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "met__L_m", "label": "met__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_mg2_e__AA2", "label": "EX_mg2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "mg2_m", "label": "mg2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_mn2_e__AA2", "label": "EX_mn2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "mn2_m", "label": "mn2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_nh4_e__AA2", "label": "EX_nh4_e__AA2", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA2", "label": "EX_o2_e__AA2", "shape": "box"}, {"color": "red", "id": "EX_orn_e__AA2", "label": "EX_orn_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "orn_m", "label": "orn_m", "shape": "ellipse"}, {"color": "red", "id": "EX_pheme_e__AA2", "label": "EX_pheme_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "pheme_m", "label": "pheme_m", "shape": "ellipse"}, {"color": "red", "id": "EX_pi_e__AA2", "label": "EX_pi_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "pi_m", "label": "pi_m", "shape": "ellipse"}, {"color": "red", "id": "EX_so4_e__AA2", "label": "EX_so4_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "so4_m", "label": "so4_m", "shape": "ellipse"}, {"color": "red", "id": "EX_thm_e__AA2", "label": "EX_thm_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "thm_m", "label": "thm_m", "shape": "ellipse"}, {"color": "red", "id": "EX_thr__L_e__AA2", "label": "EX_thr__L_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "thr__L_m", "label": "thr__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ura_e__AA2", "label": "EX_ura_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "ura_m", "label": "ura_m", "shape": "ellipse"}, {"color": "red", "id": "EX_zn2_e__AA2", "label": "EX_zn2_e__AA2", "shape": "box"}, {"color": "lightblue", "id": "zn2_m", "label": "zn2_m", "shape": "ellipse"}, {"color": "red", "id": "EX_4abz_e__AA3", "label": "EX_4abz_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "4abz_m", "label": "4abz_m", "shape": "ellipse"}, {"color": "red", "id": "EX_LalaDgluMdapDala_e__AA3", "label": "EX_LalaDgluMdapDala_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_arg__L_e__AA3", "label": "EX_arg__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_asp__L_e__AA3", "label": "EX_asp__L_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "asp__L_m", "label": "asp__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ca2_e__AA3", "label": "EX_ca2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_cgly_e__AA3", "label": "EX_cgly_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "cgly_m", "label": "cgly_m", "shape": "ellipse"}, {"color": "red", "id": "EX_cl_e__AA3", "label": "EX_cl_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_cobalt2_e__AA3", "label": "EX_cobalt2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_cu2_e__AA3", "label": "EX_cu2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_fe2_e__AA3", "label": "EX_fe2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_fe3_e__AA3", "label": "EX_fe3_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_galur_e__AA3", "label": "EX_galur_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_glu__L_e__AA3", "label": "EX_glu__L_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "glu__L_m", "label": "glu__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_gsn_e__AA3", "label": "EX_gsn_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "gsn_m", "label": "gsn_m", "shape": "ellipse"}, {"color": "red", "id": "EX_h2s_e__AA3", "label": "EX_h2s_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "h2s_m", "label": "h2s_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ins_e__AA3", "label": "EX_ins_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "ins_m", "label": "ins_m", "shape": "ellipse"}, {"color": "red", "id": "EX_k_e__AA3", "label": "EX_k_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_leu__L_e__AA3", "label": "EX_leu__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_lys__L_e__AA3", "label": "EX_lys__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_mal__L_e__AA3", "label": "EX_mal__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_malt_e__AA3", "label": "EX_malt_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_mg2_e__AA3", "label": "EX_mg2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_mn2_e__AA3", "label": "EX_mn2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA3", "label": "EX_o2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_orn_e__AA3", "label": "EX_orn_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_ppap_e__AA3", "label": "EX_ppap_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "ppap_m", "label": "ppap_m", "shape": "ellipse"}, {"color": "red", "id": "EX_so4_e__AA3", "label": "EX_so4_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_thr__L_e__AA3", "label": "EX_thr__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_trp__L_e__AA3", "label": "EX_trp__L_e__AA3", "shape": "box"}, {"color": "lightblue", "id": "trp__L_m", "label": "trp__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ura_e__AA3", "label": "EX_ura_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_val__L_e__AA3", "label": "EX_val__L_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_zn2_e__AA3", "label": "EX_zn2_e__AA3", "shape": "box"}, {"color": "red", "id": "EX_LalaDgluMdapDala_e__AA4", "label": "EX_LalaDgluMdapDala_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_acglu_e__AA4", "label": "EX_acglu_e__AA4", "shape": "box"}, {"color": "lightblue", "id": "acglu_m", "label": "acglu_m", "shape": "ellipse"}, {"color": "red", "id": "EX_arg__L_e__AA4", "label": "EX_arg__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_ca2_e__AA4", "label": "EX_ca2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_cl_e__AA4", "label": "EX_cl_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_cobalt2_e__AA4", "label": "EX_cobalt2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_cu2_e__AA4", "label": "EX_cu2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_fe2_e__AA4", "label": "EX_fe2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_gly_e__AA4", "label": "EX_gly_e__AA4", "shape": "box"}, {"color": "lightblue", "id": "gly_m", "label": "gly_m", "shape": "ellipse"}, {"color": "red", "id": "EX_gua_e__AA4", "label": "EX_gua_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_ile__L_e__AA4", "label": "EX_ile__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_indole_e__AA4", "label": "EX_indole_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_k_e__AA4", "label": "EX_k_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_leu__L_e__AA4", "label": "EX_leu__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_lys__L_e__AA4", "label": "EX_lys__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_malt_e__AA4", "label": "EX_malt_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_mg2_e__AA4", "label": "EX_mg2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_mn2_e__AA4", "label": "EX_mn2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA4", "label": "EX_o2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_ocdcea_e__AA4", "label": "EX_ocdcea_e__AA4", "shape": "box"}, {"color": "lightblue", "id": "ocdcea_m", "label": "ocdcea_m", "shape": "ellipse"}, {"color": "red", "id": "EX_orn_e__AA4", "label": "EX_orn_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_pi_e__AA4", "label": "EX_pi_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_s_e__AA4", "label": "EX_s_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_so4_e__AA4", "label": "EX_so4_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_succ_e__AA4", "label": "EX_succ_e__AA4", "shape": "box"}, {"color": "lightblue", "id": "succ_m", "label": "succ_m", "shape": "ellipse"}, {"color": "red", "id": "EX_thr__L_e__AA4", "label": "EX_thr__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_tol_e__AA4", "label": "EX_tol_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_ura_e__AA4", "label": "EX_ura_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_val__L_e__AA4", "label": "EX_val__L_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_zn2_e__AA4", "label": "EX_zn2_e__AA4", "shape": "box"}, {"color": "red", "id": "EX_4hbz_e__AA5", "label": "EX_4hbz_e__AA5", "shape": "box"}, {"color": "lightblue", "id": "4hbz_m", "label": "4hbz_m", "shape": "ellipse"}, {"color": "red", "id": "EX_acald_e__AA5", "label": "EX_acald_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_gal_e__AA5", "label": "EX_gal_e__AA5", "shape": "box"}, {"color": "lightblue", "id": "gal_m", "label": "gal_m", "shape": "ellipse"}, {"color": "red", "id": "EX_glyc_e__AA5", "label": "EX_glyc_e__AA5", "shape": "box"}, {"color": "lightblue", "id": "glyc_m", "label": "glyc_m", "shape": "ellipse"}, {"color": "red", "id": "EX_h2s_e__AA5", "label": "EX_h2s_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_nh4_e__AA5", "label": "EX_nh4_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA5", "label": "EX_o2_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_orn_e__AA5", "label": "EX_orn_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_succ_e__AA5", "label": "EX_succ_e__AA5", "shape": "box"}, {"color": "red", "id": "EX_urea_e__AA5", "label": "EX_urea_e__AA5", "shape": "box"}, {"color": "lightblue", "id": "urea_m", "label": "urea_m", "shape": "ellipse"}, {"color": "red", "id": "EX_R_3hhdca_e__AA6", "label": "EX_R_3hhdca_e__AA6", "shape": "box"}, {"color": "lightblue", "id": "R_3hhdca_m", "label": "R_3hhdca_m", "shape": "ellipse"}, {"color": "red", "id": "EX_R_3httdca_e__AA6", "label": "EX_R_3httdca_e__AA6", "shape": "box"}, {"color": "lightblue", "id": "R_3httdca_m", "label": "R_3httdca_m", "shape": "ellipse"}, {"color": "red", "id": "EX_acald_e__AA6", "label": "EX_acald_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_arg__L_e__AA6", "label": "EX_arg__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_bz_e__AA6", "label": "EX_bz_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_ca2_e__AA6", "label": "EX_ca2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_cl_e__AA6", "label": "EX_cl_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_cobalt2_e__AA6", "label": "EX_cobalt2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_cu2_e__AA6", "label": "EX_cu2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_cys__L_e__AA6", "label": "EX_cys__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_etoh_e__AA6", "label": "EX_etoh_e__AA6", "shape": "box"}, {"color": "lightblue", "id": "etoh_m", "label": "etoh_m", "shape": "ellipse"}, {"color": "red", "id": "EX_fe3_e__AA6", "label": "EX_fe3_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_fru_e__AA6", "label": "EX_fru_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_galct__D_e__AA6", "label": "EX_galct__D_e__AA6", "shape": "box"}, {"color": "lightblue", "id": "galct__D_m", "label": "galct__D_m", "shape": "ellipse"}, {"color": "red", "id": "EX_gua_e__AA6", "label": "EX_gua_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_h2s_e__AA6", "label": "EX_h2s_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_hxan_e__AA6", "label": "EX_hxan_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_ile__L_e__AA6", "label": "EX_ile__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_indole_e__AA6", "label": "EX_indole_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_k_e__AA6", "label": "EX_k_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_leu__L_e__AA6", "label": "EX_leu__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_lys__L_e__AA6", "label": "EX_lys__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_mal__L_e__AA6", "label": "EX_mal__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_malt_e__AA6", "label": "EX_malt_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_mg2_e__AA6", "label": "EX_mg2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_mn2_e__AA6", "label": "EX_mn2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_nh4_e__AA6", "label": "EX_nh4_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA6", "label": "EX_o2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_orn_e__AA6", "label": "EX_orn_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_pi_e__AA6", "label": "EX_pi_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_so4_e__AA6", "label": "EX_so4_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_succ_e__AA6", "label": "EX_succ_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_thr__L_e__AA6", "label": "EX_thr__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_ura_e__AA6", "label": "EX_ura_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_val__L_e__AA6", "label": "EX_val__L_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_zn2_e__AA6", "label": "EX_zn2_e__AA6", "shape": "box"}, {"color": "red", "id": "EX_4abz_e__AA7", "label": "EX_4abz_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_arg__L_e__AA7", "label": "EX_arg__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_bz_e__AA7", "label": "EX_bz_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_ca2_e__AA7", "label": "EX_ca2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_cl_e__AA7", "label": "EX_cl_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_cobalt2_e__AA7", "label": "EX_cobalt2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_cu2_e__AA7", "label": "EX_cu2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_cys__L_e__AA7", "label": "EX_cys__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_fe3_e__AA7", "label": "EX_fe3_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_fru_e__AA7", "label": "EX_fru_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_gly_e__AA7", "label": "EX_gly_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_gua_e__AA7", "label": "EX_gua_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_h_e__AA7", "label": "EX_h_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_hxan_e__AA7", "label": "EX_hxan_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_ile__L_e__AA7", "label": "EX_ile__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_indole_e__AA7", "label": "EX_indole_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_inost_e__AA7", "label": "EX_inost_e__AA7", "shape": "box"}, {"color": "lightblue", "id": "inost_m", "label": "inost_m", "shape": "ellipse"}, {"color": "red", "id": "EX_k_e__AA7", "label": "EX_k_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_leu__L_e__AA7", "label": "EX_leu__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_lnlc_e__AA7", "label": "EX_lnlc_e__AA7", "shape": "box"}, {"color": "lightblue", "id": "lnlc_m", "label": "lnlc_m", "shape": "ellipse"}, {"color": "red", "id": "EX_lys__L_e__AA7", "label": "EX_lys__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_met__L_e__AA7", "label": "EX_met__L_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_mg2_e__AA7", "label": "EX_mg2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_mn2_e__AA7", "label": "EX_mn2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_o2_e__AA7", "label": "EX_o2_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_ocdcea_e__AA7", "label": "EX_ocdcea_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_pheme_e__AA7", "label": "EX_pheme_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_pi_e__AA7", "label": "EX_pi_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_so4_e__AA7", "label": "EX_so4_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_tyr__L_e__AA7", "label": "EX_tyr__L_e__AA7", "shape": "box"}, {"color": "lightblue", "id": "tyr__L_m", "label": "tyr__L_m", "shape": "ellipse"}, {"color": "red", "id": "EX_ura_e__AA7", "label": "EX_ura_e__AA7", "shape": "box"}, {"color": "red", "id": "EX_zn2_e__AA7", "label": "EX_zn2_e__AA7", "shape": "box"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": "black", "from": "acald_m", "to": "EX_acald_e__AA1", "width": 10.799866014173249}, {"arrows": "to", "color": "black", "from": "ala__L_m", "to": "EX_ala__L_e__AA1", "width": 14.002423570525096}, {"arrows": "to", "color": "black", "from": "fe2_m", "to": "EX_fe2_e__AA1", "width": 10.53017939350186}, {"arrows": "to", "color": "black", "from": "fru_m", "to": "EX_fru_e__AA1", "width": 14.064535849930799}, {"arrows": "to", "color": "black", "from": "fum_m", "to": "EX_fum_e__AA1", "width": 6.13668397908495}, {"arrows": "to", "color": "black", "from": "galur_m", "to": "EX_galur_e__AA1", "width": 14.983674211692879}, {"arrows": "to", "color": "black", "from": "mal__L_m", "to": "EX_mal__L_e__AA1", "width": 13.117605225251106}, {"arrows": "to", "color": "black", "from": "nh4_m", "to": "EX_nh4_e__AA1", "width": 15.0}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA1", "width": 14.527771756410582}, {"arrows": "to", "color": "black", "from": "s_m", "to": "EX_s_e__AA1", "width": 4.441090430069467}, {"arrows": "to", "color": "black", "from": "srb__L_m", "to": "EX_srb__L_e__AA1", "width": 11.233806541346677}, {"arrows": "to", "color": "black", "from": "tol_m", "to": "EX_tol_e__AA1", "width": 1.5}, {"arrows": "to", "color": "black", "from": "val__L_m", "to": "EX_val__L_e__AA1", "width": 14.052320893858282}, {"arrows": "to", "color": "black", "from": "LalaDgluMdapDala_m", "to": "EX_LalaDgluMdapDala_e__AA2", "width": 1.50108031193965}, {"arrows": "to", "color": "black", "from": "acald_m", "to": "EX_acald_e__AA2", "width": 15.0}, {"arrows": "to", "color": "black", "from": "arg__L_m", "to": "EX_arg__L_e__AA2", "width": 5.32317576478566}, {"arrows": "to", "color": "black", "from": "bz_m", "to": "EX_bz_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "ca2_m", "to": "EX_ca2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cl_m", "to": "EX_cl_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cobalt2_m", "to": "EX_cobalt2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cu2_m", "to": "EX_cu2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cys__L_m", "to": "EX_cys__L_e__AA2", "width": 3.16934938536315}, {"arrows": "to", "color": "black", "from": "fe2_m", "to": "EX_fe2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "fe3_m", "to": "EX_fe3_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "fru_m", "to": "EX_fru_e__AA2", "width": 14.957152881656004}, {"arrows": "to", "color": "black", "from": "gthrd_m", "to": "EX_gthrd_e__AA2", "width": 13.051717882118115}, {"arrows": "to", "color": "black", "from": "gua_m", "to": "EX_gua_e__AA2", "width": 4.93837796927298}, {"arrows": "to", "color": "black", "from": "h_m", "to": "EX_h_e__AA2", "width": 14.252629316203684}, {"arrows": "to", "color": "black", "from": "hxan_m", "to": "EX_hxan_e__AA2", "width": 4.601779001829055}, {"arrows": "to", "color": "black", "from": "ile__L_m", "to": "EX_ile__L_e__AA2", "width": 5.287578162642696}, {"arrows": "to", "color": "black", "from": "indole_m", "to": "EX_indole_e__AA2", "width": 2.4128923115574934}, {"arrows": "to", "color": "black", "from": "k_m", "to": "EX_k_e__AA2", "width": 4.514922817410988}, {"arrows": "to", "color": "black", "from": "leu__L_m", "to": "EX_leu__L_e__AA2", "width": 6.171628873665503}, {"arrows": "to", "color": "black", "from": "lys__L_m", "to": "EX_lys__L_e__AA2", "width": 5.619748952684049}, {"arrows": "to", "color": "black", "from": "malt_m", "to": "EX_malt_e__AA2", "width": 7.882638080730691}, {"arrows": "to", "color": "black", "from": "met__L_m", "to": "EX_met__L_e__AA2", "width": 4.070553305058116}, {"arrows": "to", "color": "black", "from": "mg2_m", "to": "EX_mg2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "mn2_m", "to": "EX_mn2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "nh4_m", "to": "EX_nh4_e__AA2", "width": 14.272685237305744}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA2", "width": 12.53728197484527}, {"arrows": "to", "color": "black", "from": "orn_m", "to": "EX_orn_e__AA2", "width": 4.753104997465554}, {"arrows": "to", "color": "black", "from": "pheme_m", "to": "EX_pheme_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "pi_m", "to": "EX_pi_e__AA2", "width": 7.754961743664417}, {"arrows": "to", "color": "black", "from": "so4_m", "to": "EX_so4_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "thm_m", "to": "EX_thm_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "thr__L_m", "to": "EX_thr__L_e__AA2", "width": 5.020571367060713}, {"arrows": "to", "color": "black", "from": "ura_m", "to": "EX_ura_e__AA2", "width": 5.546147490977653}, {"arrows": "to", "color": "black", "from": "zn2_m", "to": "EX_zn2_e__AA2", "width": 1.5}, {"arrows": "to", "color": "black", "from": "4abz_m", "to": "EX_4abz_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "LalaDgluMdapDala_m", "to": "EX_LalaDgluMdapDala_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "arg__L_m", "to": "EX_arg__L_e__AA3", "width": 4.453260283986088}, {"arrows": "to", "color": "black", "from": "asp__L_m", "to": "EX_asp__L_e__AA3", "width": 14.01869901133362}, {"arrows": "to", "color": "black", "from": "ca2_m", "to": "EX_ca2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cgly_m", "to": "EX_cgly_e__AA3", "width": 13.051717882118115}, {"arrows": "to", "color": "black", "from": "cl_m", "to": "EX_cl_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cobalt2_m", "to": "EX_cobalt2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cu2_m", "to": "EX_cu2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "fe2_m", "to": "EX_fe2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "fe3_m", "to": "EX_fe3_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "galur_m", "to": "EX_galur_e__AA3", "width": 4.886356597214911}, {"arrows": "to", "color": "black", "from": "glu__L_m", "to": "EX_glu__L_e__AA3", "width": 13.051717882118115}, {"arrows": "to", "color": "black", "from": "gsn_m", "to": "EX_gsn_e__AA3", "width": 4.087936097788099}, {"arrows": "to", "color": "black", "from": "h2s_m", "to": "EX_h2s_e__AA3", "width": 4.11097437802861}, {"arrows": "to", "color": "black", "from": "ins_m", "to": "EX_ins_e__AA3", "width": 3.771261888248103}, {"arrows": "to", "color": "black", "from": "k_m", "to": "EX_k_e__AA3", "width": 3.690035164034363}, {"arrows": "to", "color": "black", "from": "leu__L_m", "to": "EX_leu__L_e__AA3", "width": 5.315776312993478}, {"arrows": "to", "color": "black", "from": "lys__L_m", "to": "EX_lys__L_e__AA3", "width": 4.736914792808481}, {"arrows": "to", "color": "black", "from": "mal__L_m", "to": "EX_mal__L_e__AA3", "width": 13.07311052872268}, {"arrows": "to", "color": "black", "from": "malt_m", "to": "EX_malt_e__AA3", "width": 13.471190562105644}, {"arrows": "to", "color": "black", "from": "mg2_m", "to": "EX_mg2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "mn2_m", "to": "EX_mn2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA3", "width": 14.12385055028839}, {"arrows": "to", "color": "black", "from": "orn_m", "to": "EX_orn_e__AA3", "width": 3.913270054117348}, {"arrows": "to", "color": "black", "from": "ppap_m", "to": "EX_ppap_e__AA3", "width": 7.602816732532971}, {"arrows": "to", "color": "black", "from": "so4_m", "to": "EX_so4_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "thr__L_m", "to": "EX_thr__L_e__AA3", "width": 5.719857941855777}, {"arrows": "to", "color": "black", "from": "trp__L_m", "to": "EX_trp__L_e__AA3", "width": 1.8103382750827768}, {"arrows": "to", "color": "black", "from": "ura_m", "to": "EX_ura_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "val__L_m", "to": "EX_val__L_e__AA3", "width": 13.483795318810968}, {"arrows": "to", "color": "black", "from": "zn2_m", "to": "EX_zn2_e__AA3", "width": 1.5}, {"arrows": "to", "color": "black", "from": "LalaDgluMdapDala_m", "to": "EX_LalaDgluMdapDala_e__AA4", "width": 1.971674906215537}, {"arrows": "to", "color": "black", "from": "acglu_m", "to": "EX_acglu_e__AA4", "width": 5.530644507300603}, {"arrows": "to", "color": "black", "from": "arg__L_m", "to": "EX_arg__L_e__AA4", "width": 6.7091044030944325}, {"arrows": "to", "color": "black", "from": "ca2_m", "to": "EX_ca2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cl_m", "to": "EX_cl_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cobalt2_m", "to": "EX_cobalt2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cu2_m", "to": "EX_cu2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "fe2_m", "to": "EX_fe2_e__AA4", "width": 14.580763944682733}, {"arrows": "to", "color": "black", "from": "gly_m", "to": "EX_gly_e__AA4", "width": 4.707846637579926}, {"arrows": "to", "color": "black", "from": "gua_m", "to": "EX_gua_e__AA4", "width": 8.82205339017155}, {"arrows": "to", "color": "black", "from": "ile__L_m", "to": "EX_ile__L_e__AA4", "width": 6.083036080103663}, {"arrows": "to", "color": "black", "from": "indole_m", "to": "EX_indole_e__AA4", "width": 3.632787777899109}, {"arrows": "to", "color": "black", "from": "k_m", "to": "EX_k_e__AA4", "width": 5.282881100292679}, {"arrows": "to", "color": "black", "from": "leu__L_m", "to": "EX_leu__L_e__AA4", "width": 6.988367072657834}, {"arrows": "to", "color": "black", "from": "lys__L_m", "to": "EX_lys__L_e__AA4", "width": 6.4242579866580805}, {"arrows": "to", "color": "black", "from": "malt_m", "to": "EX_malt_e__AA4", "width": 13.654730072320728}, {"arrows": "to", "color": "black", "from": "mg2_m", "to": "EX_mg2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "mn2_m", "to": "EX_mn2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA4", "width": 15.0}, {"arrows": "to", "color": "black", "from": "ocdcea_m", "to": "EX_ocdcea_e__AA4", "width": 6.499254879103484}, {"arrows": "to", "color": "black", "from": "orn_m", "to": "EX_orn_e__AA4", "width": 14.746168406644726}, {"arrows": "to", "color": "black", "from": "pi_m", "to": "EX_pi_e__AA4", "width": 8.66941285103166}, {"arrows": "to", "color": "black", "from": "s_m", "to": "EX_s_e__AA4", "width": 10.188365081591066}, {"arrows": "to", "color": "black", "from": "so4_m", "to": "EX_so4_e__AA4", "width": 13.32455279522147}, {"arrows": "to", "color": "black", "from": "succ_m", "to": "EX_succ_e__AA4", "width": 9.66217270881196}, {"arrows": "to", "color": "black", "from": "thr__L_m", "to": "EX_thr__L_e__AA4", "width": 6.0701315067058195}, {"arrows": "to", "color": "black", "from": "tol_m", "to": "EX_tol_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "ura_m", "to": "EX_ura_e__AA4", "width": 6.348771785498735}, {"arrows": "to", "color": "black", "from": "val__L_m", "to": "EX_val__L_e__AA4", "width": 6.8607192668402455}, {"arrows": "to", "color": "black", "from": "zn2_m", "to": "EX_zn2_e__AA4", "width": 1.5}, {"arrows": "to", "color": "black", "from": "4hbz_m", "to": "EX_4hbz_e__AA5", "width": 1.0}, {"arrows": "to", "color": "black", "from": "acald_m", "to": "EX_acald_e__AA5", "width": 14.907808471263063}, {"arrows": "to", "color": "black", "from": "gal_m", "to": "EX_gal_e__AA5", "width": 12.449703078897038}, {"arrows": "to", "color": "black", "from": "glyc_m", "to": "EX_glyc_e__AA5", "width": 13.69204866774207}, {"arrows": "to", "color": "black", "from": "h2s_m", "to": "EX_h2s_e__AA5", "width": 9.66193643565014}, {"arrows": "to", "color": "black", "from": "nh4_m", "to": "EX_nh4_e__AA5", "width": 13.25904797757238}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA5", "width": 14.602201142147226}, {"arrows": "to", "color": "black", "from": "orn_m", "to": "EX_orn_e__AA5", "width": 10.727070998284717}, {"arrows": "to", "color": "black", "from": "succ_m", "to": "EX_succ_e__AA5", "width": 12.764594566793644}, {"arrows": "to", "color": "black", "from": "urea_m", "to": "EX_urea_e__AA5", "width": 11.733570323477153}, {"arrows": "to", "color": "black", "from": "R_3hhdca_m", "to": "EX_R_3hhdca_e__AA6", "width": 6.050143201639359}, {"arrows": "to", "color": "black", "from": "R_3httdca_m", "to": "EX_R_3httdca_e__AA6", "width": 1.521244838337855}, {"arrows": "to", "color": "black", "from": "acald_m", "to": "EX_acald_e__AA6", "width": 14.103947797700817}, {"arrows": "to", "color": "black", "from": "arg__L_m", "to": "EX_arg__L_e__AA6", "width": 5.805796992195087}, {"arrows": "to", "color": "black", "from": "bz_m", "to": "EX_bz_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "ca2_m", "to": "EX_ca2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cl_m", "to": "EX_cl_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cobalt2_m", "to": "EX_cobalt2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cu2_m", "to": "EX_cu2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cys__L_m", "to": "EX_cys__L_e__AA6", "width": 7.746465851893957}, {"arrows": "to", "color": "black", "from": "etoh_m", "to": "EX_etoh_e__AA6", "width": 12.65806061577614}, {"arrows": "to", "color": "black", "from": "fe3_m", "to": "EX_fe3_e__AA6", "width": 14.952298445776954}, {"arrows": "to", "color": "black", "from": "fru_m", "to": "EX_fru_e__AA6", "width": 15.0}, {"arrows": "to", "color": "black", "from": "galct__D_m", "to": "EX_galct__D_e__AA6", "width": 15.0}, {"arrows": "to", "color": "black", "from": "gua_m", "to": "EX_gua_e__AA6", "width": 5.413073151243467}, {"arrows": "to", "color": "black", "from": "h2s_m", "to": "EX_h2s_e__AA6", "width": 4.521091498100683}, {"arrows": "to", "color": "black", "from": "hxan_m", "to": "EX_hxan_e__AA6", "width": 5.068260139244341}, {"arrows": "to", "color": "black", "from": "ile__L_m", "to": "EX_ile__L_e__AA6", "width": 5.769524805214095}, {"arrows": "to", "color": "black", "from": "indole_m", "to": "EX_indole_e__AA6", "width": 2.777277997897159}, {"arrows": "to", "color": "black", "from": "k_m", "to": "EX_k_e__AA6", "width": 4.979063822424983}, {"arrows": "to", "color": "black", "from": "leu__L_m", "to": "EX_leu__L_e__AA6", "width": 6.667408676393905}, {"arrows": "to", "color": "black", "from": "lys__L_m", "to": "EX_lys__L_e__AA6", "width": 6.107573438298907}, {"arrows": "to", "color": "black", "from": "mal__L_m", "to": "EX_mal__L_e__AA6", "width": 8.26856102291661}, {"arrows": "to", "color": "black", "from": "malt_m", "to": "EX_malt_e__AA6", "width": 13.640471997657961}, {"arrows": "to", "color": "black", "from": "mg2_m", "to": "EX_mg2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "mn2_m", "to": "EX_mn2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "nh4_m", "to": "EX_nh4_e__AA6", "width": 11.059446380345657}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA6", "width": 14.849034445762644}, {"arrows": "to", "color": "black", "from": "orn_m", "to": "EX_orn_e__AA6", "width": 5.2234406914708345}, {"arrows": "to", "color": "black", "from": "pi_m", "to": "EX_pi_e__AA6", "width": 8.264901507803097}, {"arrows": "to", "color": "black", "from": "so4_m", "to": "EX_so4_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "succ_m", "to": "EX_succ_e__AA6", "width": 5.541710744363963}, {"arrows": "to", "color": "black", "from": "thr__L_m", "to": "EX_thr__L_e__AA6", "width": 5.49708202489332}, {"arrows": "to", "color": "black", "from": "ura_m", "to": "EX_ura_e__AA6", "width": 6.032747308797736}, {"arrows": "to", "color": "black", "from": "val__L_m", "to": "EX_val__L_e__AA6", "width": 6.540633852701502}, {"arrows": "to", "color": "black", "from": "zn2_m", "to": "EX_zn2_e__AA6", "width": 1.5}, {"arrows": "to", "color": "black", "from": "4abz_m", "to": "EX_4abz_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "arg__L_m", "to": "EX_arg__L_e__AA7", "width": 10.47086630566487}, {"arrows": "to", "color": "black", "from": "bz_m", "to": "EX_bz_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "ca2_m", "to": "EX_ca2_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cl_m", "to": "EX_cl_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cobalt2_m", "to": "EX_cobalt2_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cu2_m", "to": "EX_cu2_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "cys__L_m", "to": "EX_cys__L_e__AA7", "width": 2.959897365832865}, {"arrows": "to", "color": "black", "from": "fe3_m", "to": "EX_fe3_e__AA7", "width": 3.8737841507612867}, {"arrows": "to", "color": "black", "from": "fru_m", "to": "EX_fru_e__AA7", "width": 13.484878009967279}, {"arrows": "to", "color": "black", "from": "gly_m", "to": "EX_gly_e__AA7", "width": 6.0727240290008035}, {"arrows": "to", "color": "black", "from": "gua_m", "to": "EX_gua_e__AA7", "width": 4.681592871913538}, {"arrows": "to", "color": "black", "from": "h_m", "to": "EX_h_e__AA7", "width": 11.250260676322274}, {"arrows": "to", "color": "black", "from": "hxan_m", "to": "EX_hxan_e__AA7", "width": 4.350228750891575}, {"arrows": "to", "color": "black", "from": "ile__L_m", "to": "EX_ile__L_e__AA7", "width": 8.032629772227182}, {"arrows": "to", "color": "black", "from": "indole_m", "to": "EX_indole_e__AA7", "width": 2.223798621998868}, {"arrows": "to", "color": "black", "from": "inost_m", "to": "EX_inost_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "k_m", "to": "EX_k_e__AA7", "width": 4.264858022265829}, {"arrows": "to", "color": "black", "from": "leu__L_m", "to": "EX_leu__L_e__AA7", "width": 5.9012567134037095}, {"arrows": "to", "color": "black", "from": "lnlc_m", "to": "EX_lnlc_e__AA7", "width": 6.171999935789277}, {"arrows": "to", "color": "black", "from": "lys__L_m", "to": "EX_lys__L_e__AA7", "width": 5.354528757040597}, {"arrows": "to", "color": "black", "from": "met__L_m", "to": "EX_met__L_e__AA7", "width": 3.8290716708414365}, {"arrows": "to", "color": "black", "from": "mg2_m", "to": "EX_mg2_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "mn2_m", "to": "EX_mn2_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "o2_m", "to": "EX_o2_e__AA7", "width": 13.6288122045586}, {"arrows": "to", "color": "black", "from": "ocdcea_m", "to": "EX_ocdcea_e__AA7", "width": 5.426955309889331}, {"arrows": "to", "color": "black", "from": "pheme_m", "to": "EX_pheme_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "pi_m", "to": "EX_pi_e__AA7", "width": 8.946423975235836}, {"arrows": "to", "color": "black", "from": "so4_m", "to": "EX_so4_e__AA7", "width": 1.5}, {"arrows": "to", "color": "black", "from": "tyr__L_m", "to": "EX_tyr__L_e__AA7", "width": 3.6394244210258604}, {"arrows": "to", "color": "black", "from": "ura_m", "to": "EX_ura_e__AA7", "width": 5.281717648696245}, {"arrows": "to", "color": "black", "from": "zn2_m", "to": "EX_zn2_e__AA7", "width": 1.5}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
