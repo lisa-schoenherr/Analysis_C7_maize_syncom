@@ -1,4 +1,39 @@
 reaction_id,reaction_equation,duplicate_test_exact,duplicate_test_directions,duplicate_test_coefficients,duplicate_test_redox,diphosphate_test,dead_end_test
+ACACT5r,accoa_c + dcacoa_c <=> 3oddcoa_c + coa_c,ok,ACACT10,ACACT10,ok,ok,ok
+ACACT2r,accoa_c + btcoa_c <=> 3ohcoa_c + coa_c,ok,ACACT11,ACACT11,ok,ok,ok
+ACACT7r,accoa_c + tdcoa_c <=> 3ohdcoa_c + coa_c,ok,ACACT12,ACACT12,ok,ok,ok
+ACACT4r,accoa_c + occoa_c <=> 3odcoa_c + coa_c,ok,ACACT13,ACACT13,ok,ok,ok
+ACACT11,3ohcoa_c + coa_c --> accoa_c + btcoa_c,ok,ACACT2r,ACACT2r,ok,ok,ok
+ACACT8,3oocoa_c + coa_c --> accoa_c + hxcoa_c,ok,ACACT3r,ACACT3r,ok,ok,ok
+ACACT13,3odcoa_c + coa_c --> accoa_c + occoa_c,ok,ACACT4r,ACACT4r,ok,ok,ok
+ACACT10,3oddcoa_c + coa_c --> accoa_c + dcacoa_c,ok,ACACT5r,ACACT5r,ok,ok,ok
+ACACT9,3otdcoa_c + coa_c --> accoa_c + ddcacoa_c,ok,ACACT6r,ACACT6r,ok,ok,ok
+ACACT12,3ohdcoa_c + coa_c --> accoa_c + tdcoa_c,ok,ACACT7r,ACACT7r,ok,ok,ok
+ACACT3r,accoa_c + hxcoa_c <=> 3oocoa_c + coa_c,ok,ACACT8,ACACT8,ok,ok,ok
+ACACT6r,accoa_c + ddcacoa_c <=> 3otdcoa_c + coa_c,ok,ACACT9,ACACT9,ok,ok,ok
+ACOAD1fr,b2coa_c + fadh2_c --> btcoa_c + fad_c,ok,ACOAD1f,ACOAD1f,ACOAD1;T2ECR,ok,ok
+ACOAD1f,btcoa_c + fad_c --> b2coa_c + fadh2_c,ok,ACOAD1fr,ACOAD1fr,ACOAD1;T2ECR,ok,ok
+ACTD_1,diact_c + h_c + nadh_c --> actn__R_c + nad_c,ok,ACTD,ACTD,ACTDa,ok,ok
+ACTD,actn__R_c + nad_c --> diact_c + h_c + nadh_c,ok,ACTD_1,ACTD_1,ACTDa,ok,ok
+THFAT,h2o_c + methf_c --> 5fthf_c + h_c,ok,FOMETRi,FOMETRi,ok,ok,ok
+GLDBRAN3,bglyg4n_c --> glyg4n_c,ok,GLBRAN3,GLBRAN3,ok,ok,ok
+GLBRAN3,glyg4n_c --> bglyg4n_c,ok,GLDBRAN3,GLDBRAN3,ok,ok,ok
+HACD1i,3hbcoa_c + nad_c --> aacoa_c + h_c + nadh_c,ok,HACD1,HACD1,ok,ok,ok
+HACD1,aacoa_c + h_c + nadh_c <=> 3hbcoa_c + nad_c,ok,HACD1i,HACD1i,ok,ok,ok
+HACD2i,3hhcoa_c + nad_c --> 3ohcoa_c + h_c + nadh_c,ok,HACD2,HACD2,ok,ok,ok
+HACD2,3ohcoa_c + h_c + nadh_c <=> 3hhcoa_c + nad_c,ok,HACD2i,HACD2i,ok,ok,ok
+HACD3i,3hocoa_c + nad_c --> 3oocoa_c + h_c + nadh_c,ok,HACD3,HACD3,ok,ok,ok
+HACD3,3oocoa_c + h_c + nadh_c <=> 3hocoa_c + nad_c,ok,HACD3i,HACD3i,ok,ok,ok
+HACD4i,3hdcoa_c + nad_c --> 3odcoa_c + h_c + nadh_c,ok,HACD4,HACD4,ok,ok,ok
+HACD4,3odcoa_c + h_c + nadh_c <=> 3hdcoa_c + nad_c,ok,HACD4i,HACD4i,ok,ok,ok
+HACD5i,3hddcoa_c + nad_c --> 3oddcoa_c + h_c + nadh_c,ok,HACD5,HACD5,ok,ok,ok
+HACD5,3oddcoa_c + h_c + nadh_c <=> 3hddcoa_c + nad_c,ok,HACD5i,HACD5i,ok,ok,ok
+HACD6i,3htdcoa_c + nad_c --> 3otdcoa_c + h_c + nadh_c,ok,HACD6,HACD6,ok,ok,ok
+HACD6,3otdcoa_c + h_c + nadh_c <=> 3htdcoa_c + nad_c,ok,HACD6i,HACD6i,ok,ok,ok
+HACD7i,3hhdcoa_c + nad_c --> 3ohdcoa_c + h_c + nadh_c,ok,HACD7,HACD7,ok,ok,ok
+HACD7,3ohdcoa_c + h_c + nadh_c <=> 3hhdcoa_c + nad_c,ok,HACD7i,HACD7i,ok,ok,ok
+HSTPTr,glu__L_c + imacp_c <=> akg_c + hisp_c,ok,HSTPT,ok,ok,ok,ok
+HSTPT,glu__L_c + imacp_c --> akg_c + hisp_c,ok,HSTPTr,ok,ok,ok,ok
 EX_14glucan_e,14glucan_e <=> ,ok,ok,ok,ok,ok,ok
 EX_2ddglcn_e,2ddglcn_e <=> ,ok,ok,ok,ok,ok,ok
 EX_2dhglcn_e,2dhglcn_e <=> ,ok,ok,ok,ok,ok,ok
@@ -331,20 +366,8 @@ ABUTD,4abutn_c + h2o_c + nad_c --> 4abut_c + 2.0 h_c + nadh_c,ok,ok,ok,4ABUTD,ok
 ABUTt2pp,4abut_p + h_p --> 4abut_c + h_c,ok,ok,ok,ok,ok,ok
 ABUTt2r,4abut_e + h_e --> 4abut_c + h_c,ok,ok,ok,ok,ok,ok
 ABUTtex,4abut_e <=> 4abut_p,ok,ok,ok,ok,ok,only when going backwards
-ACACT10,3oddcoa_c + coa_c --> accoa_c + dcacoa_c,ok,ACACT5r,ACACT5r,ok,ok,ok
-ACACT11,3ohcoa_c + coa_c --> accoa_c + btcoa_c,ok,ACACT2r,ACACT2r,ok,ok,ok
-ACACT12,3ohdcoa_c + coa_c --> accoa_c + tdcoa_c,ok,ACACT7r,ACACT7r,ok,ok,ok
-ACACT13,3odcoa_c + coa_c --> accoa_c + occoa_c,ok,ACACT4r,ACACT4r,ok,ok,ok
 ACACT1r,2.0 accoa_c <=> aacoa_c + coa_c,ok,ok,ok,ok,ok,ok
-ACACT2r,accoa_c + btcoa_c <=> 3ohcoa_c + coa_c,ok,ACACT11,ACACT11,ok,ok,ok
-ACACT3r,accoa_c + hxcoa_c <=> 3oocoa_c + coa_c,ok,ACACT8,ACACT8,ok,ok,ok
-ACACT4r,accoa_c + occoa_c <=> 3odcoa_c + coa_c,ok,ACACT13,ACACT13,ok,ok,ok
-ACACT5r,accoa_c + dcacoa_c <=> 3oddcoa_c + coa_c,ok,ACACT10,ACACT10,ok,ok,ok
-ACACT6r,accoa_c + ddcacoa_c <=> 3otdcoa_c + coa_c,ok,ACACT9,ACACT9,ok,ok,ok
-ACACT7r,accoa_c + tdcoa_c <=> 3ohdcoa_c + coa_c,ok,ACACT12,ACACT12,ok,ok,ok
-ACACT8,3oocoa_c + coa_c --> accoa_c + hxcoa_c,ok,ACACT3r,ACACT3r,ok,ok,ok
 ACACT8r,3ohodcoa_c + coa_c <=> accoa_c + pmtcoa_c,ok,ok,ok,ok,ok,ok
-ACACT9,3otdcoa_c + coa_c --> accoa_c + ddcacoa_c,ok,ACACT6r,ACACT6r,ok,ok,ok
 ACACt2pp,acac_p + h_p --> acac_c + h_c,ok,ok,ok,ok,ok,ok
 ACACtex,acac_e <=> acac_p,ok,ok,ok,ok,ok,only when going backwards
 ACALDt,acald_e <=> acald_c,ok,ok,ok,ok,ok,ok
@@ -373,8 +396,6 @@ ACOAD16f,fad_c + phxacoa_c <=> fadh2_c + phxa2coa_c,ok,ok,ok,ok,ok,only when goi
 ACOAD17f,fad_c + pptcoa_c <=> fadh2_c + ppt2coa_c,ok,ok,ok,ok,ok,only when going backwards
 ACOAD18f,fad_c + pbcoa_c <=> fadh2_c + pb2coa_c,ok,ok,ok,ok,ok,only when going backwards
 ACOAD19f,fad_c + phppcoa_c <=> cinmcoa_c + fadh2_c,ok,ok,ok,ok,ok,only when going backwards
-ACOAD1f,btcoa_c + fad_c --> b2coa_c + fadh2_c,ok,ACOAD1fr,ACOAD1fr,ACOAD1;T2ECR,ok,ok
-ACOAD1fr,b2coa_c + fadh2_c --> btcoa_c + fad_c,ok,ACOAD1f,ACOAD1f,ACOAD1;T2ECR,ok,ok
 ACOAD2,h_c + hx2coa_c + nadh_c <=> hxcoa_c + nad_c,ok,ok,ok,ACOAD2f,ok,ok
 ACOAD20,2.0 2mbcoa_c + o2_c --> 2.0 2mb2coa_c + 2.0 h2o_c,ok,ok,ok,ok,ok,ok
 ACOAD20f,6athcoa_c + fad_c <=> 6ath2coa_c + fadh2_c,ok,ok,ok,ok,ok,only when going backwards
@@ -445,9 +466,7 @@ ACSPHACP80,R_3hpocta_c + atp_c + coa_c --> R_3hpoctacoa_c + amp_c + ppi_c,ok,ok,
 ACSPHACP90,R_3hpnona_c + atp_c + coa_c --> R_3hpnonacoa_c + amp_c + ppi_c,ok,ok,ok,ok,ok,ok
 ACSPHACT40,R_3h4atba_c + atp_c + coa_c --> R_3h4atbcoa_c + amp_c + ppi_c,ok,ok,ok,ok,ok,ok
 ACSPHACT60,R_3h6atha_c + atp_c + coa_c --> R_3h6athcoa_c + amp_c + ppi_c,ok,ok,ok,ok,ok,ok
-ACTD,actn__R_c + nad_c --> diact_c + h_c + nadh_c,ok,ACTD_1,ACTD_1,ACTDa,ok,ok
 ACTD2,actn__R_c + coa_c + nad_c --> acald_c + accoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
-ACTD_1,diact_c + h_c + nadh_c --> actn__R_c + nad_c,ok,ACTD,ACTD,ACTDa,ok,ok
 ACTDa,actn__R_c + nadp_c --> diact_c + h_c + nadph_c,ok,ok,ok,ACTD;ACTD_1,ok,ok
 ACTNabc,actn__R_e + atp_c + h2o_c --> actn__R_c + adp_c + h_c + pi_c,ok,ok,ok,ok,ok,ok
 ACt5pp,ac_p + 2.0 h_p --> ac_c + 2.0 h_c,ok,ok,ok,ok,ok,ok
@@ -1059,7 +1078,6 @@ FMNAT,atp_c + fmn_c + h_c --> fad_c + ppi_c,ok,ok,ok,ok,ok,ok
 FMNRx,fmn_c + h_c + nadh_c --> fmnh2_c + nad_c,ok,ok,ok,ok,ok,ok
 FMNRx2,fmn_c + h_c + nadph_c --> fmnh2_c + nadp_c,ok,ok,ok,ok,ok,ok
 FOLD3,2ahhmd_c + 4abz_c --> dhpt_c + ppi_c,ok,ok,ok,ok,ok,ok
-FOMETRi,5fthf_c + h_c --> h2o_c + methf_c,ok,THFAT,THFAT,ok,ok,ok
 FORGLUIH2,forglu_c + h2o_c --> Nforglu_c + nh4_c,ok,ok,ok,ok,ok,ok
 FORtex,for_e <=> for_p,ok,ok,ok,ok,ok,for_e;for_p
 FRUpts,fru_e + pep_c --> f1p_c + pyr_c,ok,ok,ok,ok,ok,ok
@@ -1146,7 +1164,6 @@ GGSPMDO,ggspmd_c + h2o_c + o2_c --> 13dampp_c + ggbutal_c + h2o2_c,ok,ok,ok,ok,o
 GGSPMDS,atp_c + glu__L_c + spmd_c --> adp_c + ggspmd_c + h_c + pi_c,ok,ok,ok,ok,ok,ok
 GHMT2r,ser__L_c + thf_c <=> gly_c + h2o_c + mlthf_c,ok,ok,ok,ok,ok,ok
 GK1,atp_c + gmp_c <=> adp_c + gdp_c,ok,ok,ok,ok,ok,ok
-GLBRAN3,glyg4n_c --> bglyg4n_c,ok,GLDBRAN3,GLDBRAN3,ok,ok,ok
 GLCDpp,glc__D_p + h2o_p + q8_c --> glcn_p + h_p + q8h2_c,ok,ok,ok,ok,ok,ok
 GLCOAS,atp_c + coa_c + glutar_c --> adp_c + glutcoa_c + pi_c,ok,ok,ok,ok,ok,ok
 GLCOASYNT,S_gtrdhdlp_c + coa_c <=> dhlam_c + glutcoa_c,ok,ok,ok,ok,ok,only when going backwards
@@ -1159,7 +1176,6 @@ GLCptspp,glc__D_p + pep_c --> g6p_c + pyr_c,ok,ok,ok,ok,ok,ok
 GLCt2,glc__D_e + h_e --> glc__D_c + h_c,ok,ok,ok,ok,ok,ok
 GLCt2pp,glc__D_p + h_p --> glc__D_c + h_c,ok,ok,ok,ok,ok,ok
 GLCtex,glc__D_e <=> glc__D_p,ok,ok,ok,ok,ok,ok
-GLDBRAN3,bglyg4n_c --> glyg4n_c,ok,GLBRAN3,GLBRAN3,ok,ok,ok
 GLGC,atp_c + g1p_c + h_c --> adpglc_c + ppi_c,ok,ok,ok,ok,ok,ok
 GLNS,atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c,ok,ok,ok,ok,ok,ok
 GLNabc,atp_c + gln__L_e + h2o_c --> adp_c + gln__L_c + h_c + pi_c,ok,ok,ok,ok,ok,ok
@@ -1258,12 +1274,9 @@ H2Otpp,h2o_p <=> h2o_c,ok,ok,ok,ok,ok,ok
 H2SO,h2s_c + 2.0 o2_c --> 2.0 h_c + so4_c,ok,ok,ok,ok,ok,ok
 H2St1,h2s_c <=> h2s_e,ok,ok,ok,ok,ok,ok
 H2tex,h2_e <=> h2_p,ok,ok,ok,ok,ok,h2_e;h2_p
-HACD1,aacoa_c + h_c + nadh_c <=> 3hbcoa_c + nad_c,ok,HACD1i,HACD1i,ok,ok,ok
 HACD10i,3hhpcoa_c + nad_c --> 3ohpcoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD11i,3hnonacoa_c + nad_c --> 3ononacoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD19i,3h6athcoa_c + nad_c --> 3o6athcoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
-HACD1i,3hbcoa_c + nad_c --> aacoa_c + h_c + nadh_c,ok,HACD1,HACD1,ok,ok,ok
-HACD2,3ohcoa_c + h_c + nadh_c <=> 3hhcoa_c + nad_c,ok,HACD2i,HACD2i,ok,ok,ok
 HACD20i,3hvacccoa_c + nad_c --> 3ovacccoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD21i,3hhdccoa_c + nad_c --> 3ohdccoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD22i,3htdccoa_c + nad_c --> 3otdccoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
@@ -1274,19 +1287,8 @@ HACD26i,3hdd5coa_c + nad_c --> 3odd5coa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD27i,3hptslacoa_c + nad_c --> 3optslacoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD28i,3hhdd4coa_c + nad_c --> 3ohdd4coa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD29i,3hlnlccoa_c + nad_c --> 3olnlccoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
-HACD2i,3hhcoa_c + nad_c --> 3ohcoa_c + h_c + nadh_c,ok,HACD2,HACD2,ok,ok,ok
-HACD3,3oocoa_c + h_c + nadh_c <=> 3hocoa_c + nad_c,ok,HACD3i,HACD3i,ok,ok,ok
 HACD30i,3hhd710coa_c + nad_c --> 3ohd710coa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 HACD32i,3hdd6coa_c + nad_c --> 3odd6coa_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
-HACD3i,3hocoa_c + nad_c --> 3oocoa_c + h_c + nadh_c,ok,HACD3,HACD3,ok,ok,ok
-HACD4,3odcoa_c + h_c + nadh_c <=> 3hdcoa_c + nad_c,ok,HACD4i,HACD4i,ok,ok,ok
-HACD4i,3hdcoa_c + nad_c --> 3odcoa_c + h_c + nadh_c,ok,HACD4,HACD4,ok,ok,ok
-HACD5,3oddcoa_c + h_c + nadh_c <=> 3hddcoa_c + nad_c,ok,HACD5i,HACD5i,ok,ok,ok
-HACD5i,3hddcoa_c + nad_c --> 3oddcoa_c + h_c + nadh_c,ok,HACD5,HACD5,ok,ok,ok
-HACD6,3otdcoa_c + h_c + nadh_c <=> 3htdcoa_c + nad_c,ok,HACD6i,HACD6i,ok,ok,ok
-HACD6i,3htdcoa_c + nad_c --> 3otdcoa_c + h_c + nadh_c,ok,HACD6,HACD6,ok,ok,ok
-HACD7,3ohdcoa_c + h_c + nadh_c <=> 3hhdcoa_c + nad_c,ok,HACD7i,HACD7i,ok,ok,ok
-HACD7i,3hhdcoa_c + nad_c --> 3ohdcoa_c + h_c + nadh_c,ok,HACD7,HACD7,ok,ok,ok
 HACD8,3ohodcoa_c + h_c + nadh_c <=> 3hodcoa_c + nad_c,ok,ok,ok,ok,ok,ok
 HACD9,3hmbcoa_c + nad_c <=> 2maacoa_c + h_c + nadh_c,ok,ok,ok,ok,ok,only when going backwards
 HBCHLR,3hbcoa__R_c <=> b2coa_c + h2o_c,ok,ok,ok,ok,ok,ok
@@ -1331,8 +1333,6 @@ HPYRRx,h_c + hpyr_c + nadh_c --> glyc__R_c + nad_c,ok,ok,ok,ok,ok,ok
 HSDy,hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c,ok,ok,ok,ok,ok,only when going forwards
 HSERTA,accoa_c + hom__L_c --> achms_c + coa_c,ok,ok,ok,ok,ok,ok
 HSK,atp_c + hom__L_c --> adp_c + h_c + phom_c,ok,ok,ok,ok,ok,ok
-HSTPT,glu__L_c + imacp_c --> akg_c + hisp_c,ok,HSTPTr,ok,ok,ok,ok
-HSTPTr,glu__L_c + imacp_c <=> akg_c + hisp_c,ok,HSTPT,ok,ok,ok,ok
 HVCD,3optcoa_c + h_c + nadh_c <=> 3hptcoa_c + nad_c,ok,ok,ok,ok,ok,ok
 HXAND,h2o_c + hxan_c + nad_c --> h_c + nadh_c + xan_c,ok,ok,ok,ok,ok,ok
 HXANt2pp,h_p + hxan_p --> h_c + hxan_c,ok,ok,ok,ok,ok,ok
@@ -1907,7 +1907,6 @@ PSP_L,h2o_c + pser__L_c --> pi_c + ser__L_c,ok,ok,ok,ok,ok,ok
 PSSA160,cdpdhdecg_c + ser__L_c --> cmp_c + h_c + ps160_c,ok,ok,ok,ok,ok,ok
 PSSA161,cdpdhdec9eg_c + ser__L_c --> cmp_c + h_c + ps161_c,ok,ok,ok,ok,ok,ok
 PSSA181,cdpdodec11eg_c + ser__L_c --> cmp_c + h_c + ps181_c,ok,ok,ok,ok,ok,ok
-PSUDS,r5p_c + ura_c --> h2o_c + psd5p_c,ok,YUMPS,ok,ok,ok,ok
 PTA2,pi_c + ppcoa_c --> coa_c + ppap_c,ok,ok,ok,ok,ok,ok
 PTAr,accoa_c + pi_c <=> actp_c + coa_c,ok,ok,ok,ok,ok,actp_c
 PTAtex,pta_e <=> pta_p,ok,ok,ok,ok,ok,only when going backwards
@@ -2046,8 +2045,6 @@ SBTD_D2,nad_c + sbt__D_c --> fru_c + h_c + nadh_c,ok,ok,ok,ok,ok,ok
 SCYSSL,2.0 gthrd_c + scys__L_c --> cys__L_c + gthox_c + h_c + so3_c,ok,ok,ok,ok,ok,ok
 SDPDS,h2o_c + sl26da_c --> 26dap_LL_c + succ_c,ok,ok,ok,ok,ok,ok
 SDPTA,akg_c + sl26da_c <=> glu__L_c + sl2a6o_c,ok,ok,ok,ok,ok,only when going forwards
-SEAHCYSHYD,h2o_c + seahcys_c --> adn_c + selhcys_c,ok,SEAHCYSHYD_1,ok,ok,ok,ok
-SEAHCYSHYD_1,h2o_c + seahcys_c <=> adn_c + selhcys_c,ok,SEAHCYSHYD,ok,ok,ok,only when going forwards
 SELCYSLY3,nadph_c + selcys_c --> ala__L_c + nadp_c + seln_c,ok,ok,ok,ok,ok,ok
 SERASr,atp_c + h_c + ser__L_c --> ppi_c + seramp_c,ok,ok,ok,ok,ok,ok
 SERAT,accoa_c + ser__L_c <=> acser_c + coa_c,ok,ok,ok,ok,ok,only when going backwards
@@ -2095,8 +2092,6 @@ SUCOAACTr,ac_c + succoa_c <=> accoa_c + succ_c,ok,ok,ok,ok,ok,ok
 SUCOAS,atp_c + coa_c + succ_c <=> adp_c + pi_c + succoa_c,ok,ok,ok,ok,ok,ok
 SUCR,h2o_c + sucr_c --> fru_c + glc__D_c,ok,ok,ok,ok,ok,ok
 SUCpts,pep_c + sucr_e --> pyr_c + suc6p_c,ok,ok,ok,ok,ok,ok
-SULR,5.0 h_c + 3.0 nadph_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nadp_c,ok,SULR_1,SULR_1,ok,ok,ok
-SULR_1,3.0 h2o_c + h2s_c + 3.0 nadp_c <=> 5.0 h_c + 3.0 nadph_c + so3_c,ok,SULR,SULR,ok,ok,ok
 SULabc,atp_c + h2o_c + so4_e --> adp_c + h_c + pi_c + so4_c,ok,ok,ok,ok,ok,ok
 SULabcpp,atp_c + h2o_c + so4_p --> adp_c + h_c + pi_c + so4_c,ok,ok,ok,ok,ok,ok
 St,s_e <=> s_c,ok,ok,ok,ok,ok,ok
@@ -2111,7 +2106,6 @@ TDSK,atp_c + lipidAds_c --> adp_c + h_c + lipidA_c,ok,ok,ok,ok,ok,ok
 TGBPA,tagdp__D_c <=> dhap_c + g3p_c,ok,ok,ok,ok,ok,only when going backwards
 THD2pp,2.0 h_p + nadh_c + nadp_c --> 2.0 h_c + nad_c + nadph_c,ok,ok,ok,ok,ok,ok
 THDPS,h2o_c + succoa_c + thdp_c --> coa_c + sl2a6o_c,ok,ok,ok,ok,ok,ok
-THFAT,h2o_c + methf_c --> 5fthf_c + h_c,ok,FOMETRi,FOMETRi,ok,ok,ok
 THIORDXi,h2o2_c + trdrd_c --> 2.0 h2o_c + trdox_c,ok,ok,ok,CAT;CYTBD;CYTBD2pp;CYTBDpp;CYTBO3_4pp;GTHPi;NADHPO,ok,ok
 THMDt2,h_e + thymd_e --> h_c + thymd_c,ok,ok,ok,ok,ok,ok
 THMDt2pp,h_p + thymd_p --> h_c + thymd_c,ok,ok,ok,ok,ok,ok
@@ -2242,7 +2236,6 @@ XYLK,atp_c + xylu__D_c --> adp_c + h_c + xu5p__D_c,ok,ok,ok,ok,ok,ok
 XYLOS2,2.0 h2o_c + xyl3_c <=> 3.0 xyl__D_c,ok,ok,ok,ok,ok,only when going backwards
 XYLOS3,h2o_c + xylb_c <=> 2.0 xyl__D_c,ok,ok,ok,ok,ok,only when going backwards
 XYLt2,h_e + xyl__D_e --> h_c + xyl__D_c,ok,ok,ok,ok,ok,ok
-YUMPS,r5p_c + ura_c <=> h2o_c + psd5p_c,ok,PSUDS,ok,ok,ok,only when going forwards
 ZN2t3pp,h_p + zn2_c --> h_c + zn2_p,ok,ok,ok,ok,ok,ok
 ZN2t4pp,h_p + k_p + zn2_c --> h_c + k_c + zn2_p,ok,ok,ok,ok,ok,ok
 ZN2t5,h_p + zn2_c --> h_c + zn2_e,ok,ok,ok,ok,ok,ok
@@ -2260,3 +2253,10 @@ sink_hemeO_c,hemeO_c --> ,ok,ok,ok,ok,ok,ok
 sink_mobd_c,mobd_c --> ,ok,ok,ok,ok,ok,ok
 Growth,0.000223 10fthf_c + 0.513689 ala__L_c + 0.000223 amet_c + 0.295792 arg__L_c + 0.241055 asn__L_c + 0.241055 asp__L_c + 54.124831 atp_c + 0.005205 ca2_c + 0.005205 cl_c + 0.000576 coa_c + 0.0001 cobalt2_c + 0.133508 ctp_c + 0.000709 cu2_c + 0.09158 cys__L_c + 0.026166 datp_c + 0.027017 dctp_c + 0.027017 dgtp_c + 0.026166 dttp_c + 0.000223 fad_c + 0.006715 fe2_c + 0.007808 fe3_c + 0.26316 gln__L_c + 0.26316 glu__L_c + 0.612638 gly_c + 0.215096 gtp_c + 48.601527 h2o_c + 0.094738 his__L_c + 0.290529 ile__L_c + 0.195193 k_c + 0.019456 kdo2lipid4_p + 0.450531 leu__L_c + 0.343161 lys__L_c + 0.153686 met__L_c + 0.008675 mg2_c + 0.000223 mlthf_c + 0.000691 mn2_c + 0.0001 mql8_c + 0.013894 murein5px4p_p + 0.001831 nad_c + 0.000447 nadp_c + 0.017868 pe160_c + 0.045946 pe160_p + 0.054154 pe161_c + 0.02106 pe161_p + 0.185265 phe__L_c + 0.000223 pheme_c + 0.221055 pro__L_c + 0.000223 pydx5p_c + 0.000223 ribflv_c + 0.215792 ser__L_c + 0.000223 sheme_c + 0.004338 so4_c + 0.000223 thf_c + 0.000223 thmpp_c + 0.253687 thr__L_c + 0.056843 trp__L_c + 0.137896 tyr__L_c + 0.144104 utp_c + 0.423162 val__L_c + 0.000341 zn2_c --> 53.95 adp_c + 53.95 h_c + 53.945662 pi_c + 0.773903 ppi_c,ok,ok,ok,ok,ok,ok
 ATPM,atp_c + h2o_c --> adp_c + h_c + pi_c,NTP1,ok,ok,ok,ok,ok
+YUMPS,r5p_c + ura_c <=> h2o_c + psd5p_c,ok,PSUDS,ok,ok,ok,only when going forwards
+SEAHCYSHYD_1,h2o_c + seahcys_c <=> adn_c + selhcys_c,ok,SEAHCYSHYD,ok,ok,ok,only when going forwards
+SEAHCYSHYD,h2o_c + seahcys_c --> adn_c + selhcys_c,ok,SEAHCYSHYD_1,ok,ok,ok,ok
+SULR_1,3.0 h2o_c + h2s_c + 3.0 nadp_c <=> 5.0 h_c + 3.0 nadph_c + so3_c,ok,SULR,SULR,ok,ok,ok
+SULR,5.0 h_c + 3.0 nadph_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nadp_c,ok,SULR_1,SULR_1,ok,ok,ok
+FOMETRi,5fthf_c + h_c --> h2o_c + methf_c,ok,THFAT,THFAT,ok,ok,ok
+PSUDS,r5p_c + ura_c --> h2o_c + psd5p_c,ok,YUMPS,ok,ok,ok,ok
