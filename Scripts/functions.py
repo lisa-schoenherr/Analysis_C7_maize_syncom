@@ -17,6 +17,7 @@ import pandas as pd
 
 # plots
 import matplotlib.pyplot as plt
+from cobra import Reaction
 from matplotlib.colors import LinearSegmentedColormap, LogNorm
 import seaborn as sns
 
@@ -44,22 +45,26 @@ def get_rxn(model, rxn_id, bounds = False, mass = False, GPR=False, charge=False
     :param GPR: bool, if True, the GPR of the reaction is returned.
     :param charge: bool, if True, the charge of each metabolite in the reaction is returned.
     """
-    rxn = model.reactions.get_by_id(rxn_id)
-    charges = {met.id: met.charge for met in rxn.metabolites}
-    masses = {met.id: met.formula for met in rxn.metabolites}
-    gpr = rxn.gene_reaction_rule
-    up = rxn.upper_bound
-    lb = rxn.lower_bound
-    print(rxn)
 
-    if charge:
-        print(charges)
-    if mass:
-        print(masses)
-    if GPR:
-        print(gpr)
-    if bounds:
-        print(f"from {lb} to {up}")
+    if rxn_id in model.reactions:
+        rxn = model.reactions.get_by_id(rxn_id)
+        charges = {met.id: met.charge for met in rxn.metabolites}
+        masses = {met.id: met.formula for met in rxn.metabolites}
+        gpr = rxn.gene_reaction_rule
+        up = rxn.upper_bound
+        lb = rxn.lower_bound
+        print(rxn)
+
+        if charge:
+            print(charges)
+        if mass:
+            print(masses)
+        if GPR:
+            print(gpr)
+        if bounds:
+            print(f"from {lb} to {up}")
+    else:
+        print("No match.")
 
 
 def get_rxn_unknown(models, rxn_id, bounds=False, mass = False, GPR=False, charge=False):
@@ -146,6 +151,56 @@ def get_met_unknown(models, met_id):
     print("No match.")
 
 
+def get_identity_model(model):
+    """
+    Gets you the info if we have community or individual model.
+    :param model: cobrapy model
+    :return: "ind" or "com"
+    """
+    ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)]
+    if model.id in ind_model_ids:
+        return "ind"
+    else:
+        return "com"
+
+
+def check_early_biomass_component(model, medium_dict, check_rxn_id):
+    rxn_id = "objective_check"
+    sad_mets = []
+
+    check_mets = model.reactions.get_by_id(check_rxn_id).metabolites
+    #check_mets = model.reactions.check_rxn_id.metabolites
+    for met, flux in check_mets.items():
+        if flux < 0: # only look at mets that are consumed
+            #print(met)
+            stoich = {met: flux}
+
+            if rxn_id in model.reactions: # biomass test reaction is updated
+                rxn = model.reactions.get_by_id(rxn_id)
+                rxn.subtract_metabolites(rxn.metabolites)
+                rxn.add_metabolites(stoich)
+            else: # first time reaction is created
+                new_rxn = Reaction(id=rxn_id, name="objective reaction", lower_bound=0, upper_bound=1000)
+                new_rxn.add_metabolites(stoich)
+                model.add_reactions([new_rxn])
+
+            model.objective = rxn_id
+
+            with model:
+                change_medium(model, medium_dict)
+                try:
+                    pfba_flux = pfba(model)
+                    if pfba_flux[rxn_id] == 0:
+                        sad_mets.append(met.id)
+                except Infeasible:
+                    print("Cannot get result because pfba is infeasible")
+
+    if rxn_id in model.reactions:
+        rxn = model.reactions.get_by_id(rxn_id)
+        model.remove_reactions([rxn])
+
+    print(sad_mets)
+
 ###
 # PART 2 - Simulations: change and test different media
 ###
@@ -165,8 +220,10 @@ def change_medium(model, medium_dict):
     if isinstance(medium_dict, pd.DataFrame):
         medium_dict = dict(zip(medium_dict.reaction, medium_dict.bound))
 
-    ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)]
-    if model.id not in ind_model_ids:
+    #ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)] # old version because if this ever changes i need to change it in every function
+    #if model.id not in ind_model_ids:  # community models
+    model_ident = get_identity_model(model)
+    if model_ident == "com":
         # adjust the medium suffices for community models with medium compartment
         medium_dict = {k.removesuffix('_e') + '_m' if k.endswith('_e') else k: v for k, v in medium_dict.items()}
 
@@ -185,8 +242,8 @@ def test_medium(model, medium_dict, frac=1):
     with model:
         change_medium(model, medium_dict)
         try:
-            ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)]
-            if model.id not in ind_model_ids: # community models
+            model_ident = get_identity_model(model)
+            if model_ident == "com": # community models
                 solution = model.cooperative_tradeoff(fluxes=True, pfba=True, fraction=frac).fluxes.transpose()
                 growth = solution[solution.index.str.contains("Growth")].transpose()
                 growth = growth[~ growth.index.str.contains("medium")]
@@ -315,6 +372,17 @@ def create_medium(carbon_list, minimal_list, model_dict, medium_uptake_bound):
 ###
 
 def convert_cooptradeoff_into_fluxes(model, medium=None, frac=1):
+    """
+    Convert cooperative tradeoff into fluxes for a given community model.
+
+    :param model: The metabolic model to compute cooperative
+        tradeoff fluxes on (must be community model).
+    :param medium: Optional medium for the model to consider
+        during computation. Default is ``None``.
+    :param frac: Fraction to modulate the cooperative tradeoff
+        computation. Default is ``1``.
+    :return: Flux values for reactions in the same style as the normal pfba function [pandas.Series].
+    """
 
     if hasattr(model, "modification") and model.modification is not None:
         model.modification = None
@@ -337,17 +405,20 @@ def convert_cooptradeoff_into_fluxes(model, medium=None, frac=1):
         return pfba_fluxes
 
 
+# this gets you long dataframe for a community
 def get_pfba_fluxes(model, medium, frac=1):
     with model:
         change_medium(model, medium)
-        ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)]
+        model_ident = get_identity_model(model)
 
         try:
-            if model.id in ind_model_ids:
+            if model_ident == "ind":
                 pfba_fluxes = pfba(model).fluxes
             else:
                 pfba_fluxes = convert_cooptradeoff_into_fluxes(model, frac=frac)
+
             return pfba_fluxes
+
         except Infeasible:
             return None
 
@@ -373,7 +444,8 @@ def get_fluxes_for_heatmap(model, medium, type, c7_all_ex, dict_with_rxn="no"):
         return "Specify either \"uptake\" or \"secret\" as type"
 
     # this decides if we just include medium EX or all EX between the bacteria
-    if model.id == "C7" and c7_all_ex == "no":
+    model_ident = get_identity_model(model)
+    if model_ident == "com" and c7_all_ex == "no":
         filtered_fluxes = filtered_fluxes[(filtered_fluxes.index.str.endswith('_m'))]
         # so here we update filtered fluxes and kick EX_.*_e reactions out and only keep EX_.*_m
 
@@ -653,20 +725,18 @@ def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type
 # VISUALISATIONS - BUDGET PLOTS
 ###
 
-def fba_and_query(model, met_query, medium=None):
-    #med = minimal_medium(model, 3, minimize_components=True)
+def fba_and_query(model, met_query, medium):
     with model:
-        try:
-            #df_filtered = medium_mre_m9[medium_mre_m9['reaction'] != 'EX_nmn_e']
-            if medium is not None:
-                change_medium(model, medium)
-            fluxes = pfba(model)
-            if fluxes["Growth"] == 0:
-                print("No growth")
-        except Infeasible:
-            print("Infeasible")
+        fluxes = get_pfba_fluxes(model, medium)
+        if fluxes is None:
             return None, None
-    solution_frame=fluxes.to_frame()
+
+    ident = get_identity_model(model)
+    if ident == "com":
+        solution_frame = fluxes.to_frame(name="fluxes")   # rename column to "fluxes"
+        solution_frame.index.name = None
+    else:
+        solution_frame=fluxes.to_frame()
 
     budget_mets = []
     for met in model.metabolites.query(met_query):
@@ -675,14 +745,17 @@ def fba_and_query(model, met_query, medium=None):
     print(budget_mets)
     return budget_mets, solution_frame
 
+
 #Remove reactions with negative flux from old list
 def remove_items(test_list, item):
     res = [i for i in test_list if i != item]
     return res
 
 
-
 def calc_producer_consumer(model, budget_mets, solution_frame):
+    if budget_mets is None:
+        return None
+
     #Defining list of reactions producing and consuming the metabolite
     consumers = []
     producers = []
@@ -742,6 +815,9 @@ def calc_producer_consumer(model, budget_mets, solution_frame):
 
 
 def make_budget_plot(all_reactions,budget_mets, save = False):
+    if budget_mets is None:
+        return None
+
     #Defining the nº of colors
     number_of_colors = len(all_reactions.index)
 
@@ -776,9 +852,15 @@ def make_budget_plot(all_reactions,budget_mets, save = False):
     return chart.T
 
 # all together
-def budget_plot_allInOne(model, query_term, medium):
+def budget_plot_allInOne(model, query_term, medium, print_rxns = False):
     budget_mets, solution_frame = fba_and_query(model, query_term, medium)
+    if budget_mets is None:
+        return "Infeasible or no Growth; no data to plot"
     all_reactions = calc_producer_consumer(model, budget_mets, solution_frame)
+
+    if print_rxns:
+        print(all_reactions)
+
     budget_plot = make_budget_plot(all_reactions, budget_mets)
 
 # alternatively, you can make multiple calls:
@@ -826,4 +908,66 @@ def pca(df, save_path=None):
     plt.grid(True)
     if save_path is not None:
         plt.savefig(save_path, format="svg", bbox_inches="tight")
+    plt.show()
+
+
+
+#####
+# More Community specific stuff
+####
+
+# similar to the get_pfba_fluxes function but slighly altered to directly also get growth values;
+# also get_pfba_fluxes gets you a series aka one column with all reactions (reactions are exactly named how they are in the syncom,
+# so we have rxn_AA1 and rxn_AA2 while with this function we habe rxn and col for AA1 and AA2)
+
+def community_pfba(com_model, medium, frac=1):
+    with com_model:
+        change_medium(com_model, medium)
+        try:
+            fluxes = com_model.cooperative_tradeoff(pfba=True, fluxes=True, fraction=frac).fluxes.transpose()
+        except (Infeasible, OptimizationError):
+            print(f"Model {com_model.id} is infeasible.")
+            return None, None
+
+        growth = fluxes[fluxes.index.str.contains("Growth")].transpose()
+        growth = growth[~ growth.index.str.contains("medium")]
+        growth.index.name = "model"
+        growth = growth["Growth"]
+
+        return fluxes, growth
+
+
+def test_fractions_community(model, medium, drop_out = None, medium_name = None, print_growth=False):
+    fractions = np.arange(0, 1.1, 0.1)
+    strain_codes = ["Sma", "Bpi", "Cpu", "Elu", "Cin", "Hro", "Ppu"]
+    com_title = "community"
+
+    if drop_out is not None:
+        if drop_out in strain_codes:
+            strain_codes = [s for s in strain_codes if s != drop_out]
+            com_title = f"drop-out community (-{drop_out})"
+
+    n_members = len(strain_codes)
+    growth_vals_per_member = [[] for _ in range(n_members)]
+
+    for frac in fractions:
+        _, growth_vals = community_pfba(model, medium, frac)
+        for i in range(n_members):
+            if print_growth:
+                print(frac, growth_vals)
+            growth_vals_per_member[i].append(growth_vals[i])
+
+    # Plot dots & dashed lines for each strain
+    for i, code in enumerate(strain_codes):
+        plt.plot(fractions, growth_vals_per_member[i],
+                 marker='o', linestyle='--', label=code)
+
+    plt.xlabel("Fraction")
+    plt.ylabel("Growth value")
+    if medium_name is not None:
+        plt.title(f"Growth of {com_title} members across fractions\non {medium_name} medium")
+    else:
+        plt.title(f"Growth of {com_title} members across fractions")
+    plt.legend()
+    plt.grid(True)
     plt.show()
