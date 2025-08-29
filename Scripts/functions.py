@@ -35,6 +35,24 @@ from sklearn.preprocessing import StandardScaler
 # PART 1 - Get Metabolite & Reaction Info
 ###
 
+def get_basic_amounts(models):
+    """
+    Get the number of reactions and metabolites for all models in a dictionary.
+    :param models: dict with model_id as a key and model as value
+    :return: print number of metabolites and reactions per model and average amount.
+    """
+    mean_met = 0
+    mean_rxn = 0
+    for model in models.values():
+        rxns = len(model.reactions)
+        mets = len(model.metabolites)
+        print(f"{model.id} has {rxns} reactions and {mets} metabolites")
+        mean_rxn += rxns
+        mean_met += mets
+    print(f"Mean number of reactions: {mean_rxn / len(models)}")
+    print(f"Mean number of metabolites: {mean_met / len(models)}")
+
+
 def get_rxn(model, rxn_id, bounds = False, mass = False, GPR=False, charge=False):
     """
     This functions returns information about a reaction in one model. The amount of information is controlled by the arguments.
