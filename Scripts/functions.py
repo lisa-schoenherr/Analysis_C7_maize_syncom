@@ -232,6 +232,30 @@ def safe_parse(x):
         return x
 
 
+def e_to_m(medium):
+    """
+    Changes the suffix of the reaction IDs in a medium dict/df from '_e' to '_m'.
+    :param medium: dict or dataframe with Exchange reaction IDs & uptake bounds or a list with only reaction IDs
+    :return: medium dict with modified reaction IDs or a list if only list of IDs were given without bounds
+    """
+    if isinstance(medium, dict):
+        # Convert reaction IDs ending in '_e' to '_m'
+        medium_dict = {k.removesuffix('_e') + '_m' if k.endswith('_e') else k: v for k, v in medium.items()}
+        return medium_dict
+
+    elif isinstance(medium, pd.DataFrame):
+        # Convert DataFrame to a dict with converted reaction IDs
+        medium_dict = {rxn.removesuffix('_e') + '_m' if rxn.endswith('_e') else rxn: bound for rxn, bound in zip(medium["reaction"], medium["bound"])}
+        return medium_dict
+
+    elif isinstance(medium, list):
+        medium_list = [rxn[:-2] + "_m" for rxn in medium]
+        return medium_list
+
+    else:
+        return "Medium is wrong data type"
+
+
 def change_medium(model, medium_dict):
 
     # when I read the csv files with medium info it is saved as a dataframe, but i want a dict
@@ -256,13 +280,13 @@ def change_medium(model, medium_dict):
 
 
 # changes medium, does pfba and returns growth rate
-def test_medium(model, medium_dict, frac=1):
+def test_medium(model, medium_dict, frac=1, min_growth=0):
     with model:
         change_medium(model, medium_dict)
         try:
             model_ident = get_identity_model(model)
             if model_ident == "com": # community models
-                solution = model.cooperative_tradeoff(fluxes=True, pfba=True, fraction=frac).fluxes.transpose()
+                solution = model.cooperative_tradeoff(fluxes=True, pfba=True, fraction=frac, min_growth=min_growth).fluxes.transpose()
                 growth = solution[solution.index.str.contains("Growth")].transpose()
                 growth = growth[~ growth.index.str.contains("medium")]
                 growth.index.name = "model"
@@ -425,6 +449,13 @@ def convert_cooptradeoff_into_fluxes(model, medium=None, frac=1):
 
 # this gets you long dataframe for a community
 def get_pfba_fluxes(model, medium, frac=1):
+    """
+    Compute pfba fluxes for a given COBRApy model for a given medium.
+    :param model: COBRApy model (individual or community)
+    :param medium: dict or df
+    :param frac: optional for community models, between 0 and 1; 1 is standard
+    :return: series with reaction ids and fluxes
+    """
     with model:
         change_medium(model, medium)
         model_ident = get_identity_model(model)
