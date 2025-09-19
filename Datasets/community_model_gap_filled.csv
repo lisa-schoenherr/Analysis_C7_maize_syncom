@@ -1,6 +1,6 @@
 id;genus;species;reactions;metabolites;file;abundance
 AA1;Stenotrophomonas;Stenotrophomonas maltophilia;2263;1513;/home/lisa/Dokumente/Programmierung/Models/12_gap_filled/AA1_filled.xml;16
-AA2;Brucella;Brucella pituitosa;2671;1792;/home/lisa/Dokumente/Programmierung/Models/12_gap_filled/AA2_filled.xml;5
+AA2;Brucella;Brucella pituitosa;2671;1792;/home/lisa/Dokumente/Programmierung/Models/13_vitamin/AA2_vitamin.xml;5
 AA3;Curtobacterium;Curtobacterium pusillum;2218;1498;/home/lisa/Dokumente/Programmierung/Models/12_gap_filled/AA3_filled.xml;8
 AA4;Enterobacter;Enterobacter ludwigii;2795;1757;/home/lisa/Dokumente/Programmierung/Models/12_gap_filled/AA4_deleted_duplicates.xml;65
 AA5;Chryseobacterium;Chryseobacterium indologenes;2106;1444;/home/lisa/Dokumente/Programmierung/Models/12_gap_filled/AA5_filled.xml;1
