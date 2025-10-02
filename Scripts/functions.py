@@ -281,6 +281,14 @@ def change_medium(model, medium_dict):
 
 # changes medium, does pfba and returns growth rate
 def test_medium(model, medium_dict, frac=1, min_growth=0):
+    """
+    Test a certain medium for one model and only returns the growth value.
+    :param model:
+    :param medium_dict:
+    :param frac: Optional for community models (fraction for MICOM's cooperative tradeoff function)
+    :param min_growth:
+    :return: Growth value [int] or None if Infeasible
+    """
     with model:
         change_medium(model, medium_dict)
         try:
