@@ -1,0 +1,19 @@
+Bacteria
+++Bacillati
+| \-Curtobacterium pusillum
+\-Pseudomonadati
+  +-Pseudomonadota
+  | ++Betaproteobacteria
+  | | \-Herbaspirillum robiniae
+  | ++Alphaproteobacteria
+  | | \-Brucella pituitosa
+  | \-Gammaproteobacteria
+  |   ++Enterobacterales
+  |   | \-Enterobacter ludwigii
+  |   ++Lysobacterales
+  |   | \-Stenotrophomonas maltophilia
+  |   \+Pseudomonadales
+  |     \-Pseudomonas putida
+  \+FCB group
+    \-Chryseobacterium indologenes
+-----------------------------------
