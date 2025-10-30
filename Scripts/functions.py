@@ -521,7 +521,7 @@ def get_fluxes_for_heatmap(model, medium, type, c7_all_ex, dict_with_rxn="no"):
     return flux_dict
 
 
-def uptake_secret_heatmap(all_models, type, initial_medium=None, c7_all_ex="no", vmin=1e-5):
+def uptake_secret_heatmap(all_models, type, initial_medium=None, c7_all_ex="no", vmin=1e-5, save_path=None, width=12):
     data = {}
 
     for model_name, model_obj in all_models.items():
@@ -550,7 +550,7 @@ def uptake_secret_heatmap(all_models, type, initial_medium=None, c7_all_ex="no",
     custom_cmap = LinearSegmentedColormap.from_list(f"{base_cmap_name}_custom", custom_colors)
 
     # Plot heatmap
-    plt.figure(figsize=(12, min(len(df_filtered) * 0.4, 32)))
+    plt.figure(figsize=(width, min(len(df_filtered) * 0.4, 32)))
     plt.grid(False)
 
     ax = sns.heatmap(
@@ -576,6 +576,9 @@ def uptake_secret_heatmap(all_models, type, initial_medium=None, c7_all_ex="no",
     plt.ylabel(f"{type.capitalize()} reactions")
     plt.tight_layout()
     #plt.show()
+
+    if save_path is not None:
+        plt.savefig(save_path, format="svg", bbox_inches="tight")
 
     """ without logarithmic scale
     # Plot heatmap
@@ -634,7 +637,7 @@ def cleaner_ex_reaction_ids(index, model):
         for rxn in index])
 
 
-def get_uptakes_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_ids):
+def get_uptakes_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_ids, sort_by_model=False):
     uptake_data = {model_id: [] for model_id in model_ids}
 
     flux_dict = dict(zip(com_fluxes['reaction_id'], com_fluxes['flux']))
@@ -655,8 +658,11 @@ def get_uptakes_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_
 
     # Prepare data for uptake
     filtered_uptake = uptake_df.dropna(how='all')
-    sorted_uptake = sort_reactions_by_model_presence(filtered_uptake)
-    plot_uptake = sorted_uptake.fillna(0)
+    if sort_by_model:
+        sorted_uptake = sort_reactions_by_model_presence(filtered_uptake)
+        plot_uptake = sorted_uptake.fillna(0)
+    else:
+        plot_uptake = filtered_uptake.fillna(0)
 
     # Clean reaction names for y-axis
     #plot_uptake.index = clean_ex_reaction_ids(plot_uptake.index.to_series())
@@ -665,7 +671,7 @@ def get_uptakes_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_
     return plot_uptake
 
 
-def get_secretions_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_ids):
+def get_secretions_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_ids, sort_by_model=False):
     secretion_data = {model_id: [] for model_id in model_ids}
 
     flux_dict = dict(zip(com_fluxes['reaction_id'], com_fluxes['flux']))
@@ -687,8 +693,11 @@ def get_secretions_within_community(model, all_ex_rxns, com_fluxes, epsilon, mod
 
     # Prepare data for secretion
     filtered_secretion = secretion_df.dropna(how='all')
-    sorted_secretion = sort_reactions_by_model_presence(filtered_secretion)
-    plot_secretion = sorted_secretion.fillna(0)
+    if sort_by_model:
+        sorted_secretion = sort_reactions_by_model_presence(filtered_secretion)
+        plot_secretion = sorted_secretion.fillna(0)
+    else:
+        plot_secretion = filtered_secretion.fillna(0)
 
     # Clean reaction names for y-axis
     plot_secretion.index = cleaner_ex_reaction_ids(plot_secretion.index, model)
@@ -696,7 +705,7 @@ def get_secretions_within_community(model, all_ex_rxns, com_fluxes, epsilon, mod
     return plot_secretion
 
 
-def get_fluxes_within_community(com_model, medium, type, dict_with_ind_models):
+def get_fluxes_within_community(com_model, medium, type, dict_with_ind_models, sort_by_model):
     model_ids = sorted(list(set([rxn.id[-3:] for rxn in com_model.reactions if rxn.id[-3:].startswith("AA")]))) # which models are present in community
     epsilon = 0.0001 # threshold for fluxes, below they are 0
 
@@ -721,18 +730,18 @@ def get_fluxes_within_community(com_model, medium, type, dict_with_ind_models):
     all_ex_rxns = sorted(all_ex_rxns)
 
     if type == "uptake":
-        plot_uptake = get_uptakes_within_community(com_model, all_ex_rxns, com_fluxes, epsilon, model_ids)
+        plot_uptake = get_uptakes_within_community(com_model, all_ex_rxns, com_fluxes, epsilon, model_ids, sort_by_model)
         return plot_uptake
     elif type == "secret":
-        plot_secretion = get_secretions_within_community(com_model, all_ex_rxns, com_fluxes, epsilon, model_ids)
+        plot_secretion = get_secretions_within_community(com_model, all_ex_rxns, com_fluxes, epsilon, model_ids, sort_by_model)
         return plot_secretion
     else:
         return None # type was falsely specified
 
 
 # OG Aufruf um Heatmap zu generieren
-def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type, vmin=0.001):
-    df_fluxes = get_fluxes_within_community(com_model, medium, type, dict_with_ind_models)
+def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type, vmin=0.001, save_path=None, width=12, sort_by_model=False):
+    df_fluxes = get_fluxes_within_community(com_model, medium, type, dict_with_ind_models, sort_by_model)
 
     df = pd.DataFrame(df_fluxes).fillna(0)
     df = df.abs() # absolute values, so even negative fluxes have right colour scale that |-1000| is bigger than 0
@@ -751,7 +760,7 @@ def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type
 
 
     # Plot heatmap
-    plt.figure(figsize=(12, len(df_filtered) * 0.4))
+    plt.figure(figsize=(width, len(df_filtered) * 0.4))
     plt.grid(False)
 
     ax = sns.heatmap(
@@ -773,6 +782,10 @@ def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type
     plt.xlabel("Models")
     plt.ylabel(f"reactions")
     #plt.tight_layout()
+
+    if save_path is not None:
+        plt.savefig(save_path, format="svg", bbox_inches="tight")
+
     plt.show()
 
     return df_filtered
