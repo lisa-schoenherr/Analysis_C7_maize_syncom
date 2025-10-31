@@ -1,5 +1,0 @@
-include README.rst
-include docs/*.rst
-include data/*.*
-recursive-include data *
-

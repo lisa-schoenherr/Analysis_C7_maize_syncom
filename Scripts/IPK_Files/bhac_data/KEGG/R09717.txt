@@ -1,9 +1,0 @@
-ENTRY       R09717                      Reaction
-NAME        threo-3-hydroxy-D-aspartate glyoxylate-lyase (glycine-forming)
-DEFINITION  threo-3-Hydroxy-D-aspartate <=> Glycine + Glyoxylate
-EQUATION    C19813 <=> C00037 + C00048
-RCLASS      RC00311  C00048_C19813
-            RC00312  C00037_C19813
-ENZYME      4.1.3.41
-DBLINKS     RHEA: 27941
-///
