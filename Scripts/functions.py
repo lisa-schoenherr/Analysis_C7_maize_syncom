@@ -30,7 +30,6 @@ from cobra.medium import minimal_medium
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-
 ###
 # PART 1 - Get Metabolite & Reaction Info
 ###
@@ -86,6 +85,15 @@ def get_rxn(model, rxn_id, bounds = False, mass = False, GPR=False, charge=False
 
 
 def get_rxn_unknown(models, rxn_id, bounds=False, mass = False, GPR=False, charge=False):
+    """
+    This functions returns information about a reaction for a dict of models. The amount of information is controlled by the arguments.
+    :param models: dict with keys being names of models and the values being a COBRApy model object.
+    :param rxn_id: reaction ID as string.
+    :param bounds: bool, if True, the lower and upper bounds are returned.
+    :param mass: bool, if True, the formula of each metabolite in the reaction is returned.
+    :param GPR: bool, if True, the GPR of the reaction is returned.
+    :param charge: bool, if True, the charge of each metabolite in the reaction is returned.
+    """
     model_list = []
     gpr_list = []
     ub = set()
@@ -110,6 +118,11 @@ def get_rxn_unknown(models, rxn_id, bounds=False, mass = False, GPR=False, charg
 
 
 def get_met(model, met_id):
+    """
+    This functions returns information about a metabolite in one model. The amount of information is controlled by the arguments.
+    :param model: Cobrapy model object.
+    :param met_id: metabolite ID as string.
+    """
     if met_id in model.metabolites:
         met = model.metabolites.get_by_id(met_id)
         # rxns = {rxn.id:model.reactions.get_by_id(rxn.id).reaction for rxn in met.reactions}
@@ -137,6 +150,11 @@ def get_met(model, met_id):
 
 
 def get_met_unknown(models, met_id):
+    """
+   This functions returns information about a metabolite for a dict of models. The amount of information is controlled by the arguments.
+   :param models: dict with keys being names of models and the values being a COBRApy model object.
+   :param met_id: metabolite ID as string.
+   """
     model_list = []
     rxn_list = []
     for model in models.values():
@@ -375,48 +393,6 @@ def create_medium(carbon_list, minimal_list, model_dict, medium_uptake_bound, ca
     return visualise_heatmap_medium(results, save_path=save_path)
 
 
-"""
-This are two older create_medium functions from 04_Simulations:
-def make_key(carbon):
-        if isinstance(carbon, list):
-            # Join all metabolites except "EX_" and "_e" to make a concise label
-            parts = [c[3:-2] for c in carbon]
-            return "_".join(parts)
-        else:
-            return carbon[3:-2]
-#%%
-def create_medium(carbon_list, minimal_list, model_dict, medium_uptake_bound):
-    # Flatten the carbon_list for consistent keys
-    flattened_sources = [item[0] if isinstance(item, list) else item for item in carbon_list]
-    #results = {carbon[3:-2]: {model.id: None for model in #model_dict.values()} for carbon in flattened_sources}
-    results = {make_key(carbon): {model.id: None for model in model_dict.values()} for carbon in carbon_list}
-
-
-    for carbon in carbon_list:
-        carbon_key = make_key(carbon)
-        # Standardize the carbon key (used to index the results dict)
-        if isinstance(carbon, list):
-            #carbon_key = carbon[0][3:-2]
-            new_medium = minimal_list + carbon
-        else:
-            #carbon_key = carbon[3:-2]
-            new_medium = minimal_list + [carbon]
-
-        # define uptake bound here (this has big impact on how much biomass can be produced)
-        med_dict = {new_medium[i]: medium_uptake_bound for i in range(len(new_medium))}
-
-        for model in model_dict.values():
-            growth_val = test_medium(model, med_dict)
-            if isinstance(growth_val, numbers.Number) and growth_val != 0:
-                print(carbon, growth_val)
-            results[carbon_key][model.id] = growth_val
-        #print("-----")
-
-    visualise_heatmap_medium(results)
-
-"""
-
-
 ###
 # PART 3 - Simulations: Uptakes and Secretions (Heatmaps)
 ###
@@ -608,7 +584,6 @@ def uptake_secret_heatmap(all_models, type, initial_medium=None, c7_all_ex="no",
 ###
 
 def sort_reactions_by_model_presence(df):
-    """Sort reactions: first those used by AA1, then AA2, etc."""
     seen = set()
     sorted_reactions = []
 
