@@ -1,0 +1,6 @@
+# IDE and editor folders
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
