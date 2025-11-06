@@ -1,6 +1,0 @@
-These models were created with carveme:
-
-carve Datasets/AAx_proteins.faa -u gramneg --solver cplex --soft filtered_false_reactions.tsv -o Models/06_carveme/AAx.xml
-
-- all models besides AA3 are gram negative
-- --soft is used to give carveme a list of reactions that we want to exclude from the model creation process (soft constraints), the tsv file "filtered_false_reactions.tsv" includes this list, the = in the second column indicates the exclusion

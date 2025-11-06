@@ -1,0 +1,62 @@
+To be able to track my progress, I saved my models and different stages of my curation process.
+
+Archived models (see #ARCHIVE_ folder) are those created with CarveMe, however without using the soft constraint parameters. Therefore, these are not actively used anymore.
+
+For my results that I generated for my master thesis, I used the models in the folder 12_gap_filled.
+06 - 11 are older version that build on one another but make it possible to track changes and get MEMOTE scores after each curation step.
+
+For my models I did not used the three letter abbreviation of their species name like I did in my thesis; I used AA1-AA7 to name them and being able to iterate through the models more easily. This abbrevation system was also used here: https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA357031
+
+Sma - AA1
+Bpi - AA2
+Cpu - AA3
+Elu - AA4
+Cin - AA5
+Hro - AA6
+Ppu - AA7
+
+
+----------------
+----------------
+06 - Models were just created with CarveMe with the following command:
+
+carve Datasets/AAx_proteins.faa -u gramneg --solver cplex --soft filtered_false_reactions.tsv -o Models/06_carveme/AAx.xml
+
+- all models besides AA3 are gram negative
+- --soft is used to give carveme a list of reactions that we want to exclude from the model creation process (soft constraints), the tsv file "filtered_false_reactions.tsv" includes this list (see 06_ folder), the = in the second column indicates the exclusion
+
+For soft constraints I only used reactions that only occured in the iYO844 model (Carveme excluded these reactions in the model creation process).
+
+----------------
+07 - The CarveMe models underwent Frowins Script, i.e.
+(1) Identify imbalanced reactions
+(2) Apply mass balance function
+
+there were in total 4 reactions were stoichiometry was not balanced
+(see imbalanced_reactions.csv)
+
+----------------
+08 - Models were charge balanced
+
+----------------
+09 - Based on the results from MACAW, mostly Duplicates were fixed in an automated way
+
+----------------
+10 - More curation regarding duplicates, however now manual.
+
+----------------
+11 - These models are currently not used and are not a progress from the 10_ models. For these models the bounds of reactions were changed according to reference models to deal with unbounded flux reactions (and blocked reactions). But the results were very mixed, so it is not an official step of the pipeline.
+
+----------------
+12 - These models are currently used (and were used to generate all results) and include additional gap-filling steps (all models beside AA4 was gap-filled) e.g. to make sure all biomass components can be synthesised
+
+----------------
+13 - AA2 (Bpi) and AA3 (Cpu) were investigated for their auxotrophies regarding B vitamins. So these models have extra metabolites in their biomass or AA2 has an extra pathway to synthesise biotin. These models were not actively used for my results, only for vitamin testing.
+
+----------------
+----------------
+
+Additionally, in this folder, there are two models: iJN1463 and iML1515. These are models for Pseudomonas and E.coli respectively. These are well-curated, already exisiting models downloaded from the BiGG database and served as references for different tasks.
+http://bigg.ucsd.edu/models/iML1515
+http://bigg.ucsd.edu/models/iJN1463
+
