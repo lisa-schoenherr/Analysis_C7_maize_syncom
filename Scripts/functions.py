@@ -298,13 +298,12 @@ def change_medium(model, medium_dict):
 
 
 # changes medium, does pfba and returns growth rate
-def test_medium(model, medium_dict, frac=1, min_growth=0):
+def test_medium(model, medium_dict, frac=1):
     """
     Test a certain medium for one model and only returns the growth value.
     :param model:
     :param medium_dict:
     :param frac: Optional for community models (fraction for MICOM's cooperative tradeoff function)
-    :param min_growth:
     :return: Growth value [int] or None if Infeasible
     """
     with model:
@@ -312,7 +311,7 @@ def test_medium(model, medium_dict, frac=1, min_growth=0):
         try:
             model_ident = get_identity_model(model)
             if model_ident == "com": # community models
-                solution = model.cooperative_tradeoff(fluxes=True, pfba=True, fraction=frac, min_growth=min_growth).fluxes.transpose()
+                solution = model.cooperative_tradeoff(fluxes=True, pfba=True, fraction=frac).fluxes.transpose()
                 growth = solution[solution.index.str.contains("Growth")].transpose()
                 growth = growth[~ growth.index.str.contains("medium")]
                 growth.index.name = "model"
@@ -982,8 +981,22 @@ def community_pfba(com_model, medium, frac=1):
         return fluxes, growth
 
 
-def test_fractions_community(model, medium, drop_out = None, medium_name = None, print_growth=False):
-    fractions = np.arange(0, 1.1, 0.1)
+def test_fractions_community(model, medium, drop_out = None, medium_name = None, print_growth=False,
+                             start=0, stop=1.1, step=0.1, save_path=None):
+    """
+    Tests the growth values of all members of one community model across a range of different fractions for the MICOM function cooperative_tradeoff()
+
+    :param model: Community model object creating with MICOM
+    :param medium: A dictionary representing the medium
+    :param drop_out: 3 letter abbreviation of a bacterium if Community is a drop-out (optional)
+    :param medium_name: Name for the medium, used in plot title
+    :param print_growth: Boolean indicating whether to print growth fraction and values during execution (default=False)
+    :param start: Start value of the fraction range (default = 0)
+    :param stop: Stop value of the fraction range  (default = 1.1; stop value is exclusive)
+    :param step: Step size for the fraction range  (default = 0.1)
+    :param save_path: Path to save the generated plot as svg (optional)
+    """
+    fractions = np.arange(start, stop, step)
     strain_codes = ["Sma", "Bpi", "Cpu", "Elu", "Cin", "Hro", "Ppu"]
     com_title = "community"
 
@@ -1015,4 +1028,8 @@ def test_fractions_community(model, medium, drop_out = None, medium_name = None,
         plt.title(f"Growth of {com_title} members across fractions")
     plt.legend()
     plt.grid(True)
+
+    if save_path is not None:
+        plt.savefig(save_path, format="svg", bbox_inches="tight")
+
     plt.show()
