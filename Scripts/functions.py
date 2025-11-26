@@ -214,7 +214,6 @@ def check_every_biomass_component(model, medium_dict):
     growth_mets = model.reactions.Growth.metabolites
     for met, flux in growth_mets.items():
         if flux < 0: # only look at mets that are consumed
-            #print(met)
             stoich = {met: flux}
 
             if rxn_id in model.reactions: # biomass test reaction is updated
@@ -330,14 +329,10 @@ def change_medium(model, medium_dict):
     if isinstance(medium_dict, pd.DataFrame):
         medium_dict = dict(zip(medium_dict.reaction, medium_dict.bound))
 
-    #ind_model_ids = [f"AA{i}" for i in range(1, 8)] + [f"AA{i}f" for i in range(1, 8)] # old version because if this ever changes i need to change it in every function
-    #if model.id not in ind_model_ids:  # community models
     model_ident = get_identity_model(model)
     if model_ident == "com":
         # adjust the medium suffices for community models with medium compartment
         medium_dict = {k.removesuffix('_e') + '_m' if k.endswith('_e') else k: v for k, v in medium_dict.items()}
-
-    #print(medium_dict)
 
     # Only include reactions that are in the model
     valid_medium = {
@@ -542,7 +537,6 @@ def get_fluxes_for_heatmap(model, medium, type, c7_all_ex, dict_with_rxn="no"):
         met_id = list(rxn.metabolites.keys())[0].name  # us .id or use .name
         flux_dict[met_id] = flux
 
-    #print(flux_dict.keys())
     return flux_dict
 
 
@@ -689,7 +683,6 @@ def get_uptakes_within_community(model, all_ex_rxns, com_fluxes, epsilon, model_
         plot_uptake = filtered_uptake.fillna(0)
 
     # Clean reaction names for y-axis
-    #plot_uptake.index = clean_ex_reaction_ids(plot_uptake.index.to_series())
     plot_uptake.index = cleaner_ex_reaction_ids(plot_uptake.index, model)
 
     return plot_uptake
