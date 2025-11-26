@@ -200,15 +200,65 @@ def get_identity_model(model):
         return "com"
 
 
+
+def check_every_biomass_component(model, medium_dict):
+    """
+    Checks for every metabolite in the Growth reaction (=objective) if it can be synthesised by making every metabolite the objective one at a time.
+    :param model: Cobrapy model
+    :param medium_dict: Dict with medium
+    :return: all metabolites that cannot be synthesised
+    """
+    rxn_id = "Growth_small"
+    sad_mets = []
+
+    growth_mets = model.reactions.Growth.metabolites
+    for met, flux in growth_mets.items():
+        if flux < 0: # only look at mets that are consumed
+            #print(met)
+            stoich = {met: flux}
+
+            if rxn_id in model.reactions: # biomass test reaction is updated
+                rxn = model.reactions.get_by_id(rxn_id)
+                rxn.subtract_metabolites(rxn.metabolites)
+                rxn.add_metabolites(stoich)
+            else: # first time reaction is created
+                new_rxn = Reaction(id=rxn_id, name="Biomass reaction", lower_bound=0, upper_bound=1000)
+                new_rxn.add_metabolites(stoich)
+                model.add_reactions([new_rxn])
+
+            model.objective = rxn_id
+
+            with model:
+                change_medium(model, medium_dict)
+                try:
+                    pfba_flux = pfba(model)
+                    if pfba_flux[rxn_id] == 0:
+                        sad_mets.append(met.id)
+                except Infeasible:
+                    print("Cannot get result because pfba is infeasible")
+
+    if rxn_id in model.reactions:
+        rxn = model.reactions.get_by_id(rxn_id)
+        model.remove_reactions([rxn])
+
+    print(sad_mets)
+
+
+
 def check_early_biomass_component(model, medium_dict, check_rxn_id):
+    """
+    Checks for every metabolite in a given reaction if it can be synthesised by making every metabolite the objective one at a time.
+    :param model: Cobrapy model
+    :param medium_dict: Dict with medium
+    :param check_rxn_id: reaction id (str) to check
+    :return: all metabolites that cannot be synthesised
+    """
     rxn_id = "objective_check"
     sad_mets = []
 
     check_mets = model.reactions.get_by_id(check_rxn_id).metabolites
-    #check_mets = model.reactions.check_rxn_id.metabolites
     for met, flux in check_mets.items():
         if flux < 0: # only look at mets that are consumed
-            #print(met)
             stoich = {met: flux}
 
             if rxn_id in model.reactions: # biomass test reaction is updated
@@ -767,6 +817,8 @@ def heatmap_fluxes_withinCommunity(com_model, dict_with_ind_models, medium, type
 
 ###
 # VISUALISATIONS - BUDGET PLOTS
+# The Code for Budget Plots is originally from Tiago and was slightly adapted here to fit my needs
+# Budget Plots show reactions that produce and consume a specific metabolite facilitating the investigation of flux through a metabolic network
 ###
 
 def fba_and_query(model, met_query, medium):

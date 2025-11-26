@@ -1,6 +1,6 @@
 # Code Repository - Master Thesis - Lisa Schönherr
 
-This repository contains all of Lisa's work on her master thesis project about Analysing Plant-Microbe Interactions via community modelling of metabolic interactions in the C7 Maize root SynCom.
+This repository contains all of Lisa's work on her master thesis project about analysing plant-microbe interactions via modelling of metabolic interactions in a seven-member maize root synthetic community.
 
 There are 4 main folders: 
 1. Datatsets 
