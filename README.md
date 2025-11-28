@@ -10,7 +10,7 @@ There are 4 main folders:
    * csv files that have different media (mainly maize root exudates)
 2. Models, i.e. metabolic models as .xml files after different stages of curation 
 3. Reports, i.e. MEMOTE and MACAW reports to check model quality 
-4. Scripts, i.e. Jupyter Notebooks that contain my work in progress as well as a python file that contains all functions that are used in multiple notebooks
+4. Scripts, i.e. Jupyter Notebooks that contain my analyses and simulations as well as a python file that contains all functions that are used in multiple notebooks
 
 
 More explaination about my scripts: 
